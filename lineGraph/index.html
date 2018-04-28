@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>D3 Time Plot</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+        <style>
+            div.tooltip {
+                position: absolute;
+                                line-height: 1;
+                   font-weight: bold;
+                   padding: 12px;
+                   background: rgba(0, 0, 0, 0.8);
+                   color: #fff;
+                   border-radius: 2px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <br><div id ="title">Global Plastic Production from 1950 to 2015</div>
+        <br>
+        <div class="tooltip"></div>
+        <br><button id="animate">Click to begin animation</button><br><br>
+        <script>
+            var N = 10;
+            var w = 700;
+            var h = 500;
+            var margin = {
+                top: 20,
+                bottom: 60,
+                left: 50,
+                right: 20
+            };
+            var width = w - margin.left - margin.right;
+            var height = h - margin.top - margin.bottom;
+            var dataset = [
+                {value: 1.5, year: "1950"},
+                {value: 50, year: "1977"},
+                {value: 100, year: "1989"},
+                {value: 200, year: "2002"},
+                {value: 250, year: "2009"},
+                {value: 280, year: "2011"},
+                {value: 299, year: "2013"},
+                {value: 322, year: "2015"},
+                {value: 335, year: "2016"}
+            ];
+
+            var yScale = d3.scale.linear()
+                    .domain([0, d3.max(dataset, function (d) {
+                            return d.value
+                        })])
+                    .range([height, 0]);
+
+            var xScale = d3.time.scale()
+                    .domain(d3.extent(dataset, function (d) {
+                        return d.year
+                    }))
+                    .range([0, width]);
+
+            var xAxis = d3.svg.axis()
+                    .scale(xScale)
+                    .ticks(20)
+                    .tickFormat(d3.format("0f"))
+                    .tickPadding(10)
+                    .orient("bottom");
+
+            var yAxis = d3.svg.axis()
+                    .scale(yScale)
+                    .ticks(10)
+                    .tickPadding(10)
+                    .orient("left");
+
+            var line = d3.svg.line()
+                    .x(function (d) {
+                        return xScale(d.year);
+                    })
+                    .y(function (d) {
+                        return yScale(d.value);
+                    })
+                    .interpolate("monotone");
+
+            var area = d3.svg.area()
+                    .x(function (d) {
+                        return xScale(d.year)
+                    })
+                    .y0(height)
+                    .y1(function (d) {
+                        return yScale(d.value);
+                    })
+                    .interpolate("monotone");
+
+
+            var chart = d3.select("body")
+                    .append("svg")
+                    .attr("id", "chart")
+                    .attr("height", h)
+                    .attr("width", w)
+                    .append("g")
+                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+            function plot(params) {
+                this.append("g")
+                        .classed("x axis", true)
+                        .attr("transform", "translate(0," + height + ")")
+                        .call(params.axis.x)
+                        .append("text")
+                          .attr("class", "label")
+                          .attr("y", 6)
+                          .attr("dy", ".71em")
+                          .attr("transform", "translate(350, 40)")
+                          .style("text-anchor", "end")
+                          .text("Year");
+
+                this.append("g")
+                        .classed("y axis", true)
+                        .call(params.axis.y)
+                        .append("text")
+                          .attr("class", "label")
+                          .attr("y", 6)
+                          .attr("dy", ".71em")
+                          .attr("transform", "rotate(-90)")
+                          .style("text-anchor", "end")
+                          .text("Plastic production volume in million metric tons");
+                //Enter
+                this.selectAll('.area')
+                        .data([params.data])
+                        .enter()
+                        .append("path")
+                        .classed("area", true);
+
+                this.selectAll('.trendline')
+                        .data([params.data])
+                        .enter()
+                        .append("path")
+                        .classed("trendline", true);
+
+                this.selectAll('.point')
+                        .data(params.data)
+                        .enter()
+                        .append("circle")
+                        .attr("r", "4")
+                        .attr("fill","#008CBA")
+                        .classed("point", true);
+
+                //Update
+                this.selectAll(".area")
+                        .attr("d", function (d) {
+                            return area(d);
+                        });
+
+                this.selectAll(".trendline")
+                        .attr("d", function (d) {
+                            return line(d);
+                        });
+
+                this.selectAll('.point')
+                        .attr("cx", function (d, i) {
+                            return xScale(d.year);
+                        })
+                        .attr("cy", function (d, i) {
+                            return yScale(d.value);
+                        })
+                        .on('mouseover', function (d) {
+                            params.tooltip
+                                    .style("left", d3.event.x)
+                                    .style("top", d3.event.y)
+                                    .transition()
+                                    .duration(500)
+                                    .style("opacity", 1)
+                                    .text('Plastic Production in ' + d.year + ' was ' + d.value + ' million metric tons');
+                        })
+                        .on('mouseout', function () {
+                            params.tooltip
+                                    .transition()
+                                    .duration(500)
+                                    .style("opacity", 0);
+                        });
+                //Exit
+                this.selectAll('.area')
+                        .data(params.data)
+                        .exit()
+                        .remove();
+
+                this.selectAll('.trendline')
+                        .data([params.data])
+                        .exit()
+                        .remove();
+
+                this.selectAll('.point')
+                        .data(params.data)
+                        .exit()
+                        .remove();
+            }
+
+            plot.call(chart, {
+                data: dataset,
+                axis: {x: xAxis, y: yAxis},
+                tooltip: d3.select(".tooltip")
+            });
+
+            d3.select('#animate').on('click', function () {
+                var self = this;
+                chart.selectAll('.trendline')
+                        .style("stroke-dashoffset", w + 100)
+                        .style("stroke-dasharray", w + 100)
+                        .transition()
+                        .duration(5000)
+                        .each("start", function () {
+                            d3.select(self).attr("disabled", "disabled")
+                        })
+                        .each("end", function () {
+                            d3.select(self).attr("disabled", null)
+                        })
+                        .style("stroke-dashoffset", 0);
+            });
+        </script>
+    </body>
+</html>
