@@ -1,0 +1,96 @@
+body, html {
+    margin:0;
+    padding:0;
+    font-family:"Arial", sans-serif;
+    font-size:1em;
+    text-align:center;
+    font-family:monospace;
+}
+
+#chart {
+    background-color:white;
+    /*border: 1px solid #CCC;*/
+}
+
+.bar {
+    fill:grey;
+    shape-rendering:crispEdges;
+}
+
+.bar-label {
+    text-anchor:end;
+    fill:white;
+}
+
+.axis path,
+.axis line {
+    fill:none;
+    stroke:#000;
+    stroke-width: 3;
+    shape-rendering:crispEdges;
+}
+
+.gridline path,
+.gridline line {
+    fill: none;
+    stroke: #ccc;
+    shape-rendering: crispEdges;
+}
+
+.trendline {
+    fill: none;
+    stroke: #008CBA;
+    stroke-width: 4;
+    /*stroke-dasharray:10;*/
+}
+
+.area {
+    fill: white;
+    stroke: #ccc;
+    opacity: 0.25;
+}
+
+.donut {
+    opacity:0.1;
+}
+.axis-label {
+    text-anchor: middle;
+}
+.chart-header {
+    text-transform: capitalize;
+    font-size: 110%;
+}
+#animate {
+
+
+  background-color: white;
+   color: black;
+   border: 2px solid #008CBA;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family:monospace;
+}
+
+
+#animate:hover {  background-color: #008CBA;
+    color: white;
+}
+
+#title{
+font-family:monospace;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 10px;
+
+}
+
+#cursor {
+    stroke: black;
+}
