@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+  .chart {
+    height: 70px;
+    width: 300px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    margin: 1em;
+  }
+  .chart .bar {
+    fill: #ccc;
+  }
+</style>
+<svg class="chart" data-bar-chart data-data="230,43,10,13,10,20,30,23,43,10,13,10,20,30" data-bar-width="15"></svg>
+<svg class="chart" data-bar-chart data-data="19,65,23,31,32,44,5,32,23,23,54,65" data-bar-width="15"></svg>
+<svg class="chart" data-bar-chart data-data="34,43,65,21,5,43,43,32,32,12,31,32,12,32,23,12" data-bar-width="15"></svg>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+  $('[data-bar-chart]').each(function (i, svg) {
+    var $svg = $(svg);
+    var data = $svg.data('data').split(',').map(function (datum) {
+      return parseFloat(datum);
+    });
+
+    var barWidth = parseFloat($svg.data('bar-width')) || 15;
+    var barSpace = parseFloat($svg.data('bar-space')) || 0.5;
+    var chartHeight = $svg.outerHeight();
+    var y = d3.scale.linear()
+              .domain([0, d3.max(data)])
+              .range([0, chartHeight]);
+    d3.select(svg)
+      .selectAll("rect")
+        .data(data)
+      .enter().append("rect")
+        .attr("class", "bar")
+        .attr("width", barWidth)
+        .attr("x", function (d, i) { return barWidth*i + barSpace*i; })
+        .attr("y", chartHeight)
+        .attr("height", 0)
+        .transition()
+        .delay(function (d, i) { return i*100; })
+        .attr("y", function (d, i) { return chartHeight-y(d); })
+        .attr("height", function (d) { return y(d); });
+  });
+
+</script>
