@@ -9,10 +9,11 @@
         <style>
             div.tooltip {
                 position: absolute;
-                                line-height: 1;
+                    line-height: 1;
+                    font-family: "Lato";
                    font-weight: bold;
                    padding: 12px;
-                   background: rgba(0, 0, 0, 0.8);
+                   background: #018AC0;
                    color: #fff;
                    border-radius: 2px;
             }
@@ -115,6 +116,7 @@
                           .attr("y", 6)
                           .attr("dy", ".71em")
                           .attr("transform", "translate(350, 40)")
+                          .style("font-family","Lato")
                           .style("text-anchor", "end")
                           .text("Year");
 
@@ -127,6 +129,7 @@
                           .attr("dy", ".71em")
                           .attr("transform", "rotate(-90)")
                           .style("text-anchor", "end")
+                          .style("font-family","Lato")
                           .text("Plastic production volume in million metric tons");
                 //Enter
                 this.selectAll('.area')
@@ -146,7 +149,7 @@
                         .enter()
                         .append("circle")
                         .attr("r", "4")
-                        .attr("fill","#008CBA")
+                        .attr("fill","#018AC0")
                         .classed("point", true);
 
                 //Update

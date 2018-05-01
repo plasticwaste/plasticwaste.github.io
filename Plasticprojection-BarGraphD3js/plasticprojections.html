@@ -1,10 +1,15 @@
 <!DOCTYPE html>
+<html>
+<head>
 <meta charset="utf-8">
+</head>
+<script>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+  </script>
 <style>
 
     body {
-
-        font-family:monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
         text-align:center;
         width: 960px;
         height: 500px;
@@ -51,15 +56,16 @@
     .axis-label {
         text-anchor: middle;
     }
+    
     label {
-        font-family: monospace,"Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Lato","Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: normal;
     }
 
 
 
     .toolTip {
-        font-family: monospace,"Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Lato","Helvetica Neue", Helvetica, Arial, sans-serif;
         position: absolute;
         display: none;
         width: auto;
@@ -69,7 +75,7 @@
         border: 0 none;
         border-radius: 8px 8px 8px 8px;
         box-shadow: -3px 3px 15px #888888;
-        color: black;
+        color: #018AC0;
         font: 12px sans-serif;
         padding: 5px;
         text-align: center;
@@ -132,11 +138,11 @@
 
     .axisHorizontal .tick line {
         stroke-width: 1;
-        stroke: rgba(0, 0, 0, 0.2);
+        stroke:#018AC0;
     }
 
     .bar {
-        fill: #02cc9a;
+        fill: #018AC0;
         fill-opacity: .9;
     }
 
@@ -145,19 +151,24 @@
     }
       #title,
       #footer{
-      font-family:monospace;
+      font-family:"Lato";
       font-size: 20px;
         padding-top: 10px;
         padding-left: 50px;
 
       }
+        #title{
+          text-align: center;
+        }
 #footer{
-  font-size: 15px;
+  font-size: 16px;
+  text-align: left;
 }
 
 #source{
   font-size: 10px;
   text-align: left;
+  padding-left: 50px;
 
 }
     }
@@ -166,6 +177,7 @@
 <body>
   <div id ="title"> <b>Plastic Marine Debris Projections</b></div>
   <br></br>
+
 <form>
     <label><input type="radio" name="dataset" id="dataset" value="Low" checked> Low (15%)</label>
     <label><input type="radio" name="dataset" id="dataset" value="Mid">Mid (25%) </label>
@@ -220,7 +232,7 @@
     }
 
 
-    var margin = {top: (parseInt(d3.select('body').style('height'), 10)/10), right: (parseInt(d3.select('body').style('width'), 10)/20), bottom: (parseInt(d3.select('body').style('height'), 10)/10), left: (parseInt(d3.select('body').style('width'), 10)/20)},
+    var margin = {top: (parseInt(d3.select('body').style('height'), 10)/10), right: (parseInt(d3.select('body').style('width'), 10)/20), bottom: (parseInt(d3.select('body').style('height'), 10)/10), left: (parseInt(d3.select('body').style('width'), 10)/10)},
             width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right - 400,
             height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
 
@@ -276,9 +288,8 @@
                 .append("text")
                 .attr("x", (width / 2))
                 .attr("y", (margin.top / 2)+10)
-                .style("font-size","11px")
-                .style("font-weight","bold")
-                .style("font-family","monospace")
+                .style("font-size","14px")
+                .style("font-family","Lato")
                 .text("Year");
 
         svg.select(".y.axis").remove();
@@ -292,9 +303,8 @@
                 .attr("y", 6)
                 .attr("dy", ".71em")
                 .style("text-anchor", "end")
-                .style("font-size","11px")
-                .style("font-weight","bold")
-                .style("font-family","monospace")
+                .style("font-size","14px")
+                .style("font-family","Lato")
                 .text("Plastic marine debris, cumulative (in million metric tons)");
 
 
@@ -334,3 +344,4 @@
 <div id = "source">  Source:Jambeck et al. (2015, February 13). Plastic waste inputs from land into the ocean
 </div>
 </body>
+</html>

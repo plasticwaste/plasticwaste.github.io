@@ -1,10 +1,9 @@
 body, html {
     margin:0;
     padding:0;
-    font-family:"Arial", sans-serif;
     font-size:1em;
     text-align:center;
-    font-family:monospace;
+    font-family:"Lato","Arial", sans-serif;;
 }
 
 #chart {
@@ -75,7 +74,7 @@ body, html {
     transition-duration: 0.4s;
     border-radius: 8px;
     cursor: pointer;
-    font-family:monospace;
+    font-family:"Lato";
 }
 
 
@@ -84,7 +83,7 @@ body, html {
 }
 
 #title{
-font-family:monospace;
+font-family:"Lato";
   font-weight: bold;
   font-size: 18px;
   padding-top: 10px;
