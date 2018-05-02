@@ -1,0 +1,3017 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0404.1406                               -->
+<workbook source-build='10.5.3 (10500.18.0404.1406)' source-platform='mac' version='10.5' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='Plastic_severity' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet2 (Top20countries)' inline='true' name='federated.1amu1yb1736u0m17eifzh0rr09t9' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Top20countries' name='excel-direct.1gjgsr71fkwe2r1abqqib08ntth6'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/var/folders/df/jr0yvkp11293x8_mzs0425gw0000gn/T/tableau-temp/2277700436/Data/Desktop/Top20countries.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1gjgsr71fkwe2r1abqqib08ntth6' name='Sheet2' table='[Sheet2$]' type='table'>
+          <columns gridOrigin='A1:I22:no:A1:I22:0' header='yes' outcome='2'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='string' name='Econ. classification' ordinal='1' />
+            <column datatype='real' name='Coastal pop.(millions)' ordinal='2' />
+            <column datatype='real' name='Waste generated (kg/ppd)' ordinal='3' />
+            <column datatype='integer' name='% plastic waste' ordinal='4' />
+            <column datatype='integer' name='% mismanaged waste' ordinal='5' />
+            <column datatype='real' name='Mismanaged plastic waste(MMT/Year)' ordinal='6' />
+            <column datatype='real' name='% of total mismanaged plastic waste' ordinal='7' />
+            <column datatype='string' name='Plastic marine debris (MMT/year)' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Econ. classification</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Econ. classification]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Econ. classification</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Coastal pop.(millions)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Coastal pop.(millions)]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Coastal pop.(millions)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Waste generated (kg/ppd)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Waste generated (kg/ppd)]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Waste generated (kg/ppd)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% plastic waste</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[% plastic waste]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>% plastic waste</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% mismanaged waste</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[% mismanaged waste]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>% mismanaged waste</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mismanaged plastic waste(MMT/Year)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mismanaged plastic waste(MMT/Year)]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Mismanaged plastic waste(MMT/Year)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% of total mismanaged plastic waste</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% of total mismanaged plastic waste]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>% of total mismanaged plastic waste</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Plastic marine debris (MMT/year)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Plastic marine debris (MMT/year)]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Plastic marine debris (MMT/year)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I22:no:A1:I22:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='% Mismanaged Waste' datatype='integer' name='[% mismanaged waste]' role='measure' type='quantitative' />
+      <column caption='% Of Total Mismanaged Plastic Waste' datatype='real' name='[% of total mismanaged plastic waste]' role='measure' type='quantitative' />
+      <column caption='% Plastic Waste' datatype='integer' name='[% plastic waste]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Econ. classification]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;HIC&quot;' value='High Income ' />
+          <alias key='&quot;LI&quot;' value='Lower Income' />
+          <alias key='&quot;LMI&quot;' value='Lower Middle Income' />
+          <alias key='&quot;UMI&quot;' value='Upper Middle Income' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[Econ. classification]' derivation='None' name='[none:Econ. classification:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Plastic_severity.twb Files/Sheet2 (Top20countries).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Econ. classification</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Econ. classification]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Econ. classification</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Coastal pop.(millions)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Coastal pop.(millions)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Coastal pop.(millions)</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet2</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Waste generated (kg/ppd)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Waste generated (kg/ppd)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Waste generated (kg/ppd)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet2</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% plastic waste</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[% plastic waste]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% plastic waste</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet2</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% mismanaged waste</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[% mismanaged waste]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% mismanaged waste</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet2</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mismanaged plastic waste(MMT/Year)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Mismanaged plastic waste(MMT/Year)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mismanaged plastic waste(MMT/Year)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet2</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% of total mismanaged plastic waste</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% of total mismanaged plastic waste]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% of total mismanaged plastic waste</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet2</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Plastic marine debris (MMT/year)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Plastic marine debris (MMT/year)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Plastic marine debris (MMT/year)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.333893' measure-ordering='alphabetic' measure-percentage='0.666107' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Econ. classification:nk]' type='palette'>
+            <map to='#072f00'>
+              <bucket>&quot;HIC&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;UMI&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;LI&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LMI&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Rank' />
+        <field-sort-custom-order field='Country' />
+        <field-sort-custom-order field='Econ. classification' />
+        <field-sort-custom-order field='Coastal pop.(millions)' />
+        <field-sort-custom-order field='Waste generated (kg/ppd)' />
+        <field-sort-custom-order field='% plastic waste' />
+        <field-sort-custom-order field='% mismanaged waste' />
+        <field-sort-custom-order field='Mismanaged plastic waste(MMT/Year)' />
+        <field-sort-custom-order field='% of total mismanaged plastic waste' />
+        <field-sort-custom-order field='Plastic marine debris (MMT/year)' />
+        <field-sort-custom-order field='Calculation_1919659402998472704' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+    <mapsource inline='true' name='map-blue-plain' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Standard-copy-copy' name='cjglg7srv001m2rleh4j32q2l' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='map-blue-plain' name='map-blue-plain' wait-tile-color='#dddddd'>
+          <map-layer-style name='Standard-copy-copy' request-string='cjglg7srv001m2rleh4j32q2l' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjglg7srv001m2rleh4j32q2l' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='mapbox example' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Standard' name='cjglamra1000g2srzdz79lmgo' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='mapbox example' name='mapbox example' wait-tile-color='#dddddd'>
+          <map-layer-style name='Standard' request-string='cjglamra1000g2srzdz79lmgo' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjglamra1000g2srzdz79lmgo' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='mapbox2' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='whaam!' name='cjgladrpr001p2sn60toix0lm' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='mapbox2' name='mapbox2' wait-tile-color='#dddddd'>
+          <map-layer-style name='whaam!' request-string='cjgladrpr001p2sn60toix0lm' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgladrpr001p2sn60toix0lm' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='mapboxsimple' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Outdoors' name='cjgldh28m000l2sp3yr2w7dbv' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='mapboxsimple' name='mapboxsimple' wait-tile-color='#dddddd'>
+          <map-layer-style name='Outdoors' request-string='cjgldh28m000l2sp3yr2w7dbv' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgldh28m000l2sp3yr2w7dbv' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='whammMapBpx' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='whaam!' name='cjglafepz00082sryqmmegk37' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='whammMapBpx' name='whammMapBpx' wait-tile-color='#dddddd'>
+          <map-layer-style name='whaam!' request-string='cjglafepz00082sryqmmegk37' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjglafepz00082sryqmmegk37' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='bright' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Bright' name='cjgldmwe8000a2sp4ud0n1u8w' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='bright' name='bright' wait-tile-color='#dddddd'>
+          <map-layer-style name='Bright' request-string='cjgldmwe8000a2sp4ud0n1u8w' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgldmwe8000a2sp4ud0n1u8w' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='no label' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Bright' name='cjgldmwe8000a2sp4ud0n1u8w' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='no label' name='no label' wait-tile-color='#dddddd'>
+          <map-layer-style name='Bright' request-string='cjgldmwe8000a2sp4ud0n1u8w' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgldmwe8000a2sp4ud0n1u8w' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='no label-1' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Standard-copy' name='cjgldve7b001r2sn6dczxq35k' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='no label-1' name='no label-1' wait-tile-color='#dddddd'>
+          <map-layer-style name='Standard-copy' request-string='cjgldve7b001r2sn6dczxq35k' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgldve7b001r2sn6dczxq35k' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='map-nolabelsubtle' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Standard' name='cjglamra1000g2srzdz79lmgo' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='map-nolabelsubtle' name='map-nolabelsubtle' wait-tile-color='#dddddd'>
+          <map-layer-style name='Standard' request-string='cjglamra1000g2srzdz79lmgo' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjglamra1000g2srzdz79lmgo' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='map blue' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Scenic' name='cjgn7g6z8000f2snwpreezjqz' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='map blue' name='map blue' wait-tile-color='#dddddd'>
+          <map-layer-style name='Scenic' request-string='cjgn7g6z8000f2snwpreezjqz' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgn7g6z8000f2snwpreezjqz' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='map-no bpundary' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Scenic-copy' name='cjgn7l2gr00012snbx51tslm6' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='map-no bpundary' name='map-no bpundary' wait-tile-color='#dddddd'>
+          <map-layer-style name='Scenic-copy' request-string='cjgn7l2gr00012snbx51tslm6' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgn7l2gr00012snbx51tslm6' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='map-bright' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Bright' name='cjgldmwe8000a2sp4ud0n1u8w' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='map-bright' name='map-bright' wait-tile-color='#dddddd'>
+          <map-layer-style name='Bright' request-string='cjgldmwe8000a2sp4ud0n1u8w' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgldmwe8000a2sp4ud0n1u8w' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='14'>OCEAN DETRITUS | </run>
+            <run fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='13'>Countries polluting oceans the most with </run>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='13'>mismanaged</run>
+            <run fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='13'>Æ </run>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='13'>plastic waste</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet2 (Top20countries)' name='federated.1amu1yb1736u0m17eifzh0rr09t9' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1amu1yb1736u0m17eifzh0rr09t9'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Mismanaged plastic waste(MMT/Year)]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mismanaged plastic waste(MMT/Year)]' derivation='Sum' name='[sum:Mismanaged plastic waste(MMT/Year):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]' field-type='quantitative' max='16123716.260623299' min='-13042722.692285385' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]' field-type='quantitative' max='10009969.843772566' min='-8841107.0839831028' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]' field-type='quantitative' max='8.8200000000000003' max-size='1' min='0.28000000000000003' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='border-width' value='2' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#f2f6f7' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]' value='Origin by country of mismanaged plastic waste &#10;in 2010 (million metric tonnes)&#10;' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_12' value='#00000000' />
+            <format attr='stroke-color' id='annotation_12' value='#000000' />
+            <format attr='body-type' id='annotation_13' value='none' />
+            <format attr='stroke-color' id='annotation_13' value='#000000' />
+            <format attr='fill-color' id='annotation_14' value='#00000000' />
+            <format attr='stroke-color' id='annotation_14' value='#000000' />
+            <format attr='fill-color' id='annotation_15' value='#00000000' />
+            <format attr='stroke-color' id='annotation_15' value='#000000' />
+            <format attr='fill-color' id='annotation_16' value='#00000000' />
+            <format attr='stroke-color' id='annotation_16' value='#000000' />
+            <format attr='fill-color' id='annotation_19' value='#00000000' />
+            <format attr='stroke-color' id='annotation_19' value='#000000' />
+            <format attr='fill-color' id='annotation_20' value='#00000000' />
+            <format attr='stroke-color' id='annotation_20' value='#000000' />
+            <format attr='fill-color' id='annotation_21' value='#00000000' />
+            <format attr='stroke-color' id='annotation_21' value='#000000' />
+            <format attr='line-end' id='annotation_21' value='arrow' />
+            <format attr='line-end' id='annotation_15' value='arrow' />
+            <format attr='line-end' id='annotation_14' value='arrow' />
+            <format attr='line-end' id='annotation_20' value='arrow' />
+            <format attr='line-end' id='annotation_13' value='arrow' />
+            <format attr='line-end' id='annotation_19' value='arrow' />
+            <format attr='line-end' id='annotation_16' value='arrow' />
+            <format attr='line-end' id='annotation_12' value='arrow' />
+            <format attr='fill-color' id='annotation_22' value='#00000000' />
+            <format attr='stroke-color' id='annotation_22' value='#000000' />
+            <format attr='line-end' id='annotation_22' value='arrow' />
+            <format attr='line-end-size' id='annotation_20' value='large' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.019999999552965164' />
+            <format attr='map-style' value='' />
+            <format attr='wrap' value='false' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+          </style-rule>
+          <style-rule element='data-highlighter'>
+            <format attr='border-color' value='#499894' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='data-highlighter-title'>
+            <format attr='title' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' value='Highlight Country' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]' />
+              <lod column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#4e79a7'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#4e79a7'>Mismanaged plastic waste:</run>
+                <run bold='true' fontalignment='1' fontcolor='#4e79a7'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+                <run fontalignment='1' fontcolor='#4e79a7'>(MMT/Year)</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+                <run>&#10;&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='wrap' value='on' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='6.3908782005310059' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='shape' value='plastic/bottle.jpg' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='has-halo' value='false' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#1b1b1b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</rows>
+        <cols>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Morocco&quot;</value>
+                <value>0.31</value>
+                <value>31.129000000000001</value>
+                <value>-7.3550000000000004</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Vietnam&quot;</value>
+                <value>1.8300000000000001</value>
+                <value>21.75</value>
+                <value>105.373</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Algeria&quot;</value>
+                <value>0.52000000000000002</value>
+                <value>28.604500000000002</value>
+                <value>2.6400000000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+        <annotations>
+          <annotation class='point' id='12' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>8.8200000000000003</value>
+                    <value>35.1753</value>
+                    <value>99.387699999999995</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='40' y='-102' />
+          </annotation>
+          <annotation class='point' id='13' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Sri Lanka&quot;</value>
+                    <value>1.5900000000000001</value>
+                    <value>7.2999999999999998</value>
+                    <value>80.727000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-21' y='68' />
+          </annotation>
+          <annotation class='point' id='14' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Indonesia&quot;</value>
+                    <value>3.2200000000000002</value>
+                    <value>-0.73899999999999999</value>
+                    <value>114.045</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-17' y='77' />
+          </annotation>
+          <annotation class='point' id='15' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Egypt&quot;</value>
+                    <value>0.96999999999999997</value>
+                    <value>26.16</value>
+                    <value>28.742000000000001</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='62' y='60' />
+          </annotation>
+          <annotation class='point' id='16' mark-position='1' pullback='12' text-width='64'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Nigeria&quot;</value>
+                    <value>0.84999999999999998</value>
+                    <value>9.3416999999999994</value>
+                    <value>7.6779999999999999</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-39' y='42' />
+          </annotation>
+          <annotation class='point' id='19' mark-position='1' pullback='12' text-width='64'>
+            <formatted-text>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;India&quot;</value>
+                    <value>0.59999999999999998</value>
+                    <value>22.741</value>
+                    <value>78.236000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='10' y='-74' />
+          </annotation>
+          <annotation class='point' id='20' mark-position='1' pullback='12' text-width='77'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Vietnam&quot;</value>
+                    <value>1.8300000000000001</value>
+                    <value>21.75</value>
+                    <value>105.373</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='117' y='92' />
+          </annotation>
+          <annotation class='point' id='21' mark-position='1' pullback='12' text-width='103'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Philippines&quot;</value>
+                    <value>1.8799999999999999</value>
+                    <value>17.181000000000001</value>
+                    <value>121.256</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='27' y='-45' />
+          </annotation>
+          <annotation class='point' id='22' mark-position='1' pullback='12' text-width='132'>
+            <formatted-text>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;North Korea&quot;</value>
+                    <value>0.29999999999999999</value>
+                    <value>39.767000000000003</value>
+                    <value>126.389</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='19' y='-49' />
+          </annotation>
+        </annotations>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2(a)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Verdana'>OCEAN DETRITUS | </run>
+            <run fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='14'>Top </run>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='14'>20</run>
+            <run fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='14'> sources of mismanaged </run>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='14'>Plastic waste</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet2 (Top20countries)' name='federated.1amu1yb1736u0m17eifzh0rr09t9' />
+          </datasources>
+          <mapsources>
+            <mapsource name='map-blue-plain' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1amu1yb1736u0m17eifzh0rr09t9'>
+            <column caption='% Mismanaged Waste' datatype='integer' name='[% mismanaged waste]' role='measure' type='quantitative' />
+            <column caption='% Of Total Mismanaged Plastic Waste' datatype='real' name='[% of total mismanaged plastic waste]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Econ. classification]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;HIC&quot;' value='High Income ' />
+                <alias key='&quot;LI&quot;' value='Lower Income' />
+                <alias key='&quot;LMI&quot;' value='Lower Middle Income' />
+                <alias key='&quot;UMI&quot;' value='Upper Middle Income' />
+              </aliases>
+            </column>
+            <column datatype='real' name='[Mismanaged plastic waste(MMT/Year)]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Econ. classification]' derivation='None' name='[none:Econ. classification:nk]' pivot='key' type='nominal' />
+            <column-instance column='[% mismanaged waste]' derivation='Sum' name='[sum:% mismanaged waste:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[% of total mismanaged plastic waste]' derivation='Sum' name='[sum:% of total mismanaged plastic waste:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mismanaged plastic waste(MMT/Year)]' derivation='Sum' name='[sum:Mismanaged plastic waste(MMT/Year):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Econ. classification:nk]' />
+              <groupfilter function='member' level='[none:Econ. classification:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;HIC&quot;</bucket>
+              <bucket>&quot;UMI&quot;</bucket>
+              <bucket>&quot;LMI&quot;</bucket>
+              <bucket>&quot;LI&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]' field-type='quantitative' max='16244754.020287896' min='-12433691.857770646' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]' field-type='quantitative' max='10995332.424546221' min='-9800218.3726076689' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='border-width' value='2' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#f7f7f0' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]' value='% Mismanaged Waste' />
+            <format attr='color' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' value='Econ. classification'>
+              <formatted-text>
+                <run bold='true' fontsize='11'>Econ. classification</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_12' value='#00000000' />
+            <format attr='stroke-color' id='annotation_12' value='#000000' />
+            <format attr='body-type' id='annotation_13' value='none' />
+            <format attr='stroke-color' id='annotation_13' value='#000000' />
+            <format attr='fill-color' id='annotation_14' value='#00000000' />
+            <format attr='stroke-color' id='annotation_14' value='#000000' />
+            <format attr='fill-color' id='annotation_15' value='#00000000' />
+            <format attr='stroke-color' id='annotation_15' value='#000000' />
+            <format attr='fill-color' id='annotation_16' value='#00000000' />
+            <format attr='stroke-color' id='annotation_16' value='#000000' />
+            <format attr='fill-color' id='annotation_19' value='#00000000' />
+            <format attr='stroke-color' id='annotation_19' value='#000000' />
+            <format attr='fill-color' id='annotation_20' value='#00000000' />
+            <format attr='stroke-color' id='annotation_20' value='#000000' />
+            <format attr='fill-color' id='annotation_21' value='#00000000' />
+            <format attr='stroke-color' id='annotation_21' value='#000000' />
+            <format attr='line-end' id='annotation_21' value='arrow' />
+            <format attr='line-end' id='annotation_15' value='arrow' />
+            <format attr='line-end' id='annotation_14' value='arrow' />
+            <format attr='line-end' id='annotation_20' value='arrow' />
+            <format attr='line-end' id='annotation_13' value='arrow' />
+            <format attr='line-end' id='annotation_19' value='arrow' />
+            <format attr='line-end' id='annotation_16' value='arrow' />
+            <format attr='line-end' id='annotation_12' value='arrow' />
+            <format attr='fill-color' id='annotation_23' value='#00000000' />
+            <format attr='line-end' id='annotation_23' value='arrow' />
+            <format attr='stroke-color' id='annotation_23' value='#000000' />
+            <format attr='stroke-color' id='annotation_24' value='#000000' />
+            <format attr='fill-color' id='annotation_24' value='#00000000' />
+            <format attr='line-end' id='annotation_24' value='arrow' />
+            <format attr='fill-color' id='annotation_25' value='#00000000' />
+            <format attr='stroke-color' id='annotation_25' value='#000000' />
+            <format attr='line-end' id='annotation_25' value='arrow' />
+            <format attr='line-end-size' id='annotation_25' value='large' />
+            <format attr='line-end' id='annotation_26' value='arrow' />
+            <format attr='line-end-size' id='annotation_26' value='large' />
+            <format attr='stroke-color' id='annotation_26' value='#000000' />
+            <format attr='fill-color' id='annotation_26' value='#00000000' />
+            <format attr='fill-color' id='annotation_27' value='#00000000' />
+            <format attr='stroke-color' id='annotation_27' value='#000000' />
+            <format attr='line-end' id='annotation_27' value='arrow' />
+            <format attr='stroke-color' id='annotation_29' value='#000000' />
+            <format attr='line-end' id='annotation_29' value='arrow' />
+            <format attr='fill-color' id='annotation_29' value='#00000000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjglg7srv001m2rleh4j32q2l' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+          <style-rule element='data-highlighter'>
+            <format attr='border-color' value='#499894' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='data-highlighter-title'>
+            <format attr='title' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' value='Highlight Country' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' />
+              <size column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]' />
+              <tooltip column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]' />
+              <lod column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' />
+              <lod column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontsize='12'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+                <run fontalignment='1'>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#333333' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#333333' fontsize='12'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#333333' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='wrap' value='on' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='3.2596685886383057' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='shape' value='plastic/trash.png' />
+                <format attr='mark-color' value='#f9001e' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#1b1b1b' />
+                <format attr='has-halo' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</rows>
+        <cols>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;North Korea&quot;</value>
+                <value>&quot;LI&quot;</value>
+                <value>90</value>
+                <value>39.767000000000003</value>
+                <value>126.389</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+        <annotations>
+          <annotation class='point' id='12' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>8.8200000000000003</value>
+                    <value>35.1753</value>
+                    <value>99.387699999999995</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='40' y='-102' />
+          </annotation>
+          <annotation class='point' id='13' mark-position='1' pullback='12' text-width='92'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Sri Lanka&quot;</value>
+                    <value>1.5900000000000001</value>
+                    <value>7.2999999999999998</value>
+                    <value>80.727000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-69' y='68' />
+          </annotation>
+          <annotation class='point' id='14' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Indonesia&quot;</value>
+                    <value>3.2200000000000002</value>
+                    <value>-0.73899999999999999</value>
+                    <value>114.045</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-17' y='77' />
+          </annotation>
+          <annotation class='point' id='15' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Egypt&quot;</value>
+                    <value>0.96999999999999997</value>
+                    <value>26.16</value>
+                    <value>28.742000000000001</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='62' y='60' />
+          </annotation>
+          <annotation class='point' id='16' mark-position='1' pullback='12' text-width='103'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Nigeria&quot;</value>
+                    <value>0.84999999999999998</value>
+                    <value>9.3416999999999994</value>
+                    <value>7.6779999999999999</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-58' y='42' />
+          </annotation>
+          <annotation class='point' id='19' mark-position='1' pullback='12' text-width='73'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;India&quot;</value>
+                    <value>0.59999999999999998</value>
+                    <value>22.741</value>
+                    <value>78.236000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='8' y='-144' />
+          </annotation>
+          <annotation class='point' id='20' mark-position='1' pullback='12' text-width='91'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Vietnam&quot;</value>
+                    <value>1.8300000000000001</value>
+                    <value>21.75</value>
+                    <value>105.373</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='120' y='89' />
+          </annotation>
+          <annotation class='point' id='21' mark-position='1' pullback='12' text-width='109'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Philippines&quot;</value>
+                    <value>1.8799999999999999</value>
+                    <value>17.181000000000001</value>
+                    <value>121.256</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='88' y='-24' />
+          </annotation>
+          <annotation class='point' id='23' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='12'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Sri Lanka&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>84</value>
+                    <value>7.2999999999999998</value>
+                    <value>80.727000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-26' y='159' />
+          </annotation>
+          <annotation class='point' id='24' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='12'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>&quot;UMI&quot;</value>
+                    <value>76</value>
+                    <value>35.1753</value>
+                    <value>99.387699999999995</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-48' y='-112' />
+          </annotation>
+          <annotation class='point' id='25' mark-position='1' pullback='12' text-width='141'>
+            <formatted-text>
+              <run bold='true' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='12'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Egypt&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>69</value>
+                    <value>26.16</value>
+                    <value>28.742000000000001</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='17' y='78' />
+          </annotation>
+          <annotation class='point' id='26' mark-position='1' pullback='12' text-width='166'>
+            <formatted-text>
+              <run bold='true' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='12'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Nigeria&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>83</value>
+                    <value>9.3416999999999994</value>
+                    <value>7.6779999999999999</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-131' y='190' />
+          </annotation>
+          <annotation class='point' id='27' mark-position='1' pullback='12' text-width='132'>
+            <formatted-text>
+              <run bold='true' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='12'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Indonesia&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>83</value>
+                    <value>-0.73899999999999999</value>
+                    <value>114.045</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='4' y='97' />
+          </annotation>
+          <annotation class='point' id='29' mark-position='1' pullback='12' text-width='103'>
+            <formatted-text>
+              <run bold='true' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='12'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='12'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;India&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>87</value>
+                    <value>22.741</value>
+                    <value>78.236000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-69' y='93' />
+          </annotation>
+        </annotations>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='11' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='8' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='98000' id='5' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='98000' id='3' type='layout-basic' w='98400' x='800' y='1000'>
+                  <zone h='98000' id='1' name='Sheet 1' w='98400' x='800' y='1000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='22125' id='6' name='Sheet 1' pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]' type='size' w='30000' x='1300' y='73875'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+        <zone h='4000' id='9' name='Sheet 1' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' show-title='false' type='highlighter' w='13700' x='85200' y='10375'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='5250' id='12' type='text' w='95200' x='1400' y='93250'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='8'>Source: </run>
+            <run fontcolor='#000000' fontname='Tableau Medium' fontsize='8'>Jambeck et al, Science Feb 2015, UNEP, NCEAS . Retrieved from </run>
+            <run auto-url='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='8' hyperlink='tabdoc:load-url url=&amp;quot;http://science.sciencemag.org/content/347/6223/768&amp;quot;'>http://science.sciencemag.org/content/347/6223/768</run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='12' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='9' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='98000' id='5' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='98000' id='3' type='layout-basic' w='98400' x='800' y='1000'>
+                  <zone h='98000' id='1' name='Sheet 2(a)' w='98400' x='800' y='1000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='13750' id='7' leg-item-order='normal' name='Sheet 2(a)' pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' type='color' w='14400' x='84200' y='9875'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+        <zone h='18750' id='6' name='Sheet 2(a)' pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]' type='size' w='13800' x='1700' y='73625'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+        <zone fixed-size='160' h='6000' id='8' is-fixed='true' layout-strategy-id='distribute-evenly' param='vert' type='layout-flow' w='92000' x='1700' y='91125'>
+          <zone forceUpdate='true' h='6000' id='10' type='text' w='92000' x='1700' y='91125'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='8'>Source: </run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='8'>Jambeck et al, Science Feb 2015, UNEP, NCEAS . Retrieved from </run>
+              <run auto-url='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='8' hyperlink='tabdoc:load-url url=&amp;quot;http://science.sciencemag.org/content/347/6223/768&amp;quot;'>http://science.sciencemag.org/content/347/6223/768</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='4250' id='13' name='Sheet 2(a)' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' show-title='false' type='highlighter' w='16000' x='3300' y='11750'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 2(a)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='4' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 2(a)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+  </windows>
+  <external>
+    <shapes>
+      <shape name='plastic/bottle.jpg'>
+        iVBORw0KGgoAAAANSUhEUgAAAGEAAAEsCAYAAADTt92lAAAACXBIWXMAAAsTAAALEwEAmpwY
+        AAAgAElEQVR4nOy9d7hdR3X3/1kzs/cpt0pX1bLVLOPegNhgHIwREEwxBkyoMSGNUELeACGB
+        h0ACIW8ICQkklBSaQ8c2eSluVHdjG9uyZVu25SrL6rr1tL1nZv3+2Oece68kS5Z1VfJ7/H2e
+        rXLvOWfvM2tmzay1vmstUVVlPyHPc6y1iAghBIwxAIgIxW0DqkpECAomKhIjYxPj3HffvTz8
+        yGM8/vhGRkdHitep4oMnz3K898VNBBKXUCqVsFZAFess/X19HHH44SxespTly5fR39ePMRZj
+        QAwgAjr5PDFGYoxYa7s/E5H9NTTTIPtTCN57VBVjDMYYvPdYa/Hek+c5Dz/8KFdfdS0P3H8/
+        9625m1vvuI3NW7eACsZaYshIkoQkcYCiKoAgUgySMYIqqEZiVIwFjZHcR1SVQEfYBfpnDXDy
+        iadw7DHHs2jhAs76zTM5/vjjKZVKpGnafeYkSYrB+f+DEFQV7313po2MjHDRRRdx/fXXc+ml
+        l9JqTSDWIKa4CGCtQ6MlcWV8uQc1FmsMpXIZZ8sIgohBTDHAgqAoMUa8bxJiIIZAnrVI4wQ+
+        zwkhAhEk4gDxgTzPyVSw1nLCCSdw5pln8trXvpYTTzyRJElI0/R/rxA6HyciKNCoN1i16na+
+        8IUvcMklF6NRSctlQgSD4NIqpVnzSXqHoFQhLfVSKQ9ipISXgLXFCoqqaDDQVhOCTN5POuoD
+        QogkiUNVsZIVKyIEgvf4Rg1fHyZvbCe0xmiND+N9hjWCzzNiDCxYsIC3vOUt/OEf/hGLFi3q
+        fKvifiLTvt9MYUaFEEIgyzKcc8QYGW80+OBffJDvfv0bqIskaYIxPfTOXUoyeDhanYUrVYg+
+        4ESIwRNjIMZIiArSHuDiD1wEI6ZQ593HLvaBEAOYyYFRhcikfjfGkIghioI1iE0ggja2ko2u
+        pz66ifr4ZkRrhKYnTav88TvfyZ/92Xvp76lgrEXEYozp7m+dPW5fMeMrodlsYq1l7dq1vP51
+        b2Ddow9CyeB6ljB74bFUZ88hC0KuFlHBtxpYk1FKBWNTFi2Yz7JF81l6+HwGehKqlRIDAwP0
+        9vYy0FciTRKSNMFZV6g5jfi2eploNKnV6oyNjTJRqzOSeUaGMx57bDMbN27l8W3baGRKswU+
+        RJwFlyRgIDEWk01QG3mU7Y/fj6+P4EKTFSuO5L++diFHH30saXtydQb/kBSCqpLnOdu3b2fl
+        ypU8+sjjlPpmM3vJCnoHj2Q8d0SJGF+nv2o55bgVnHrisSxfOp+jjzqShXP6KDuB6BEN7cOL
+        dGe+asQYiwIxBlAt9gdpz3x1GCPd05dIC5EUghADxMQxOt7ivvsf5qFH1rNqzcNcd/MqxhpK
+        PYMkrWDVkyYtRrc8yvAjd6PNbcw5bCGXXXoly444ovvZzrmZGraZV0cKvOc97+G/L/waVPtZ
+        fPzZkC4mzydwUuf0Z53Aq3/rOTz/tJOolhVrBA1a6FiJKIoigEHUIAhGDFEByRFTnJBijO1d
+        oa2rUaAQihZHpu7vEEUUDKBtjVW8xhFxrH3oMa6+6Va+f8WNPLRuhMwklCsprrmNdXf8jFZj
+        Gy99ycv4zje/VdxRpHuCmgnMrDqKylizxVFHLcc3Jhg6ZiX0HoHP6px2/BI+8K7f5oRjlmNi
+        QKMiRhEtlreqosaiMaIxoO2Nz1qBKKgKIhExpjjtiMFIA6gWArEexRIDJOJAAxFPKM6t2BgR
+        m6KxkAsoEg0YwcccjKLquP6Wu/nH//wf7n1kG2niCLWtPLb6Clxs8uCDjzJr1ixijDO6EmZG
+        qXUggQ0b15M1akSq9A4uQgSOX76AL/79+zhpxXyIdXzIsRZMNEBEpYVGQUKOaCRGwYnBqYM8
+        QUhQ9agmaHAYLCYqUAYNWBOQ4DHRklpAWkRyBEOinkQUsBADhhYxNInBoyZDTQtjBYPFaYMz
+        Tl3OhZ9+P6eumIsRR29vPyoWUNauXQuAtZaZnLszKwQ1NGoNjECm4MXhiJx0zHKqpeKUMzoB
+        W8Y9eR7QWKfulc1jEU8OBDJ1jLcMPncodTCeWjOjqR6kibE5WchoaYRoyb0nC5a6L2OMJQ8Z
+        EYunSpCUoILi8KSopERjMEmJKGW8lIkAqnhNyLSCqDCrajn91OPJ84iRBLCAoV6vT37VQ1YI
+        YjBWEBXUelQjeeaJYlBjmGjA7//J/+VP/vJTtCIEk/Kpf/t/vOH3/5k7791EwHLltb/mdb/3
+        Pq745U1EUu57cAu/+65P8Nn/uJwYy9Tqwp9++HP84V/8G61WhktKfOm7l/PGd3yUh9dvJIpw
+        1U1ruOAdH+Xyq36N2BIbt9d51wc+yX9944fkYhltBD75ma/xt5/6GuO1gGrg8l/cwjs/9C9s
+        2N4Ck2IkIcScEKXtDin2gRjjjA4ZzPhKAEwdDQlW6yRYSMpYVVILWYhce8c67nloOyMjw/jc
+        8uvVD3DPY4+xftNWrCtx9Y1ruH+D55c3345NElbf/zA3PLCeq2+8h0bWpOVzrrzxHn788zsI
+        tlhdF19+C6vWDnPdzfdRMnD5Vau4/p6N/Py6OzASeWTdZn509Vq+d9nN2CCMjkxwyc9u42s/
+        vIHHNw9jrOELX/sRl117FzfcugaRSMShtkaUMqpjmFj4wKb6lmYKM7e7PEkURo7tGl3WWqxz
+        GGmfvduG1VSITDGMBJxzJKmhkDo460iThKiFz8i0B8sYg7ZnrrUWI1JY3qq4xE1awKZ4llKp
+        xP5z4jwxDrgQOu4GKIZQRDBTZpW0LVGZ9jPp/mzq/Ou4Kjq+o6kDKIWRjU557dT7qiq2c5/2
+        ezUWR+YDjZlVR08CxXl+qnuhc8IvINN+O/mzzp9KMZNjjIXbQduWGmBMx2boGG9xmoChczzt
+        3rwzE9o3FkLUGd10nwwOsBC0/X1dWwVocRUmGQCxHTfojE+MxYBoW41MlaFgQAs/qhC7q6wY
+        T0GjtkddJ1eCTgraTHECFoIrVNeB8p52cMBXwtPYGU8L4RDA00I4BPC0EA4BPC2EQwBPC+EQ
+        wNNCOATwtBAOATwthEMATwvhEMB+FYJiMWqwxqBahB5djFgTCRFUAwYQtWj00PZ4RinoLuqz
+        IuIchWg8QiQiuOgBxSBEDEYNaFK4kGKKqGJIEZNCFCQ6YkwwpgxBQC1iUyRaTChYfEZLSDRt
+        N5RDYuj6nab6tvYH9qsXNYtNEgdqM1oxw4vgBFRz1JaJpIi1TIbpHYhte0aLoI9XJTWuYF6Y
+        EjiDELBi8bEFpoKxGVHq5NoqvKmSEeMYUZsEItEGxDXxWkedECXg4wRBJ8BEcjwh1nG2BYng
+        BWLMiSGgRrvOvf2F/SoEKw6vllVrNvEPn7uILIekUkat8PmvXkRqHRu3jVAqGf7nJ79i1T33
+        c9eah6kkCfc8sIG/++zXefjxMZyzjI02+ad//w5BElx5gJIG/vGL38eWetk2nJPaXn523T1s
+        XreV1Wu3UypVWPvAFv7uM99j03CdSqXKRCPyic98lywLxJCSlvv48rd+ycBgmfF6wLleLv/5
+        bdy/5mHuuncjiUumkJf3H2aYbQF33HczZ5/+MjJXY/lz3k6tAdZ5JGYIlqAGEo9ECtXRVjO5
+        V4wRjArOWNREstwXhKsQcKZEM2+hIrg0LVZOK0MBaxOMczQbLXolMmErJKZOoimtoGDBmIiI
+        xeeKA4wVcnK0GXGugi0pIUDIM1Qjie3BVGqkzOLeX/0baZby48t/xBlnnDE5eDO0OvbrSnAE
+        0rKgeRNDRlIaIHpPiAEjDjURIQAR26aQGEDwqEK1lBJ8TmJBY0a55Nru7KyYoWnEWUuMLaI2
+        6KlaJER6XAv1LayJlJ1FDAiBGDPScorESIw5RhTbkwA5UTOssUjFIJKQtWI3WCRmMmaxf8Zp
+        P8KQ0sqavOqFp/OOC15J5hUnMx8onxkUMQ2lCI9+/XtX852fXD7l1/9L94Q8RJxLqVjPkQt7
+        iESsOQhB3CeFTtJI8XwDVcH7QDmRbiBof2G/CkE6eQMxZcv2DN+OgB2S0MnAqjFCI5vMKOrk
+        V+wvzKwQJKI+wbiAZinOBlIxXHHdKq6//V58UCQeqiuhOCR3WB21eoPE9oKpAwliwmRsm5lj
+        ZMNMC0EFKxUUcM5Sb4xiK0O0Wi2y1gSqEA4Gp+RJQDV21b4IOKuI6QWZQMQCftrKOIR5R8Ky
+        pcuwRgiqZHkLazNEIrNm9bFw8WFEOTQ9Jc5YsmaLNE157LH1bNuyCWJO5uuE3FNOEo499lis
+        tW16jR6iR1QNjI4PoyjeG6pJH8Eaeub28+4PvocgAWMPONXpScFiEF8wPQD+/V/+jU2PTlCq
+        lIsMIIUNGzYwMDAwo6oIZlgIwRjGR4cxqkRxpANVNm0f58j5y0grZcaaNfB5l7py4GlW0zFV
+        MRop8iQAent6mXfYQjY+cjclW0aiJdJkbGyseN8MrgLYD+po0aJFKIIrOUaHt1IqD3Hnrau5
+        +Zc3cMSyxUwdeqFISzsYUCYTRro/CIpLDKtW3cctN98FWBq1EZwVYg5Lly4FmPH8hBnO1ImI
+        KOeddx6/uPo60llLWHLsGTQyIZLhnHSTP5S2dawHZz0oSpy2FgSjRWpuq5WhNqWSChvWXEMY
+        Xcczli/nuutvnJYqNVOrYYYTB5VWK+NXv/oVr3zFy4iqDC46gblHPpdaVriwjQghxnbO2cFU
+        STJtJVhTJDLGGBERUqsMP3YHY5vvIGvmfP0b3+YV55yDc27GT0j7JYUW4MILL+R9f/EBUisQ
+        LbOWPYvywqPJmjmJKKefdRppT5WDwL9to8g5UI1YifzkyquQWMaKIY6tY9MDNxLzCbIQ+eCH
+        Psxfvv99GOjaCZ0KADOBGd0TjDFd/v7KlSuZ1dfLxPg4rjqbUv981INEzxkvej4vOf8V5DF0
+        AzkHGiKFWyJJEozA4cuW85+f/g9cdRZp3wJ6Zi9mYsv9JKHJwjmziCHHB+0Ofgih+133+Vlm
+        OoU2hMD4+Djnnnsuq26/DdJBlpz8IkIyiyyrc+ppJ/Cat76JRmyhcWfW9IGEseDzot5G2Sbc
+        ecNtfPNrF1FKeyglgeGHb2P40TuoVkt86Stf4QVnnU25XO6qokM2jznGyJve9CYuv/xyxJRY
+        fOILaFUXE1sZS5fP4/fe9w6amoHPcOLa6bIHA5EYfTvvAbKo9FQq/Oryq/nhxZeiSS99qWf4
+        vqsZHdmINYYrLr20W/tCVWdsJeyTKDt09TzPCSHgVXn/B/6cKy67nFxS5p14BlllPol6+udb
+        3vjON6NExEcM9iAKoMhrMCZF1aJqcSah2cx5/ktXcuaLzyDEcepaov/I52OSQYLPePXrXseD
+        Dz+Kb2VIe8IVhU38Pjn49kkIMcZunQdV5aJvfYevfflL5C5w2NG/QbVnKaHRIDct3v5n76bS
+        10uMocgNMDMzi54qOieb4u9OzrRlZGyM177hfJ75zBPJaqNEtRx1ykqi7adVG+ePfu+t1JtN
+        VEx7X/H7fEraJyEYY8iyjBgjt956K+9973vwMdK74BgqQytoZgIO/vjP/pDegV6ajWb3CHio
+        QaOSZxlppcxwrcbvvuMPWP6MIzAGhuuG5SefzVhTWL16Ne/+0/cQKfa/jmral/1hr97ZUT/d
+        rBmgXC6zZcsWLrjgAiaaNfoWHMH8w8/CB0cj384b/uACFixZiG/WcXFy8EMIex1AL5zNnZIJ
+        k38XmTb7trUJkCYprTwnWsPm2ih//L53Ua4K1kEznc3ik8/CY7nkku/x8Y9/vKsJnsp3mYqn
+        JL7ODUOMtLKMP3/v+3nsscewffMYXPw8ohpajRovPe8cTnjW8TRqOcZViFOMgh2TA58MvBGi
+        egarlsWzypSsIgREPGrCU/kqXXQCN84YTFScQCO0eOdfvhdbTSHk9PQsYOHS01EjfP4Ln+ba
+        a68qqr6ILVKzniL2WghdAbQLOX360//EZVf+BNIB5i8+mSTto+FrHP/sozjnlS9hYmKiWyNo
+        X9WQw5BGOGygl0U9JQYH+snbxuFMw0iR0VbpqfDO//NOfLNBKxrM/COYs+A4fFN461vfxkMP
+        PVQQ1PbB6txrIXQG0hjD9ddfz79+5rNkPjB/2cmU+pdQa9QZWjTI77z9rYw2CgEkSTJZOHAf
+        4LMM4yzDEw1GmoHRsQmSNCWEfVsFu0IMhQ2Tx4z++X287U8uYKLVwLl+Zh9xAq46l9HRCd7/
+        /vfjfbObdPhUsFdCEOh+4fXrH+dDf/lBmo0GvbPn0jN0OLmkJBXD29/9B2QieEy3EmSapvtM
+        orKp0ER4dCzjjs01mq1W23Ca+UCRtHM8s+BRpyw95Shedu6LyLeP4ks9LHzGsaSlKj/7+c/4
+        +Mc/1g30ANP2zCeDvduYKfzu9XqDj338E6y+azW2PMCCFS+gRUoj38wFb38Lld4K+IBh0qqc
+        CR+8iQarQmKExACuRFSLMSkmznC4XAwxCIkpoZngW8qZ55zF0WceT96MSGU5/YtPIC2nfPlL
+        X+EnV/60sJWegs2wV0KIqrRU+eEPv893v/3fmHKFoSOfSaBMzJVzznkZS49cjnUJrXoDd4iG
+        Mp8KNBaBqPPfcD6D8wZohMjA/CPpnbOUVtbiPX/6Jzz44IPdE9N+WwliDHetXs2HP/QhJC1T
+        XfAMXP/heFEOX76IF77iJeSqjI+P01upQjhE6S1PAaKCD4GknPLm338jkgRySgwsOgnbt5AN
+        mzbzkY98hFqtttf73x6FMNUuaNYbfPLjf8vWLduhPIfZi44vasw55bd/73zG8hqRwnYoXNqR
+        xAqVxFJxtqC2a+wyj/Z6j9DptsLU93fo66qRxEA1sVQSg7MFBX9fHWSCIAp5zJl/+AJe+YoX
+        MT4+jpSGmLPsJFylh0svvZSvfvXCbtCns0/s6XvuUQhZlnV9Q1/9yle47MoriL0DzFl6HGiZ
+        mDU5742vpn9oABdBYhEsDwKJDayYW+X4oT5Omj/Awr6EEJtEEUQU9vJEUTGCIRI07DIapKKk
+        4lk2q8IJc3o4bkEfRwwlJG7fhQCdk6EhywOnPP80Tjr9eGLuKfUdQf/CpQSx/Ms/f5Zbb7sd
+        HwKtVqvrWd6dIHYrhKlEp1WrVvH3n/y/RCvMmn8klZ755LnnuGcdz8nPPoU8891yOR0M9fTR
+        qw4blSzPmTcwSDUYEoqlvbdn6xULB5nXV8IQ8buQnw+e2b39DFareJ8jmWd2WmVuTz8yw6rR
+        iuU1r3sVSZ8ly1vMmnMqfXOWMDKxgY9+5MOMjY51y7Tt6UCyWyF0/Oa1Wo1PfOITbBseptQ/
+        n8HDjiMLlv7BEi9/7TnkmhVu3R3ixQHIiQQtAuOZ90RriE/RuNm8bZTRWp0QizI5Oy4HEaGE
+        hSzgXIK2C9raCNiZPSTkuac60Mv5F5yPj56WlJm16FhMMsCvbryef/vXz+K97zo3d4ednmwn
+        /5AI3/72d7jiyitw5SoLl5yMj1WykHHeb7+c3sE+QvTTzskdbKuNUxPIjcEjbKnVyJzBa8QZ
+        u9c5SJvrgXpwGJMgGtjxA8RYavV64VyTgNpiIky0WuzZnCtC/12fVLsOq2psU0Km38uIpZk1
+        Oeq4o3jOmc8hkwauZw7zDjsFFeGL//F5brzppm6Rq91R66cFdToFxq21bcdU5J4193L+a85j
+        0/AIc5YcR8+CZxIyz8nPO5Fz3/gqwm4PAoGESNWlZCh1HxD2jwtbgWgMScyYXXXM6i1jAow1
+        PZvHmgSTwm5o+UoEDYgpig5CUeS84yHVKEydsx1KpDGGGCNf/KfPs+XxcSo2sOH+X9Da/ign
+        nXgK3/vuJcyZPQuX2CdUSzuthKnpQc1mk3/45CfZOvoYtjrEwNCp+JBTnV3hnFe+lLgHPRsR
+        WiKM+Jx69OxXboUqEnLUJDw+Ebh/W86arU0eG20RrUXYw7FRDdZWiWqJGgntld2ZkDs++lQP
+        qrWW81/3KhIX8cExZ8lvkKZ93HHLzXz+s58m8363OSa7FEInYvSD//c/XPqjH6DSz8LlJ9Oy
+        ZUIMvOz8cyj3VbqMtSf+cEHEkoug0ey0cc8kOjHfGCNpkuJDIKBIYgsS8h72hAgEPCX1LB3o
+        Y0Fvteui6bQImApVpVQqdYWxcMURPPfs56DqMa6foSWnkFYH+fcvfoGbbr5xt/Nvh4p/AMVm
+        snnzFv7hk3+PscKc+SeQVOeR6TgnP/tkjjvpOLKQ7xQd22k/CYqNhsQ4rArEjp4NRC1KYXb0
+        bvdiytX+Px1d3f33zpe2bRDUg2+QaAtHhmiOiOJD2OGzpj+rWFDxJOJZ0Jsyp7dKmpYAgzFu
+        p/3OWkuWZd2Nt6mes1/2fBYsnoOqx81ehh08nEyVj/zVhxkbHQXYZfxhuhBUCTEnz3P+8VOf
+        Yt36R5DKIAMLn4EPjv7eEitf9WK8p+hlsIdokhohaETzQFBFJWJsuzyzFE0lkDD9YvISE3d4
+        XZx2idEiJ6LzemKbTiRFLdbuyosYKea6EiY/i8kVZBAMjmZUHhoeYePYOBoNwStG3C6GSieL
+        I4pg8gjW8fLXv5rcKDGWWLDseELay62/vpXPfOYzZFnW7aIyFTuMomCkwrXXXceF37wQTSvM
+        X/obBCmTAyvPOYdZs2Z1b7wn87zDQ+o8bIeNMbURxNRrR+zqxLVLYXdm8x4+b8efd/6tqkVR
+        Qy/kUmZj07O1ke2Vi9xZS55nLFqygBf81plkWYMgPcxfciKmXOaf/+WfufHGG6dxs7rjtOOH
+        1cbH+Ou/+SheHJWBxdC/kFaMLD5yIc8+89ndPjm7onzsOAgda3FXv5s6i57oZ865om5q+3LO
+        Tbs6xWKLvjtJt7HEE332TqU+p/1bQXzBlw1FkcPOe56M6yHPPMYIrZjz3BecwRGLh8jVUZm9
+        gt5ZS1AV/vqv/5pGo7FTPNrB9Jn0tW9eyK9vvZmkOp/5h59IQwzGtnjtm84l2Byf53Tap2Ck
+        G9Zz7QKzVgRjLNYWkakYoNlq0Wo18VlOnrdotVoF6TYUKyPPChWY5+0s+vbzdNzCO8a1uzPI
+        mG5WpbSfYWpdVWtMUcg2SbBtgXb65bjEYZKUNC3+XyonuESwxkJQVASvSgyx6NMTIypFdcoY
+        izYzU1eqTSw+BlQiruw49/Wv5AufuRCNZYYOOxk/tombb72Vr154Ie/643cgTHbcklarpUmS
+        EEJg0+bNPOeM5zI8PMzCI0+nPHQstdjkxee8kJe8+rfIQ0bJllFVRkdG2bxpM2Mjo9RqE4yO
+        TDAxNk6j1mB8bIzx8XFq4zVCHtsOt3YZzE6br7aAVAUxRVFOibHtpCteXwwy3ZPJjn76zvu0
+        3fOm6OOjbXtrR6MTTOIK4ym2n2laJmlEDKRpiVK5RFpK6e3ro6+vj2q1h2pflZ7+Pnp7e+jp
+        6aW3v0pPXw/9/f2kaUrUgPeBZqtZTACXcOX3f8R1V15PWu6jvv42tjx2J5Uk8stfXs+ypUso
+        l8s0m00kyzLN85wrrriCT37y77n3nnuQyjyWnrqSeqxQrSa87JUrWbdhIxs3bmTTo1sZGRku
+        biQGR7vbk9BOQTWTx7miVmx3IGLbyu0ogTyGIjNGikq/vrsK2sMSOzpZ2hN+Rz3fea1Orowp
+        r+9wiqQtyA7brtMYydJpkgSIKeq17sKM11gcKmIsirAbYwhSnMlUlXK5zMCcfobmzmb+/PnM
+        nTuH+YcNsWDBAj73L59n44YtOKmy/c4r8cMPsPyUZ/Pxj3yUF559dtGHLssy/djHPsZnP/tZ
+        QPBS5ojjzsL1zkVNIETF5wXBqZSUEDVdVaFEAoEsb6spK5QqJfr6+ujt66NarZCUEnp6eujp
+        6SFtz7ByuUK5VCIpFbo9aet4mzpMW/d39oGpen5HdVTYNIV66Ow/HRsnxkieF03xvPdFd6lW
+        TpZltFqt4nctT6uV0Ww2i583cxrNBo16g1azSW1ignqjQdZqUZA5TPvZDBZH4pLuavUxx1hT
+        qK/gIQRaBMrVMolCbhJkdBOb7r4BiSNkAd797nfzsY99DPnZT6/Uc195LsFVmHXYChYccTzR
+        9JHFgEhG1nbRZM2MUqXE0KK5DM0ZYu7cucyZO4f+2X0MDg4ya9Ysevp6ENd5kICihOC7s7Wj
+        TrRgpU+6ZLpn9ckqwRpje4XsucBHMZN3zqzcSWjdgi2duLRMU3edvc6I6RY4L1ZkpFlrMDE+
+        wdjYGKOjo0yMjDM+WmP78Ha2b9/OyOYRhrcNE2KkXCpTknYVZFeEZINkGJNAfZSRdasZ3v4g
+        2qzxuf/6GvLW33mrXnLxRQwefhyDK07D50IrbxHwHLZ4Iccc+wyOPvpojjjiCAZmD9CIxTk3
+        xo5B5ad8WbOTb2jqQAiREHLUCNGAiRYrB5cO+eTRtk06Jyo1WJt0V21iIHilUW/y+OPr2fT4
+        RtY9uoEHH3iQjRs3Ih56yhVEFWcMw4/cSm39XSw88hjk9OeeqffedS+HHf0cmPMMYj7OynN/
+        i9N/87n091WZyGrEWLTQEjEYkq6fPEbfNrw6M0/ajq5JTD0GRgmIoU2YMhi1u/WpHEzsrPoK
+        b+qkjePaSSZtHpZ4rDNdtWixlMslSqUyWdbiofse4vabbuema2+iN+0h1MfYfMfl1GKOU8nx
+        ZGAL/VoqCS94+QsZa44zUhspSttYS5KkxFCcPLIsa+tshzJpN4DZLf1EQwQfKVuHBCUnFEkC
+        hyB2NvaKrJ6uDVS0u+r6q6zY4vspJKawYRqNBs1mE0WZc8R83nD8m9i8cSsbHnqcpngiTarl
+        Es45ixFPLhYXA81c2+Vr2pQVdYRci5nbPgJOj6EWD4hMVn5/IlhrSYLyjPnzsCFn3XiD4Va+
+        2/fMHIp9JlqLhqKPm5gESRzqQ+EJ2U2gqfieRXm2SNFKDJ1SZkFN16Gp2rZTJGn/X4km4IMn
+        anEiTJ0jxKIhk9NYDF2uQooQTUrMAwnFxlScIIueBDvrjsJL+mQRRfAoKkpSdvfXkR4AACAA
+        SURBVOjEgdVFYouiVmVjmD/QR9PnbK5NoNh2HOGJhTB1hcuUf0xdMWaKB0GnvFJEMBqL9mLt
+        6KMJtt23Rw9sJ5GIgrU8tHU71hnGG1mhWw8EpHAmJhpZNNDH/EqCl5SoGVvrGYjZ60jfTOGA
+        CsHEop9ZM1dyHxBx+ynOtgu0s8eDejRVMslISxWsTSEUEbWDlFK9r+lSbTeCCkY8ZZfRkwLR
+        E3fBwrad2Sam24Zx5qCAL+LLUTFEogSCEaJEhBwjhqCwabzJRm95eLzJtlqzsFkOIllwn1aC
+        sYbgW/S5EovnDZGagEtKbBmv89j2EaJOj8t2iAOKYvdDto6KojEwWEk5bFYP41lg/baJotGL
+        cYiCswnj9ZyJxghIe6IYCOrbbosDj32Sv9eAmMBhA2X6NZK0AmmWMb9imd1XKXokHyAU2kZA
+        I6lEelIh1YDRIokjRNN1axRukMINPrXXzsHCPoreYiWl4hwRwScV8phRkkhFUsyTIJrMGBQk
+        BrApw81I9vgIzRjx1hbFbNUjNunmzEWNhdeWjuPP7C0hcMawb4mDbY9oLUTEWUzMSBSUMhOZ
+        Z5J1eoCgriDuqmE0g1Y0iBYcUsVMY8MVB3OL4NAoB6uwADADp6McZdNEDessveUSmY8M1xoM
+        N+pg3QFb5sXgdloyssNOKyB2mhUwNXV2igvvoGAfhSCIsYy3ch7cvJ00cfgQaWlEXILsgRLz
+        NArskzqSqJi8KELrSZloQouEDItRi31aCE8K+3g6LopItT0mRTnkqCQqxBDRPTrnDFEiucnI
+        Nd+vBL2ZRlSPmIJDJUyGXp9Kps6+qaMdQo6Fni36GjyZAc1MYABlYaWX7SFje8O3OT6HPopg
+        U8QTEAKoTPqF9jJH+6AmlUUNVF3CosFZzKr2/G9aCCCFC7u3lDB/oEqllEz+ai8N0YMqhEpI
+        GG15Vo9sZ/3oxMF+nL1CkOLgN69c5ZiBIWaXq9PCqgdOHe0jVJQcYXstK4ytvXTgKLuLRcge
+        3RC7Ig48WUg7PjFSa5HGOrVmttef0cHBVcA7BNn3ZVAONExUohHGfIuJ8QzFFo7J/3VC2AE7
+        foE9six2l3KlT+L9+yJkVayxBFGydmDmqbrlDykh7O2pYo/hSH3iYdEpocmnhDZhzQSlMu2o
+        vveYLgQFR1IYWtaiXru8n8INrRSOik7I0xQttrq97hWrinUOI0I0hUVtbPEaJ0CArM09bTQK
+        0lWW5Xifk7Uy8qwgaGV5Rsw9wQe8z/EhYGLByuukcoUdB1E7ROA2084x6S01BuPapOIkwdmC
+        o5q0uahJklCulElLJcqlMpVKhTR1RM2JMUesIQ/FOATvCVmAULhIvIAxfhr9UmQyJ09VSZxi
+        oicGMJIgtHYtBBHIpI4tBfJmhlELohhrcNaBCMb1FP1vVAmtnMZwje3btzEyMkK9Pk6zUade
+        rzM6OkZzokFWazE+Mc7ExASNegvvJ1ly0mZySJux4EgxuK6N4YyZxk31bnL/QHdYCQpRJ/cY
+        AUzuESMFias9UxUtaI06WZwcIOKJ0maOtIm+xloqlTLlSomenio9PVWqPT0MDgzSO9BLuaeX
+        /tmDDA710TN7kN7+PpJUyFpK9C06hLcYIk3JSFzApAG0NU1VThOCqpJYhwkGrQW2btrG1uFt
+        bN22he3bh6mP1xnfNMLo6CjjExNF/TdjMKagKzqTYNS1Je+IIuQ+72YwhmiJsWAjaIwIkSzL
+        McZQqVSolAyl1FCulCmVyqQOksRRLpdJ05Sy2IL10Y4HpGU3zbbQaNrDXHyXevDdzJgQAq28
+        SIwvqJA59VrBEG80GjSaOa18ku6vYlAs9ZrSqGeMDHuMq2HMVmJ8GKsBI4qPOU3fhKCIQk+1
+        ypy5c+mb10ffYB8LF8xn4cJFlId6WbBsARaHik4rReqm6jERIZ8IvPttf0rWyKiaHnCCdZYY
+        tQjSJA7VSMS1S9orBsPQrCHmD/UyZyBhaGiI3t4yJRPprZYZGhpi1qzZDPRW6O+tMjg4yMBA
+        H5USmCkVyzWadoGbTsppmDxBSdEIRqSTP9b+/bSlPGVOdRI/Ci1ZPGd75cRilDGYIqunTdM0
+        EvEB6o0W4xM1xsbrjI5OMDI8zqbhEbaOjOBDYHy8yaYtI2zeNs76DdvQTMmJYIVWEDZsHmbT
+        hi1YY7mD1UVmjlFCjJSqPYgtoTp5vHZZK5+eSSNKSQXjQJKMpYuOYNFhczj8sCH6ehL6+vpZ
+        snAOh80bZPHCIfp7K1jXoYsUBcunrqwnxi7O+DuYCTEGoi9IVlhAHd4PA7MIbgKhNF0G04Qi
+        WLUkkhNCC1yKkXTyNkJXiHbKcrIOSn2OWX0DsHBgN88/hX0OZI3AY+u38tDGrTy4fhPbR0bZ
+        NtLgvoc38MCjjzM+WsdZj+SGsoWp9cpcqZQWpKhQ6MGyUy7+0j9z+LwejAk4MRhTBNFVI7lR
+        LGA6jDtMm9DbTsibQaNXY0LL1Lnh7mtZff8dvGXl2/jHb/8NzSRQ9g6v+TQu1HShKwtnLeTd
+        r/sQJdOPxtpTP0Pu8uGmlz50pcCyFYMsPXKAF+iRGCyIRcUSVWh55eGNW/jzj3yRhzZumeZb
+        c936C6ag98WQsWxRL9aPoy7BkxC1aEIKhlQp+KZa9CQT18my7JyknpiLurcI6vnBNZdw0dVf
+        J61Y5gzMZtGSFVx71w9xJt2JjDY1RVeJbFj3KNfe+QteeNJLEJ25AuPF509XhaoODYIxRQet
+        DlkuanFqKpsWSxf0UE6EPESSKe81sU1Bt9a2tawhBCUYQ0sTrHqsBqwItlPV10SCNFCTAUUq
+        rIiyrwbuZGZNMb4bRh7hFzdfTnXAUjbCpbd+n7NPfAkL/XyCelItk8QSSSyTaBkX08lLy4hJ
+        uPTqb7Otvp482imfPT396qmV9FSmpvAamyMmKzI2OnT+6JGYQ8wAi3EljCsR/dSoHpgOdyiE
+        gGAQEqyNICnldkFxMVKkFtnYznQxOFvCmqT4cJO0mXQ7J+ztDUJo4UNe2B8RLrnxG4yHbYi3
+        YBNUmlx+zbd50Qteg2klqBT5x0FzkIhOuSCSiLK+sY7Lb7gUUUXb+WdetUvHDCE8JVaIiEXE
+        dS8o/i7y9go6kDiHcQk2STHGUtIiO6lkp5/qDim3ZWEPWnzMuOuRW1l11+2Uy+XJTH2XsOq+
+        1cxeOMgRs5cRQmH0dVTq9M9SRByJS7nutmt4dPjBbm6bQZAIJrpiQklSWFwHCYeUEArOvyXX
+        nO9d9Q28ZN3Ea1XFqiNWc75/5cW87sWvJ2vllMvlJ8g3lqKQoE0Zybfxg19dTOisao0441Ai
+        jTBOM9TbhOCDg0NKCEZAjOOmO27g/k33gimMJ+99kR6rDkkCjzz+KKOj23n2Sc+h0ax3CV07
+        Qowl+EBSNdxyz42sXru6qJUkRV7FQ9vu54uXfI6rbvklKvtet/Wp4pASgihsm9jGxddeiE0c
+        VtJuUnmMsWgb34JKj+EbV32VV53+BoIPlEtup06GxXZU1N+w6hDjufjGb1DzGVsnhrn4F9/k
+        b7/2Qa5Z+3MGBgcJB7Ed5SHlRc0pc+WN/81oYx3G9XVj1h2EECiXy7RaRRv4a2/9Ka8+43wu
+        uf47lKtl2E1tVGct69bfz7d+8h+sXXcvm4fXgYOq7WHxvMX7tQLNnnBIrYRHt63lmjt/jEqJ
+        xDhi3KEQx5Sa28YYfn3fLbz05PMZ6Ju7x9iBKkiiXHfXT9lUexQpCeKEw2cfwUBl9kGjQMLB
+        FoJKO0G7KId8+Y3fpRbHcW6Q4P0uisgUvipBabaa/OZpL2agPJfzXvQm6o28zQpm16w/EaKA
+        OMGqI4kpIXgWDh1OOa1y0JITOMhCKA41ER8NdzxwBzfddR3WVtHYaI/jDicWMcToQSNDg3N4
+        1bPeAOWclcecw9I5y4os1w71ZEffHkV+hMUiRshpQQbHLDuBYPSgdjY5qEIQE/DBUM9G+MEv
+        voO4SUfiLkvvhIAK5HV47ZlvJkktGnKSUOGClX9ElmV0q8/saWKLIMGybP5yLAbMwdNHB1UI
+        isfYEjffcy0PbL0TLE8oAABrDUEji+cdyRlHvwgJiiSRSGTF4mM49ZRTu0faPW20IkJ/32yG
+        eudhMEQ9UFmkO+OgCsEYgSj0VnsZ6JlNK88IMWBNkahNKGIVRYQhkkWPb3nOe9HrKYnDRIMP
+        wtZsCxf94lvcveZulCISuDtfUBFVi8wdXMCs3iEg7LPfa19wcI+o6nA2ctpRZ7J04Qp+eNPF
+        XHvbVTR8E1tWUi3hM0+nxkWUwLGHH88py5+DsYGxbIRrbrmGH9/wP2zLNlCSFCNFEZAsy3a7
+        GmJUlhy2FGsskVY7lHsAv/sUHGTyVyDmAWvKLOg7jN89612sPPFl/OD673DLPdfSTFvYRLAY
+        1DuotXjNb7+ZxCb4oPzVf36Ix7bdTmWgRJL0Y6LpVnfpGHjT7jdF1TXrGSeuOKXol0YsYtsH
+        CQd3T4i2OA0peIl4zRmdGOWow47lA6/7GCctOJ04EjFRaeU5pz/jTI5a8CyMFAH8t73yD3jp
+        M9/EXHMUOqrT/Ew7FvvbET3lXub1LUBi2EVSyYHFDLeHl8I9XDRyQXBEFAOEkBelmdtpSgXt
+        MTDhh7ltzS3cuvbX3PnwbTTyUQjC3/7+Z/g/r/8LVj/0K7552YWMNTZw3srXk2BBWyDKKYuf
+        zYmHn0bdT7Bl7GFuWH0tax68i7Xr7sOUQV3A2RIhL+6q5IhW0OA5bN4ChgbngVosgoZIVLCu
+        qO0txhbs8gOAGRYC7YA6EA0x5kQykArG9BY9LUxgW+Nxbrv7Bm6+81c8vP5BmtIgJp6IoSSG
+        JjW2jmxm2ewjOeXI53L0O05kuDnMov7FWPGAbVsQEWsjfbZM75xjWHLW8dTPGGciH+Xmu25k
+        1QO3c+8Dq8h1hHJPAlTBeJRAf3WIqhkkqNKKDW695yaOWnIcc6pziaGFSXIwMxuNeyLMqBAi
+        oTB6oiDq8HkkKfUQTM7DW+7ixlXXc8fa23lw4/3YHkGNR8qQSILRtAjSaFHTdO26e3nmimdj
+        sPQyi76eObDbUstK1CaVJKUnWcgrnvlqXv4br2akuY371t3DjbffwJ0P3sF461GiOk469nRE
+        lLVb1/DVS/+dNetu54zjzuJdr/4oZVtFdWImh2a3mFEhTPrblLoMs3rDGm69+3ZuW301E9kW
+        KHuMc1QHeog+Ac0RE9tELkOkSBKRxLJ2/b1FzbxYJIB73ywIaE90b8BJDuLQkBNFcAqz0zmc
+        fuTZnHbUC2j5YdY+ej+3330bRy1YzJd/+ll+ccuVSBLp6S1x85obeODx2zlu0YmoJgfssDSz
+        KyEqRooiy/c9dD+f/vLfIHNygrOkppc0TYjqUZ9hNcOQAglBPSH6omihKI6EzROPM14bp786
+        QCBHEtONjO0agkgfRQg+tiuueFRbRXXgPKMaBjlm2cmM5MN8+sJPUKMGFcVES6JlbDXy9cu/
+        wF/+zt/RXxoixqIMcyeesb8wo0eCTlE+gJOXP5N//eCFnHb4y0laFTRuR+MYxKKYRzQOL5Gg
+        vqAVGYs1RQ2gkiRsGd7IaG246PynFrMDz2cnCHTKLzsH7VYZhX3hE4IzrB1dwye/8hG+ePGn
+        mZBRnElwmiJiCVIUVXxwy4Ncf+d17erHQu49xtp9Iw/vadxm8sNEBB8KikeIgYGkj3ee+3Y+
+        9JaPcfjgSWStyfYmuyICdNrqdtzSj2x6CLFa9G7WIjD/ZKHtKoeigifn4p9/i49+9b2s2bYK
+        VzaUkvK018cYEYRyOeWSn3+LkbCF3OckLqHT+G5/YUaF0GmAAcWqKCruGpYvOI4/veDDzOqb
+        P6WG3M5fqlPUT7WoLrbqgduIRCSaHQrJPgmoFg2Q1JHlLW6592a8BEyaIK5Elu1Y6LZoLRCj
+        p2a284OrLiraVQZPK2t1KZT7AzMqhI6VKlJ0JsQkoCkWuObmy9g6+vh0qv0u0CldbIxh4/bH
+        aPqi9HHREmXvnkek2EdKacLrz3kziS+sb9+ypOnOVeBjVNKkjLHCL275KfdvWotGR+qSadzR
+        mcaMm4muXVAWKE49VhhtbubK636ESZ5EpyUzWYNi88gGRsZHwcRundQnDZF2nYuAs5YTFj+L
+        556wkrw5RpoqO5bdaLPnCUFxpJBkfO+nFxJtIGtle1Vmbm+xf231aAgmcOFlX6Il46TJk0/k
+        ExFGmyNsGd9M7OQJ78WtO6+11pLlGUYc5z7vLQyUZhFljBCT3b4fCax56DZuvu8aTOrw+9HT
+        vV+FYERZ89BtXL/mKmwpKdiAu8HUbHhVxZTh7rV3Y0SKxtN7kZbacVdr1KL7YfTM7x3inOe9
+        hbwV2RO5wtoUWzV889Iv04q1ndoUzCRmVAhFSxbIWh71wng2wX9f+nV6ekptTtGOejgWGVix
+        sDHKtsySOUciuSPTOqUk5YH1dxK1qE+023Fr17iLGoi0M4FCwv1bVvP33/prHnj8AcRGXnjq
+        S1gx7ySCtNp5CmBRjE6Ph1q1hKhsbW7jiht+2j2Z7XOu2y4w80dUn5OmZULMuWrVT3h4830k
+        xqG5weygV223/I0HzXnu0Wfxvjf9Fb93zrtZXHkGrVpgw9g6ao0JjNjdbgkFpTdCNJhoMcax
+        dssaPvuNT3H/lrvJY8SYEhVX5dVnv5E0lLFW2jFrw452q4jFGktSFi6/9mKG65u6JPAnU797
+        bzCzK4Gi/HLwge35Fr7/028wMFjqkoV3VOqiQqCIG88uzeEVZ76OAZnH8455AR+84G959fPf
+        TFaLDI+PdG6wh/sHCEIgsuqRX/PJ73yUUb+NNElJXKmdqiUcs/hEzjr+xbQmMpwVgkLETWNr
+        h3bPNdGAT0a44uofdPPsZhozaosXIUWDdY6fXHslEzpKH33EoDgX8THslNJUFD0v8eLn/DZ9
+        PbMJsYmxkb7ePs4//S2cccLzmVedR0Gl2EMjpSgYJ9yw5mr+/bJ/RfCkWIIaMp9hnRJCCxvg
+        pc99Bbc9cBsjjYfBtdXXFPKRMaABrKQ0Y52JvEEnEdAYy760g98RMx5PQEB9xjMWL0OvtbRi
+        pORSMt8q8s+mRLesGsYSOHZoMWef9FukzkAsujkpYE3C4f1LscYU7bvarvDoU7CejEhZbJuF
+        YSFEfn7Pj7nwii+hLiB5JKZgM0eaAAjWpqiBuYPzef3K13L9rVfSig2COHTKnmWCUEodtVYN
+        R4UzT31B25CEvTZY9oD9sBIEDYYTlv0GRx9+PI+NrKUV6jibTMnxLXRqA08Fw8tPewP3PHoL
+        zRiL2qlt5NSIscjA9CHgo0fzBicvO4uFs+fhrCPmAWMT6r7Fz2/9Pt/9+dcJpUAplhBnaYQa
+        LmZcc9vl3Lb2pikPa0ASFi05qVA9WmQhdSAIPmaINSydcwzHHHFi8fNOFu8MqqUZFYLBEGLA
+        pCkl6eMt57yNv/niB7D9QlTFtotMdYSRSWDlUWfw+PqNfOf6zxGNQWTKgVwLpkXX12Qtzdoo
+        b36h5TXPey3RB8SkjGcjXHHjj/j+r75BcIGSKUEQfFQSmyJp5Nq7fkEmU09AEUERbTM70Okq
+        xgot30Ryyzte9+ftCOH+cV3M7EqIYF1KDEUbqxXzj+V5p76CX979I3rS2FVXUBz1ZqW9PGvF
+        Sr542T9g+ir0xJSoU/POMjrnHhSslNBqq2ii58GWStRadX54zUV8/8avUir105P04kNOMDmq
+        AQ1FO4GYGNyU/UgLuh5OyxjNEIkEnXTqxfaBYfnCFZx53FnYkIDdPyVGZ9aVbYvurdY5QDCa
+        8/qVb6BPS0SbQ2IxoYQVJYtNXvTs87l29XWMZCNYn6GaoTS7V5FgJogWWaJqc7w6XC6IdTSz
+        Jl+98ov88NcX01MdwFlXNMMuAhOIFsdMkcJnZNu9mYvLYKMDDW07xCKqEGPR7cNFtKb8zovf
+        SRJSxOy//IUZt5i7HZ2MARIGKrN45ZnnERoBnwWa0qIuLZYNHMdhc+by6zVXFY3qsFPKOrcv
+        aa+c9uU8OCNEaVLTET7/g0/zyzuuxJQE06bFd0otFC2/JtuJydR/SOej25aidNIAIy515CHH
+        N5UzTjqL5YuOQmMo7In9hP3qtvABEiusfPYrmVdZUrR/cRnaNJzzvPO47KpLIM1IxKE62bju
+        CREKKzunxbd+/HX+P/bePMiS6zrv/N0lM99Wr7auqu7qFd1YG8QOEAsXcBUpciTRVgxFybQk
+        z8gehRRh/+FwKGbCEWPHhKxxOLxQ1mJrQiHJtijZIqWRLYoUF3EDQRIAia0BdGPpRi/VXfvy
+        9sy8y/xx8716Vd3oBUADBDUH8VD9tnyZ996899xzvvN9333xq5RGFNKLLTwVr8b61T5ZloVB
+        kZb5+Ad/FpdZpL6Mc3sNdlU7QUUS59rU9CQ/+eGfp21a6Dzlfde+n7XeMs+vHMPLEtgIcYHi
+        v+1mlcdJSS91PHDXg4xXRxEdT+QjvH5tnaCUIs9zoiii0+nwoQc/ylR1LxGa3OTnhVxeT7vK
+        UVSLlCWczLhz/+28bc+NyHSSd9zzfr7wzf+GjiRKbvJVXMrt80IQK4kVksN7b+ZXfvpfMVHd
+        gREdhNMEUVoP1g0ubJgyog+bv9BDWY+2MZlvMzUyzkfu+5+R0iATQRRFvGUya+cdvCACF0KQ
+        xAk///5f5Cff/zN8+bnPs56ukcjSZlX+ZUwn3vsB/YNAMDs6ya/8L7/GmNyPpzO4k6QMoZP+
+        d/rK4k7ZV3ykIkWUHb0Ny09/8O9R09VBjqGvUHi17Kpj/6w1KBWocQ7tvJ17bnoHX3noi0Tl
+        CHeFxXpSyEEU03tPLCOmy3v457/4L9ldPUSWZSGx7/oeWjClCsSfE6/4iHSJbq/F2/bexW0H
+        37WNrOTq2lVFwQb9eo21BiEkloxSUuPBm9/LV5/7HEk8Ego0CrvUmqCkJHW9Qd1yZiWx7DEW
+        1fmVn/+X/Ppf/FOeee4ZqtUqrsgn9Of6mamdKHORRI4Q2KTGJ370k1SSOt6vA5XXoxkuadvi
+        tx60xVpP7Ho4VcPbPDB+Fe6iuAI6/jAdDRE5eaiXE/7RT/3v/L3GL9HOmlhsoFRzrtDQ3Px+
+        IOcYqt7MgtDentm9OAlJ3N/DeuqlMv/kw/83v1P6N3ztmc8zkYxjnEKYIP/78x/8R7xt99te
+        8VzDltAWcPoMIcqXfZ0XPJ4NFHDOWYQUGA9911uyNRS+7U4Q2AysVIGNSBmCPEVIqgQQ7+Vn
+        mLYvtFKGnICSkvGxccb9+FbmrvPuhHgLV6rxvUCx4G3BtSY2XUfv8SXBL370HzMaTfI/Hvss
+        papEqoRe2xCZi5Mchn2E2v7KqzcVePuECDwdwnhUpPHOk4fKucFHtxEROkZkjk0NcSRweYZX
+        cYgHydejiCIE+ELDekK/FjxexQK49TdShiOWEomzAVbjAuHdpgmQGuhqPvH+n6NUr/DnX/o0
+        3aSLjhKUkPiLYllf38U31M5FWCtAKHKVkjuDjzJQ62A3B9c2IkLJmivz8V/+v7jx4G5uOHiI
+        d995iN27dxFFgjjSeJkPDb5+WLqf+usfR2wL+RZTWdH4fZ1lIQWIMBH4guALxND3trKhCO8C
+        vN6Hu4nhnwCkcZCkSCR/6+6PM6brfPorv08mUjJvQoJg6Iie4T2YCBvGzcYYOn5/8Gxp5qHL
+        2yx27H88s5I0szSbGU8+8QzfOvIyp06c5vmXNtDUYQhwvG068kRK8sLcEs+dmEd94Un+ubWU
+        VM4N1+zi4L6d7JkZ56Ybr+XG669hvF6inCSUEo1WHrwtmMAAHzJc4DcVxJ1DwICdse/l9F1A
+        b/voPAnOYQmlUlJuQiD7pIaBrXF4oRVEKtpsPOn54N0fQ0aj/PHnfi3MzV4PSAo9oiibLfYn
+        3uK9CecoBaCKcEYYIIKwn3DWBiCY9DgEuRF0U0u3l7KwvMFTTx/jheMnObHQ4shzL7G03CJO
+        RoiS0D6lJEb4rQTT53lHQno+/nd+kmefPcrciXP41RbClXjpdIPjp9ukHrx7GJv30MKwb+cU
+        e2Z3MTM5yvREjUP7ZzlwcA87JqskUlBJEqJYouPA7Ni/aO8LjYH+DOQdoljAQ7J+U6E8RJgD
+        9kgKWaDlwF8g0xZicAUbmTc8cOs72bXjXzA7ei2GkJ5Uqq8Wmw2OFzR3YoQMg8WLAFLOM8h6
+        hm6WkTrP4lKTl148xYsvn2Flo8O5xXVOnJpjcXUDJyOQMVFcBt9FKEt1R4mkqpid3c2dt93K
+        1770dTqNzpZz3krJCVgcDzx4P7fddyvluESn1eTs2XMsLSxzbm6Bc6cXWTh7jm7Lgkg400qZ
+        e+7lcKd7gXWe3HSwPqWkI3aMjTE2XmN8ospkrUJZR9TrdSYnJ5iaHGGsXmN8fIz6aI1KZAO3
+        mAiLeBTpTWXyYorr03EKQIhtNWlFxznb97QyjPVMl28k7XgWOg2cK4RQkfScYqPRYW1tnY1m
+        i5W1BkuLS6ysrtAznvVuztpqi7XVFktra6TGoFQJLUtEgQgQ4x0oRaleIYoU9bExZvfuYfe+
+        fczu3cXUrgnq4yM4HCVV4dsPP8La8saWDdq2hdmjYk3uLB3bodPqoV3Czj372LlvH7fcCzqK
+        wHrajRaNjQ3WVtdYXVplZWGNlYUVGqsNup0K1jrSLKXRy1mbW+Hk2XVEUYfc9/OFdXhrC4l3
+        F4Jw3qN1RJIklEuCSCviOEZHOkjsShHC01KgtwGEHWpTHh5P6nLILWlPYHyHTteRpRlZngeV
+        XemRUqKUBKFxMkINdbrwwX2WSlKu1BmNIpSSjIzUGJ0aZXJmnOldM0xMTVCv1xmfHCeplEhN
+        hs/dYK/STFNQHu81qEADOuypbcd54F14SBcHf1aAsX5AU2DSgOBSUcL4jh1MTE9y3WE5EI5T
+        SmGtpdFo0Gum5J2MRrNFo9Gk3WjRabZptlq0Wk1ajTZZZsIewVp8bqFYTM5ptAAAIABJREFU
+        J7zzOCfopY5Ot0NfC9m7wC/qnUPK7R62L0LURa7bU9DHFdK8WlCNStREJbwvBUrroDcda6q1
+        CiO1GvV6nepIjdroCCP1GvWREaJqicpIhZGRkVDUbt0ArNZf24wD0+oNnxAChfZgnUHpUAc3
+        WMAv2Amvwrz3GGMK5XIxwKHGcUy8I0EIyQ4xXXBla1Sf3l6AkkHfrM+VbdIcWxzLGIMpLtBa
+        W0wxbguybnvUQxTMu1KKgt1SFSO9+Kt1uKN0hNIKHUfEUUycRMhisAUK58ASYLzb9OSKxFKa
+        plsAYK+G62+7vaZOCLPH1pMZhr67YhcqEKRZTkpWgLj67l5BySIEQoNSGoki8skF6RX6Xlbf
+        i90uRT/gp9jqGdNP39i+snjxtnOOnuuRdnvhw14Mvu59kLLv70m8s8U6JAaDbRin9Fo64zV1
+        QvjhC++ghRAoX1yYh6jPou6HdY8LGuYiGxc6dDMz1t8Vh+2DAAvDYMjtSujObCtAcQUCxPvg
+        LHvCvqQ4hCy+H9pOFsCCYs9DgN/gRSixFZt0nluv/7Vv8F6z2N0raRScH4sb+KJDr8ltn92q
+        Crg1pnH+S9ttoEzlh48pBr80qPN4pYOI4Q4eJEWLn96+WXv97AeK+etvqv3/nfADYD9QRIRv
+        pBUuAdIZpBBY73EyRImFC16Wv4rZtGH7G9sJCIG3Obsna1QjTeoccxvr9KxEYAPr+xvUCX9j
+        pyPhLKOxYGakTE17pkoxM7qKzkJt3BupJf039k7w3lOK4zD19OemPtj3DT6XH5o7IeykLRRb
+        xGJ7Ev7tLNsFuKSUrG10WG3nZJRo5LCW53hVgJDfwKb5IbsTbFhMhQzCG1LSlzpyWLbIQAqw
+        WnJyZY1YRWTG4lRgkX+j74Qfmk4I4YgokIs4S4lQbZMai1ca6yEamuat83gJFkHuQ3Dtda79
+        uGz7oZmOQnBI4lXIQ8/WRzg8M8NMrYoswg/DJglqgRKBUBJ/FWkTLmUSL5AiQruADOgHo6w1
+        F6TD/4E2UYhTSIUulYkFJEKhPEgvt300yNMIJxAWnLn63pCWEpPnqCIkL/r6dEpIhIzRLscJ
+        P8Buaq2L5MubR198JebxCOnQSLxMOLXWYFVltHqGHI3Uqs8LXXxeDOTrBVtlvq6GCSEwaU4S
+        xeB8gRS0oBTaYzEmI4AYLNYaut12EVp8kybJV2nDEc40z+n4QD4lnABjriq8/XLOrVQu0emE
+        /LKQGc5lxLqC3LdvL94bms11hHDkueHpp54hieO3VB/0Y/z9OgOlIqRRCKuKHMSbyM1PcInP
+        nT3Hufl5tNZ0exsgDXv37kW+593vwdqc1dWXUTYjiWL+5NOf5fSJOZJyKeR9BYTgvN1CKfB6
+        VrW/HjZcGeqMJUIXWFfBdh+krwnnbYgRXbnE1/kW2MKKc8GDBIPBa08pLvMXn/1/0bKKQJEu
+        nUQKzTvufwDRaq75u+98gIW1s1Qnr2d8332kLkeWFR/92Ee454F7yF1Gz6ShgsXqQXrvQqpO
+        byVT1jFaq2IxrLVbSJlc+kuvYH22+iwrZOLjgPqoRFVsbvnMp/+MFx57FCOqxHadM0/+JWmv
+        y+c+9zlklMAnPv5JSA3t1eMoBLFQ+E6PP//DP+G3//Wvs3R2kUq5ErjrXB+7o15B1emtYd47
+        RsqKgzsq7B0rM1GrvsbjhTqIoOMco6WkEpU5fewU/+6ffYqnH36cRCbUKorTR7+JEPCe97yH
+        Bx54AI2L+c53v4mJYGzyejJ8qICUQR5r/sQyv/lrv8mBg/t553vfxaFbb0BrHejx32ou7JB5
+        ITEChMvRQhSpzVdv/TRnf006ffQcf/1XX+HF518ikjFJHGGFoptaamN1mmfX2LlzZ9hkbqys
+        +917prHlGgdv/3G8HkFUPP/wH/8yf/aZP+fUkdPkWU4pSuilXeKJModuOMjd997Nvmv2EUUR
+        IhJkLsNahxJ6c162dqDQEdK4ckue1vs+xrNIHRYiqgJCjZgvZurB3/Pn9Ys0M9vpvTbhriG0
+        IZxjRAeF9WZmQMiQY5ASQSF9XHwpJPbd5jHU5p5KKYW30Fhr8MRjT/Dodx6jdXaDRMfkPkdG
+        gjvfcRePfvNxykmVztoxlo99lVhXOH78OPqhhx5GICglY+hShbSbc9sdtzG6c4L/9Zd/gfkT
+        p/jKF7/Oc0eOYnOPaeQ8/8TzfP/b36NULbP/mv1cd9MhDl53LVMzO9BxqB12zuEjiZcFhsiH
+        4m03CKsRkBf9nayHICUcnlqbbybS+wAL77fkri/eCUFzYXunDbj0vMN7RcMEgIEPW+gCp8oA
+        oimLgJ4tuJy0jgJHau7I04yF+XmeevJJXjr6ImdPn0N6RSWuICOB0TnX3XgtH/mxD7P3hv0s
+        L6xx+uhJ4soU1jmazRYry2vo7z3xPaTWxOURPDHOd7j+uutI0xSTGWqz4/zM//bTrK80ePap
+        ozz+8BPMnztHHJXxRjJ3/Bwnnz9Nln2RSq3MxMw4u3btZN++/ew7uIfaWI0ojsOiHilsQQjl
+        nEO4EKsM7RLk2H2fMKpo4K3oBrnF1b+4U7ANOn9ex4nBXdkHIQ9opgkUEHFRFJ+mGTbLaDcz
+        zpyZ4/jx46ycWeLcybN0uh2SOEELSVmUcFjK5Zjb7rqFe999HzOzO8isYaPdZP+hfZw8eoJy
+        UkerKoYW333kW+i1xjpSa6KkQm4CBcGOqalwYlJgnKPd61GqVLj3XffywPseYPHsEi8dPc5z
+        R57l3Ok5TMNQ0iVcz7E6t8za2RUef/hxcpOTlBLGxsYZHx9jbHqMsR3jTE9PMzU1RXWkjIrC
+        yIq0CrLpOhrUnfWtT8m2Pf5z0TtBnL836+8lwnQjcS78jjEGl3uE8fTSDsvLq6yvrLO6tMrc
+        3FlWV1fpNFq0GwHOHscxwgu01JSjhEhFJPUSh248xM23H+bQDdegdUxuLd00C1wmUjC9a5Lc
+        Z8R+hGp5gjxtcfTYs+j5c2dJbcZ4aRyPwQjPyNhocEGFQqIRPvjSWZ5jsx4j4yPc8857uP/B
+        ++m2OywuLHLm1BmOH3uRpTOLNJtNIqKg6mE17dUWnbU2cyfnMC6ovnrnEZEkTmIqlSrlcpmk
+        FFEql6jVapTLZcr1CkkpplQqBY8jjtBRRBzHRFqjo23TlQtQIWfD9GdMTppm9Ho9TJZhejnt
+        dodWq0mv06Pd6tFut0l7aXi0e7SLHW2k4nD9BcjLuEBU65xFSUUyWmL2wG6uu+46Dhw4wNTM
+        VMDx2ozcO2yeI4REEWFtyHGMjY2ho6Df4yqj6Kagk1r02toqUoOUMeCQWlGulOmaDsqrLeVK
+        IFBCg4fc5GR5htCCmT072bVvlnc8eB8us7RaLdbX11maX+LcmXnm5ubY2NjApAZ6GTY1eBzK
+        S3xq6GQNuhtNpAg0zdaG6Sgkafxgns5NeL5prgCH9TFBcmjdGC7sEIMyrT7YLKBEVVGLEIpV
+        jM/ROrADWJmjK4o4iahWK0xMTbD3wF727t3DxMQko5PjCC3J8zy4p85h87BHkAM8lR88t95S
+        KpWLGdLgdYQQkGY5utPpFpJY4e0wNWjaub9kUGvYLXPOBSwnhqges6M+zY49U9z+wB3oKCLt
+        9eg2e+TdlFarxdraButLazQ3GqytrwcAcS/H5IbcBI4jmQVZL2NCx2ipQzFJaLYh9F9oeKnE
+        Fo8qaEz3c5YCLwPzcBRFm7jUKCIplaiPjTAyXmVycpKpqSkq9SpxNaE+UqdSqeC8CZ1T4GNT
+        m4LZJNq9FBrPeyiVkoFzoFQAumVpio6irdoz3jlsUYwRDv7KnTC8cwZwvkBK++JXRZjCsoJU
+        NK7GxNWE2tQos4f2FrjUTSHtPM8wJmgs53mOzSzWWvI8w1pDXnRSlmXkxhScdgXbsPd4bzcB
+        wEoS6Yg4iUmShCjS6FghZYzWEUpLVKyK9yL6jPR9kexQbBI8u94ABNwHwYgta87lwCH7NRd5
+        nhNHUXAEivbTpVIV5SK0TPFegHebnTKU/L7wgTcVYjfjNv3vBBxq4Xn2fcwBmNd6hwlg0a0m
+        JVGSECUJbI7jwYUMGqH/wpbauEH7FIOkj0Xd5kkV+FaHJzeGvF8v0T85AF+AfmVgERBChKqe
+        /rHZvAPCb12c/VgIRW5SAsukRniLxBNpha6NjIAHZzMkAQSVZzmXC7vZcit6j3QUZa4FAawc
+        apUt/uUrHP4iXmffxd/80JXErbb+drFiXADQvAm5GKZpOP9oV+CpEY6V5zlKqjBRFB1fKpeR
+        OyZ34Fzgg+6Hgtud9gApfSXmhCdXdvBwb6KU4g+i9Xq9wUB0xYyjpESPjo4Oeqnvn/d6Pcr1
+        0hXnQEaUZFe9SqVSptvrsbDRofHmCX7/QJmUkl6vG2JLkcQUBChSCmQUCzKhcL0G3muUFTTW
+        NkLJ1PZypG3mhcdgQQjiPOPg5Cj1WCHIqWrBgR1jyLwHUpIL98MEK7hiky6j22giiXAWVLpC
+        7hQ7xieQ+/fvxzuHyTqAAedZWV5F64g8v8Qw9r4oCBcILdGRwksGhX1SS5CBDUMC3r11Q9+v
+        1ZTUrCytAR6hoNdpAoKDBw8i77r9ToSxmLSFcClSSZaWlgbb+4uaDxrHFo+R0HGBzcX1AuVN
+        z5lQmONcqNq5QmqdHybTKmZpebUIdTvyQrb45ptvRl57zSHwDpP3wIfF+cyZM0SXo6ZUeBDW
+        O1JrWFxbxXlHNSkhECyvr5K7MF0FrcE3L9H+ZptSMWfnzqG0pNNtBkkz55idnUWLUsT0+CTN
+        vEPaWiWu72Z9bhWZA1qCfeXRG6gSIDAgJ6x1PY20hRTF1t9JlCyH3auH7VzXXhS5Ay8CmSAG
+        jx+UqHrktrDJG2dOOJz0KOcDpRsSrlBNZDjnnTnD+uIqghq0X8Y7w9TUFFprpNaK++57IETf
+        22tIqUh7KUtLSyGpcVETm/8ViRLrIXebjT6olhQXCGu6gqFdOlJtcCLkE2zBH3E1GNov14QH
+        4RzeFm72FZ7L8OZNCMHC2fli/2SwvRZKSu6///5iE+gM1x++iSztkTaXi2R1ztlzZ6+qegaA
+        kKpARqQI28M7M0gPvhoho9f13JwnskEjCHhVwhX9u0BrzfrCAt1ulyiRtDcWsdZyzTXXDGqs
+        ufe++3DOkjaW8d4RRZoXnn8JdRGZxdfD+vfZWBRz48QO9k7PDDaM0M+/vTlWLZcYq9QQrsgC
+        vooB2e8EKSWnXjwdEHfC0W2uYa3ltttuC+8bo3jPe96FdxqLIWu0MSLmxNGn0TLerKK/Gop7
+        3qNwTI+PUC8pdkU5O8dKZMITuI7euPVgUNPgMvaOK26cSTgwGnPj5CReCPIr7ARPoPlXWuAj
+        ywvPvkScjCJai2iT453jve99b5iO+pwU99xzD97l0HmBmi+xerbF8uIZlFID3cnXe452RfG4
+        sALtI4hKZMajhR4oBr5hVlyadILxZBRtPN5lVGsJkTMoe2Vbf4EN9A8eOqtNVlcXUNrSaK7g
+        STl07SGq1Wq4E/oNu7q6iveetcY6SksiJE9853HiOCZN0y3TxOtlSgR5yPmNBnONFmfWW6y3
+        0oCgvvLQ1WsyUYTtnVA0U0MuIlwUsZFmmNyjr/CuFN7ipUNHMceffoG8F/YFJs/xHiIdEUVR
+        cEI8nj/8wz/k5MmTyKjMxP476NJBCsO3//px5s/NkyTJ0MatQEsMwVZeLQpPFYtW0zteajU4
+        12pjnQiZKGvf0BVBCYnNc0hijq+tcmJ1nflGj+MLq4ioGrjsLmCb+YytrykVIgbdTpevfv4r
+        aFXGWc34xCxCJLzw4ot84xvfCAuzMZY//pP/RlkpytO3omQF5zJcVMa1uvzBv/9PzM+vIBIJ
+        yuB8hhAWJR3emdcEg/RC4bxC+ohElBEuBqlwFPilN/BWsB6UihDGINCsdWGhZciRIB3iItqf
+        oSP69D8ehCWNFMJIPvO7f8T84ip4g1Y5Ih4nnt6NVJI/+qM/Cq7s+sa637FjipFyld13/S0y
+        EsrjMdffcB1PPfpM4J2uaH7iJz/CXffcQafI/XpcECzi6qwXbxUbDMLIBU4joYh0TGO5w3/5
+        D7/H4ql5hFTs3D/D4sICJTFCY/UIK8e+S6QVp0+fRn7pS18kKpUgSpClERCSG289zCf//ie5
+        4a4bA06onfGZP/gsv/Mbf8DKqWUip0K+V21uqF7LtPRWtOHrDZVNlljHKKt57Bvf41O/+m9Z
+        nltCasH4rnF+6Z/8EnuvmaXV6VIe34uUikajwerqKurwjTf+s4e+/TCjE7so7biOXpbxno+8
+        m8p4jVtvv5VKqcKpEyexVrC61uDRh77LqZMnGB0dYWJsHKUDI6Mb8B4VJzk4281JZdjv3+RG
+        2qRv2ZK6vOo2dDbbUH3D4YbwXpH2HDq1gCgM/N1KKXzueO6Jo/zX3/sTvvfN7yOFx5Nz7c2H
+        +Llf/nmIEpprKxw/dgZdLtM+dxRretx5x53oTjsjihy6tg9nuggNU1PTYSW3Gfd+4O3cdNv1
+        fO6zX+DYkRcRSnPmpXl+/5n/wuTMDm6+6yZuvv1mZvZMo7UKMZ8iIW6tQ3gJUg5gjP0Ldc6B
+        sEU0o99zb2RplgfsJm5JKPCb+NLAiuwL0sMCBlk4JUJKkkSTpznN9QaPPvx9nnn0KdaX14ji
+        iEhDqRrzwY9+lHve9Xa6LiWzKbt27wGRgomQ1UnoLvLC0efRZ86cGSDTlNZo66jX6yF8IBSp
+        syT1Ef7uL/4cp06c5Ktf+TIvHjmOctBZafPNLz7EV7/wVaZnptl3zR5uvu1t7N+/j1JSolwr
+        kfsAYTHWFkIVomCSVyih8M4OTWP+DVuMt0+crgCk9WsuHBaUw/qQFYtlhLACYzPOnpnn+aeP
+        8cJzLzJ3eg68IBZRQL5WBHffexfvf8/7GRmt0+n1EFHAs1ZrI0RxBN4TRxVAkOc5en1tHcFm
+        qZH3fgD+8q5wRwV08g7Te6f55C/8LGuLazzxyNM8+b0nSBfbJCqmtdzg6cWneezhR0mShJ07
+        dzI1O8W+aw+wb99e6vVRonJA2HnvyfIsEJIPpqU31gSBoLD/20oqKGJZURQRSUney+l0Giwu
+        rXPy+ClOHz/NyZMnabaaKCMpJ2WEC0ma2lSV2+95J3fffxejO0ZIeykd0w2RYKcQ0lEuVwkY
+        WI9WCVprer0eupf2Cop7XaDe3ICW0ltH5IPL6KzBS0VmoDwxyoMfey8PfvTdzL90mueOPMex
+        Iy+wvrKO6zqkUyydW2Z+boEnH30Kay2VSoXRyTr18RFmpmfYvWcPEzMTlKplyqUScZIQl5JC
+        UjE0TG6ygP3pw1a2t6S/2NMiTD7ANRUICVEQFYpAhJhlOb1ej7TXodPssrS0zNzcHEtnF2gu
+        tVhfX6Pb7eI9xFHYLymnkFoQVSNuvvkmbr/rdmav3YuKFN6BSYNEpcMVIK9NYJ21BqE0Xki0
+        0vSyFO0FBUOuJ3cBPOUJdMgCgevTzffzzc6hANsJnNlT+2eYvXYP7/uJD7C+uMTCqTWOPneU
+        M3NzrC+v0Wv1kEJicsPquTXWzq1z8tnT5Pm3Md4FDGqSBBDWiKZar1Cr1RipjVAbrVEulahW
+        A1ZVxTGyEMQI3KVF7UOxptjiTg6bSQcmJ889nW6XtNej0+7SajZptVo0G02a6y16vZQ0DTjU
+        rJ0ChJqLAhZvjAm10bEkGYmYmp7i8E2H2X/jNUzPzpAkCVmRJbPZkOOBQg/yDw4IgdE+/4aI
+        JcoJciHQpVIJ5wPqThQXkOf5AEF3MQuLaxCdds5Rm5hgbMc0N7/9ZvI8p9Nusr7c5tTpOU6d
+        epn1+RW6jQ7NRgMnDFIEissszehGXeSaZMWtDJSinN/kHPXegwx3qVIapSSGrcSD0gWvxVob
+        WIBdH5kXllQl4kDZqVSBiNt0NZ13CK2wxoAUlOsVRsZq7Nw5xYEDh9h1YBf1yVGq1UrhtDis
+        dYNr70dLX7mt/GAtBDZ/U0r02NgYzjqsMSRKkZtwYB9dRjpyCCAV8KyQWkNqcpTSlGp1dtZG
+        mT24hwfkfSgn6TY7pGmXZrPN8uISqysrLC+vsLa2StbKSXsZaZrSS3uk3Qw8A55TKcJvOO/w
+        1g/kYPrO5qakRTF3SYGzm4wvTqTEcYKMBUkSk5RjKpUy9Xqd+vgYU7ummZ3dSa1WIy6VKFfL
+        KAVparA4LI5Olgahi2LBttYOHJuLNpUQZGlWTJGb0P9SKUHv2DGNFApn0oD/d548zYjj+NIu
+        uyeUQOGxzqOERroCnWg8QoL1OV5KvJSk1kJZkpSrJOM1dh7YiRQMPBKTO/IsL/CnOS63ZGlO
+        p9Oh1+uRp/kA7m5MDtYNqoC894Hxt4j6Kq3DOhPHlCtlyuUSSSUm0hFSqQIUHD4rZFikc5sP
+        yM5B0LM9vOmPtyC23cfuBcZXe9kwSCkEadorth0Km/aCNqjW6Hp9BOUjrGuhZITH0m40iWuT
+        Ya24WOBUKpwIQFwtNc76ATxUSFEMRl3ALAmUZkMIRus8FrZAa2TIuRZY1DBqdvSnHOkYXn63
+        X/SForybBLIgzqMG9wXcftgCaH7z2fD1br4yTNl5OSacI+v28E5gpUCZLhZNJEDHscaYFJOn
+        eG8AwUZjnbHZCfqFfa9kzlqUsIyVIhSSVs/S80PksHBF7uf2z/Z3rYOIrTVcrBPOO7+i7KoP
+        6dzeSW9kvEtIQbvdIjeGUizJbRPnLLWREfTBQwexzpFmXTwhg7a2ts4hrTFZX+jnlcwzVq5w
+        aGIEgWOxazi91t5khX8dLnJLjGZbJPNyOnh7wv3NMqUUS8srCBFY7zu9FZw13Hz4FvRdt98B
+        wmN6TaRUSGFZWVglEhFWXgC6PmRCQBJrYh+YFWO1eRcMhyhe8fsFClxISJyhkmi61tHJHdIH
+        92XrHXXxEtrz7qQ+hvuCgIlimpISjytoODUejxTht3Jj0NKjCbuOHA9CIX1fqv7yO1XqhPWl
+        VbRMED7UXkghuPltN6P37TuAc56yTXG5QSrJmRNniGRM1/cu+TONdpdVoVCRZ7XdCRUzl1lk
+        LoGcgJ6fqCXsq5dZTA0nVloooQa82K9YhLFtgJz3iYvVVhC8KCkVwhlqcZDe2shTpIxwuaUc
+        SfZMjVBTEcZ6zqxt0MwsUvYDlpcf61IyYmVuAXyE6a4Q+ZjUdpme2oFMSpqJiWmwOXlnDSEE
+        5+bPMSg7uogJJO2u5fhqk+dXWyx2sss+KQDj8+CrO08qJKgSysVooTHSbS/WfF3NAV4H7Z66
+        iLh+cpwbd42wo5Zgcov3julaiR2RQucdxhTsr49SErKojr5CHFKec25+CRkpTHcdIQSTk5Oh
+        tFhIeOc73knkBXlnBQjRz6XlpbBhu/ihkbEildDNPYqLKPpdyKRHCY9wsNru8vT8PC+vrGBc
+        n9PxKpoItIW5c+R4Mu9xIqh8eO+QWlNOSsg8VLH2TBddDuuSfxWY2tX5efI8UFHk3VXA88AD
+        D4T0pgeuO3QoCPdsnEPoBGM8C6fmkEpuWRjPvxCBFw4pIVGK4EV78BacQVzUvw13kncF25jU
+        tByYKAqIQ39l8dQ+JtZ7i8ChpacfLkC4Ilww/AUQNngtLWs4vtrg+fkNVhspspCq7GQ5TulA
+        56Y07TSl53KEUJccn5s0diEUND93FisihDeY9gbWGA4ePBii1VpFPPCOB7BSkjYWEcIhhObE
+        sy+RlEoX9UAEAukVwks8fUFID0qB1vhLoroDTDhsGkA5jQi5Egrhk0s0/ZaTCYFHpbEIUmPD
+        qCXEatS2UlSBQCPRPuxl2jlspA4vonBOHpbXNjjX6tIRgmbmOLfaoOfDblReAn0xXKWplOL0
+        yTm8iIlcRtpuYozhtttuCxx4AO9+97vDTtFZsuY88cgUzzz3Ah/hfH//4sVxYVHOrAMV4UxO
+        rN4YAFcYEGHz5YXEeYUqqjmDy+wv4W5vNSk1mfWcXGlwaiNggVNnEVJf1tAYbqcoUhx79gWU
+        sBjTJO+1cc7xgQ98IMScnHPEccwdd9yBd5Z04ywC2Gh0ODc3f0UbLy8kTggil7GnrhgvvbGI
+        aucFtUhxYLzMwbF4MB1EUXTFtEAOh4gFMo6wTuJsREmUSYhCvZm4vHXBe8/q6jqrSxtIHJ3W
+        CsIZrj00BP4Ci4w0P/KhDyGsI20tI31GzxiOPHaEqBTRZ0vpq6e+4l3hHNI5Yq2oV6tUK9uU
+        XEUoNg8Bcn/ewl8IQIZiEusRKJQPt6spYPOvfLFhjZmdKLOrLpkZKzE7WgURVH0uBvG/oAmB
+        sQbhPYmOUAhkQd95KS5zIQTCQ24zopLm+WdewGcerRTd5jpSGHbN7hoMDClQNJtNPvWpT6Ei
+        TVSdQYmIcpzw7S9+ncVTc5TjUthNy77Y3FbagL5J4ZE4uqnhxdOLLK41tzZUgfO3QF5k7LY2
+        ZLGQaoGPBEaCwZHbnEsSCQqQWhBLEMZhM0eiQi7EOq5oKgqHKygkkAMeQCd8IdR68fXKOUfu
+        HFES0W20+dpffgkpQjh7fHoWKyMeeuhbPPLII2FhtkbwB7/3+/RMShaVmdh3B5mRQQLYGj79
+        W/+JtbMBMu/kpip4aLTtYQQw3qOSGCc438/3CtBhERfuvHEt6JN5pBjfw/kuXluIJPEl52JP
+        ajOWWymZL+GJWWp1EUQIT4Ftvfo2qH2OJNpK/uR3/5jW0joitiglScoTlCYOkCQlfuM3fiPc
+        NVme+5/48Y/w1YceYeaaO6nuuhVre+zdt5uTL59E2wjK8NGP/0/cdf/dOCcGpBrnzbPCY32O
+        VhpjDUpGMCTDZQFrMkZiSVlDO4N8KLJpBWANVQ3j1QTtJUvtNl0h8TZkq17JMfB4nLBgPbH0
+        COfootAyAW9DBPYqojn6Lml/pmitr/GH//HTLJ1exsmc2YPTLJzegMxizTrzT/0VWdoN4K8s
+        Tfnql79GUk6oju0Gl5PUNf/wn/4Sh++9Fes80in+9D9/ht/9d/+HOcQ/AAAgAElEQVQPcydO
+        UYoidCQIdN+Bk90XI1sKDU6E5Lbb6lVJIRhPYm6YmeDQzgn276ijXIaTYdrAeYT0jFZK7K2P
+        sq9eY7xS4VIcG0UvhLIrFWFkTK5ilNRD686VTUfb90cCCokXMMJjBtfswFmcMOhEIqzjsW9+
+        h0/96m+yMLdE5jOm907zc7/0C9x699vwUhBXdyCjMko4/vJLX0YfO3Y0TAN4olKNbmq4/oab
+        aPRSPvF3f4pHdn+XL/zFF9A+Ye7FeX773/wHbrjpOu57531cd9MhRCTwUpAaEy7UghcCFUX4
+        wAAyCCEbb9HliJIE00upxAlSBkyPQoR5E+iZAgOKJXMOayGSF99BB6xQX8stNHoo0yrC8Ve8
+        Lp/f6wNGMu+D+KmzaCGJYo2yju9/63G++eWvM3/qHOWoghGWw3cd5m//9N9GlkocvPE6Hnv4
+        e0inqYxO0eou8+yxY+hvfefh4FaWaiBKCNll//79eDxpnnL3B+7m+luu5wt/9lc8+2TosONH
+        T/L8kZeYmB7n8J3Xccfdd7FjZpo4TjDCkdmczNkCIrAZgNNK0Mp7rKYxI7rEUrODAaQHLwze
+        WoQSbPQyTiyvoqRnrZOhlcb7/LxGuZr2Su64t7aYCQJjS2Ntna995zsc+e5zrCyuESUxUVyi
+        NBrzoY/+CHfcfze5COxie/bsLtR0PaI8TlIqMXfyJHp+YYEoLhGVqhgX5szp6WnyPEciyTND
+        dWKEn/oHn+D0y6d46CsPcfTIUbDQWW/z7b/6Lt/8/MNM7ZzhmoP7OHzLDey+Zg9RtUZcivE2
+        cARZaxFWkXrFS6tNYlK6NgehQ0mSCuEG5xVGa1bTvODGCLUSVzOYdzEb6HaqAALwuWXh1BzP
+        PvUcx559kbOnz6AQaCIipZCJ4O77386DH3oXIyMjgQHMBK3pqamp4OB4j6yNk+aGF184hs57
+        Bh1BpGtYLE4K6hPjKK2RTuBsCHSBZde+PXzy7/8si/OLPPn4k3z/O9/HLjmUV7RWmnx/4Qke
+        /fb30JFmascUM3t2ceDag+w7uIfySIVyKaFarZK6jJ71CB2DK0SsEUhVeEAuuIKKKCTrvS9S
+        k77Ys4RA9JYpw3PePqJPUDV45zxvLbwznKj3eLTSSCnIuim9do/lhRXOHD/DyeMvc/rUadrN
+        FsJAOS6HCiOgvHOEO++7k7vvu4fR8TrtXocss+A8WmqwBl9WlCsl2u2MSAcu8uXlJXRjo4l3
+        Fq2L+VlIkiQJgSehiziJKBIjnp5NGRmr894feR/v++B7OXfqLEeeOsILzx1jeWEF13UIC+uL
+        K6wtrPDUI09iMNTqVar1ChOTE0zPzjCzcyeT05NUKmXKlcqA5244pWm8LSh7PM7Bpgh20bTD
+        bqcY/lO4C36Ip0hIhFdDItsEmfbc0Ol06fYyOq0uy8vLzM2dYf7sPI2VBhurG/TaKVoqIq0R
+        UqKcxuocPSq54fpbuOvtd7Pn0D5EgVPKshxd5Nb7+0QhwEkol0u0OymRClxGjUYD3e11B5oJ
+        1oWLjuJocAFbBs6Qp5PnOQiYOjDNhw5+kA9+9H20G01OvzTPseee49zpOVaX13CdHIXAtHPW
+        OhusLzZ54chxnLUgLSpSVMplSuVSgJlUKoyNjVGvj5DUw+vVaoVSuUyShBE6KDvd7vEUI7vf
+        idaaAcIuT3O6zZRWq02jsUGr1aS5vkGn0yveN6StDO8dOooKEsbAGqmVxgpLbazM+Ng4N910
+        E9fdcpDx6VFKlQo9kwesbSGEMSwTPHxXCiECy5jvE/CKkL0LuJli/pMSYwuG3EH26AKES/0U
+        pvDYPCfDohAktRoH77iBw29/G944NprrbGysc+70AidffJmlhVU6zR7dZovcWJwNCZKOTel1
+        ciQt8HCKk6ER3SaxrXMerQN/aYAxFori285ri36zd5vwSQFCBtBXEDzqc7IWQDPnUUJgHWgk
+        1XqF6niN6dkpDly7n937Zxmpj1Gr1QJKI0tBQDdLsd4RiU2pg+H07uDcpMAYO/CY+9goKSVa
+        6whr+xHGMDdaY5FaBM63oZthmHhwsDkRGldASgpIG70sA+dJyhV2VqvM7t7L2x+4DyE8vW6X
+        bqdLu9VibXGNlaVVlhaXaDQbZO2MtJvS6XTppT3yzOC9GIx+6xyCvkKwx2cXqKgUQZ4rEJ/Y
+        AXjBe4dQIVhZKiVBELsUUymXGRsbY2xqjImZSXbt3MXISLUAf1VQSpLm6WB099K02A+potpf
+        oIMCyDZ0x1aTAbWGzTJ0wXwgpQzcfOUiZ2CHIOp5nhOX4sGy9kp3wpbO6c/JfvBiiK94ijk9
+        RwiP0FCpl6mNVdm5ezdRlKCkJMtysBZXAL+M6WFMTpYROqXXCwSEeU6apoEka5sOznD8XiqF
+        SiJKpRKVSsC7lssRURQTRQlSK1SsChJCoLjz+og6IQS5yUkzt+U6RT9q5MMdNdzcwxGE7R1h
+        raUSKzqdTkDjZRmuwOLqvua8cy5k0ownzVIS4gt2wGux/jrTL053Iict9AakkIFSU4GMNTE1
+        tLOUBYyJsRCgk1sDZ3LbhYp+lLeI0PptuCUoMKDO43B42R98Dmc8WsSDEoHhzng9LMjO9ynY
+        4kEV0MT4JDpJEpwrgK3WFfNdth0f8vqcyFD4wfswBw/GjnfgFINXBKjhcLcPYLNhAHDutk5H
+        ovCKBh21BawQdtQCUB4QHpdbvPBBlr64hfvpyGHg7uUktC5lSik67U7/YjEmVL5Oz8wgdSLo
+        egFpE4SGzNFutOEy6NcuZVaEubsqLdbleKkHkVQhIvAK4fXg7xYaBQ/eS7xXeCfxToa9gpc4
+        KwhgPIUYeuCDG+p9+PzW9+VQSAPC+qcD1sgFaRcYWlS9RJGxawIiaTZVz1/BnANMTkVBJATO
+        bk5j3ntyAe2VBo6QT/dZk8wLDu7bjdy3dy/eWmzeC8gHBEtLy0NpwVdvMsvZNzrKtTNTjDiP
+        NpbCWdvEcorg6dBfV4Yew6N+cxQOvbb9C8Vjk/pn+2PoY9ts+yjPfca+HRPsi0rsn5og9xeH
+        8wg8kyNlrt05wk0zZcrRth8RgrXVxcGdmjWXkVIxNjaBvvPW25HWkacthO+hCvq1y4F7X8q8
+        1pxqrnKu42kLi5LRW4aLUApoNtuM1yo0220uR5Aw0hIlPFKdv15JKVlaWsNaRzlRiO4G3hp2
+        ze5GX3ft9QjAZF2cS/E+4uzZsyRJiU7eeW3zoIgwuQi0z2iU0AX64QffIjQL7ZQz3Q6RU0Qq
+        5qJED1Kx3OiRW09uoZOHApC+aa15+eWXUUqS5waRtcjzjLvefi9SliImR+qoWNFrrKAixerp
+        FXzPBfq112DeG5QIkothC/HW6AAgYGSVJhYJQmnsJYFGDoNgpZ2x0QuOzbBXFumIxZdPInwZ
+        1dugZwMNw62HDyOlErzrwffirMG11wLzV5qxsrw0KBB/1TY0/w7vJd4SJoZXr0ufe0Df99e4
+        zUW+/7fTaLO8uIrUknZjAfBce+jaYsNrDYeuvxbvLL3GEkJKjMk5derUVWf++mG3Yfq1sydO
+        IEWM8460dQ4hgsRXFEVIpQQPvvd9OGvImivkWUaSlHjqqaeJIr1lFrzyeuMBiKVw+4pN1CsA
+        BX7YbJh+7djTz5MViO5WY4E07XHHHXcUfEc+5r5770brCpYMmy2R5iVOH30Za4LqkpevFMC4
+        lAWQlBESJQU761UmamUG4J0f4k6QQmxS70jLc08cJ4pHUN0V6Fnwgo997GMhrN6vYP/whz+M
+        FJAvHacWe3rtLs8+8SyJ1EFU+lWgpF2xD1A2ZboiODheYl89ph5rhH/zOE/fGAuhmUSXOHHs
+        ZdY3ltCxYWHpJFJlfPBHPjiIyEoIPmyz2cR7z/r6KugAfPrin34e0+oGUWkReK9f1el46KYp
+        3dyQeU/mLLmznI88+uExhyOJE0wn53Of+UsiLfHeknY7GJNRrVZC3l3rwIH30Le+xTe+8XWM
+        h9kbb6ftBFJGdJc3+K1P/Xs6rfaW9F8/cbIFwtCf84dM9OWe4jJrmebZxSbPLW6wlhtI1FuM
+        Rd4PHn74Wof+PQgeCtCRptlo8tu/8TssnF7EO4USCTO79iFEzJ/96Z9x5MiREDjNreE//s7v
+        kEhDMr0fnewiSltEpYiuzdlYbPOvfvVf871HHgu7QK2xOLy2GJ9vCtddMOKoUEhUITWfWo93
+        kopI0IZQl/ZWMREKGjwGT04fc4XwIAP1plSQlCIQjiOPPMWv/4t/y9KZs2gcMnHYrqE8uZd4
+        bBdxkvBbv/VbIajZaDX9zM5d1BLF6A3vpTSym9wb/o//81f4zGf/O0ceeZpqvcbK+goHDh7g
+        wfe8k7fd9TYoRVjvcLlDFNghPERC/nB6PcIhhnLapphMhfdBDSTS2NTw/FMv8bUvfJ3Fl88S
+        lxJaWZcbbjnMh378Hfz+v/3P9BzIjQXmj/01SglOnTqF/vpXv46QjtwnVEf308tSDt9+mGRs
+        hJ/5B3+Hx258jC/8j88zUqrSmF/nj3/vvzLy37/ArXffytvvv4epqUmEVPQKNpY3s1b4atr2
+        6VepCHyoUFo6u8Dj33+C7z3yfVorbRKRIJTCKs+P/dSPcc87306pHjG7bxcvHj9LeXQWISXd
+        bodnnnkG/dijj2G9pTo2jfElMtPm5jtuIhc5nbTLHe+6g8O33sg3vvh1Hn/0cZQr0W32eOxr
+        3+WRr3yT8ekxDt10A4dvu4WZ2V1UahW0VmQmu3Cp1VBsvv/WoP7hPMgKmznioVdF/80L3HB+
+        6P+buYvNA/bRGMOf5gLPhChyEz78W0kV9k3O02y0WJif5+gzRzn21LOszi+hfYTWUag0Kntu
+        uftOPvCjD1Ibq+GEodn13H737Txz7DiV6iil6ghZ2uZLX/4S+tz8AlI6RGUWazN0EjO9ZxaP
+        o0SMNx6ZaD76iR/nvg+8gyceeZLvf+d7NJbWwcdsrGU88a2n+M4Xv0t5pMz47CQHDu3nmusO
+        MDU7w0h9hHK5XCThbchqOTfQZPNFSjHIaRUVm/2OGuqwAD9U2xrtQtPe5p3nvAnfLegQvN+E
+        4/e5j8K6GtAPUskAjyn4kLwX2DSjtbrB/MISL71wgtPHz7B0bplus00caaI4QskI4SW1sRr3
+        3nU39z54L+M7pkiznDwzKKWJpGPH3l0kscJbg69PU27Os7C0hH722SOBkaVUDchl59m5cyet
+        rEWiY6wN2+5Op0OtXuPdH36Ad33gAU4fP82xI0d58cgLLC8toWOBzQxrp9dYOrnCw1/8DiKC
+        6kiNsfExJicn2LFzkh3TO5iZmaZarSISRVyKKVdKQEg5Dtt5ndYf2f3mHuKaCF7LlmehLwt0
+        hRACPUxAJRTea7I0Je31sFmPvNNjaWmVc+fOsbK0zOriBo31DZqNJs4YYhUHEUDniaRHxVAa
+        L3PrLTdx+223sGfvbmRJkNqUVqeFFHrAgO+cY+euXeHcnKdUGaVhBS+88CJ6cWkOgSSKSnhM
+        wP/ECt9zoYbAi4H3Y60hdzlSKPZcu499hw7woz/+UVaWljh1/GWeP/o85+YWWFvZQDiBchLT
+        ylhuL7F8Zolnn8hJTYpznkq5TFItEReovGq1wki9RqVaZWSkRqVSJamUieOIJCkRxxqphhuR
+        AelUv2NcoVYbaI4czlp6vcASk/Z69Fod2u0WjUajwB8F9phut0va7ZL3UvDBvUxUAk5gvAMv
+        MdaTlCTl0Qp79u7mhpuuY981+5ncOY1XgW66l6doo8lzS6xKg0xhWCc9tWolXIMXxLqGFBHz
+        5xbQG40NvJNIFZGZnPHJCUzuUDoKXEFbgkfB6cQHpBlKkilLaaLGLTN3cvs77yJLe3SaHVYW
+        Vpl7+SxnT59lYX6eVrtN3soQThFJgckcwuTkDUubfu7VFSPfFkokDi+K/JkQqKjPeyQHUc7h
+        6b2PGOkn8wPFXviAFKFaU4h+RDdMU/09j3QgfcGBJ2OSckKpWmZ8xwT7rjnAnv27qU+MMjpZ
+        JyppcmOxuSG1KcoFtjQtY7BQVtXgOfpNEJh1YVBXK2XSZo5UMQjJ6toqulsIi+YqJMKVCkCl
+        wGcqhzAsFGGGos6qqHzFeCDQq+VZ+He1PsrI2DjX3HjtAJDVarXIux1aG11WVlZZXl5mZWGZ
+        TqtHp9Oh2+1iuikmN9g8gMqEUv0CWyBA5IUXODHEWzps/Q4oNlD9xRXvsT7wISXx/9fducXY
+        VZ13/Lcu+3LO3D2e8Qy+hLEJLnFMDIU0BRGqkCYCB0KjEFut+pDXtgpSCqqSh5SUVEovkVo1
+        rRQ1aQhumrQVUmIiJSQYykNCgMTGYAxjY/B1xp6LZ87Mue3LWqsPa58z4wvY4zGB8FmWPLY8
+        s/de+6zL9/2/3z8ijmN0GCBCQRRH9PevoK+/n/7BlfT393voVDmgo6dEGIYewmUFxQtN1vB1
+        EVU0uJx9Gcadq8DTSpMIKEclavMJUivQ0GjW0K2JUyuFWSQrab1Nl5LeaamwF0epVCIuR3QP
+        9LFm41oEoKUE6zU4aZbhck8ga+mL6vUGaZqRJE3SNMM0/b/nLcTneUqIWqnC4FShS97gtFwu
+        E0UhYajQOiQINFJpgigkDAMQkBvjD6GFE6BwkKZpe9NgW746lxzeK6hlg2BdoSzMM3QQhuS1
+        pEg3t47eC7XxpcT5zgRnpK2Fn6uTJEMKSSZaMhiJjjQutGiniUQMwErh7dlbIRc51np47HmK
+        Tu178KdZL6Msphzp2jsq319nsJkrCjFgbb6wU3MLjNQsy5AyWHZNqrXJ8Pfiv5tSCl0OS1Rq
+        TVyeIyNFWkgLnSvsgJfwQ87W55zTcmT8FBGIAGP9cZ+ig19I2rKTVprGtmXwxU3IVpX3zbjc
+        rUHCy1xYVCFzC7kfj21QvrOoPWiSQLbQpIbWLCGlVxIuaxSEwOWWJE0RCEyWg4FyqQPd29lD
+        Ze40rplApKhW6+2dkJSCpeBkzv4knJ1Pcs73eAmhEIqCx1r0KLiseFwL4q9z4mJ5F28wPn6Q
+        Fx32zjjU+X9rzQatqaf985b5MXDOEVhBvdlAU+y6DHR39SKHhoYAS24SnDNtzWfb4ekyhlUC
+        pxUmT4mkpYSBPPEXxG9XCXqpYazB5DnNZhMhBLlp4MgZHBxAjoxcicOSpU1aJeVKpUJb0HsZ
+        wzmBsNAXRfzOqkGuWT1ET2eEk9b/rHexc7AUktlKpa1mbzQrSGlYt24dcnBwJVKGZI1ZEAqF
+        YG52zjt5XGIR5w0vxIEyhpKUdAhBbCwlLfEdOO+sSlubLiD8Am8x5HjzjgJZtbRvKAWV2WmP
+        oUZj67NYIVm1ahDZ29NHlgqS+iQ6jBDGcnpyFoFavuTl7BszHlk2n2ScrNWZaabM1esYZ5a8
+        E3urQ0qBw2BtUTtQHtvg8CynpdbHnYCpyWnPWRUKUZ8lzQX9fX3IG274IDbPMc06ImuilOL1
+        148U6rHL/ElAI2REzWkOnp5jtDLH6dzQsmh/J1UhWifptsWZsajc91tfSsU9DkKOHDqOcgol
+        fI+Fc44PfehDyM1btoAAZTOy+iwIwauvHiQKg2J3dBlDWRppFalFkY8PiGRMiPaU33fSMDi/
+        h7fWeosz4xCZKRQU8rxnojcLJRTHXh9DociSOc/kBg+eKsURq1b2YSU0azMIKahMTpPUU3J7
+        eedoIQU60GAMZDnSgjISYd6gxXUJ4fDqDmUswnjw1HLCWgfCt2itWdHN5ves4qo1g5QDhXEO
+        e4HS7OIzkrWWRr3J3OwMTioa895es7e3lziOkVEYcscdt5M5S16b8n0DGRw++Kp3Fr+cYT2q
+        2SELD4EWvkYUnZLLGQUHNmfNQA8D3WWcXZpD4NmhpMIWbI7eUBM0avSFirL2+J0LKU8WtwJr
+        rTly6AhJvYZVYGpTCBx33XWXb+0SwnHddVvAWOamToAxRCpm394XicN30PRwgRACtMvJbEpu
+        EoJl7nddkUcKZUjTSmSpiyyXZLm3K3YXcF9sbUVbv0f3jBIFEWEI1eljGJNz/fXXe7UFznLH
+        J+7Cmpwgn8eYWfIkY9/zB2nWfps27gIrQ47NzHKqWsfJJeJBzwpbLMzOCI6fmmb/xCQvTZxi
+        ptloN6K/WbS9eYo1ZHTvAVxmqVdnEUkFawx33303gBfX9fWu4MO33II1hvnxA3R0dVCdb7Lv
+        mT3+ACctDsPSMknnhjAevGaUQ1p3QZjXUsI5h0UgZIzSJfJLYJcuDil88UVqiZGaSmJoIBFB
+        7A+dF1iYbZ4gQ4GKAg7sfZnZ6gxSl0lnX8Nayy23fJiOjo7WdCTRUvGZe7aR5Ibq9FHS5mk6
+        opgnf/wkJkkxbYfB5c2zWSAwLqHkMkRoPYv7MoWXmHstk0RcqlhwIVxh9oSH1moRIE0rt3Xh
+        g6WU/oAXBQE/3/UUToGUGdNjozgpuWPrVuI49lnb1n/69Kc/zdq1ayCrMDP+Mso1qVRSHvvh
+        TynpEkqqZZ+gnc0Y0prfGxhmTVcn4l2cp7BOEBGy71f7OHpkjFjFpPOHoJmgg4jt27e3Fduy
+        NW9FUcT9992PbeZUTh1CmFmkEvzyqWd54dcvEgYR+TI/CdIJMiGZwdDMzbs7VyQ1WT3l8R89
+        5mvOImTs0HPEEv74T/6Urq4ugMLPTgjiOCYIArZt385NN99KkDYYO7SXQCUEssQPvvtDXhs9
+        RNgRIsiRBaRwqWuElIrpLGfvyUnGqw0QS2PSGQudWjLSV2ZDbwld2K1bLoKT+VaHswgszmVY
+        MlQQ8tjOnUwdP06po4fK8V9jmw2CIOQv/vzP2kSbgjrTqhlLyuUOvvz3XyWKQ/L5U0wffYE4
+        VqTVhP/+9v8y/tpJdBAglMDphVrqxYZwjkAolAg83nnJp07H0IpO+kuK/rJmRU8nWZbg2lzs
+        ty+EwO8wtSZUAT9/7El++fR+VNiFq44xN/EKeWL4qy98geGhoQXkjzwH+OzYtHkzf/e1ryFs
+        RnPyVaaPPU93p6RZafDwv/4Xo/teJVB+F+7exKP4LQmbYW2OVYpchW0KuzVvfwLQOovSioCQ
+        Z596ll0/3IU0MYGWTBz6JVlS46abbuKzn/0spdKZ0F71wAMPPLD4L6SzrB/ZQL3e4Jmnnyar
+        TeDCiHLPKtLE8eKevWglWHfl2oIq/5u7eyMEeZ7RSHPmE8dsZQ4RaoyzBUD87UuFq0DgrGPX
+        j5/gsUd/BjKkSzU4OfoL6tVxeru6+dY3v8XatWvbC3K7sdAtKp855zwMSgiqtRr333c/3//e
+        dyGK6R6+ht7V7yezMa4+w6brNvGxe7bSPdjnpX7SO9AiJNI5tJDkxsBlBJZb/EvipXYSUchY
+        FngWb+0LcWYN3TvU5tYQRJr56Qo/+Z8f8dLufchyH4FoMnngabLpwwRhxMP/uYOP3nabRwYV
+        YoI3HoSCZZQX0pMvfemveeihf8eJkK6B9fStvgZKg1Qbdbq6Am79+Ee46dbfx0jvNqtE6E+T
+        1h/b7TusTrCcWGySZMnQWhPJiOefe54fP/oTpqcblIMQ1Zhk4uiLNCrHiLXg61//BnfffZfH
+        twlxRkoDzjMIZ2f/kiTl29/+Jl/9269Qr9ZRXQN0jNxAV+8QJCnGBfQO9/DRO29j85bNmNyb
+        SeQmR+vgvN5nv41hrUVr3X42Yag4dfwkj+98nFdfeh3rMkQc0pybYv7gM9jGFKWuMv/89X/h
+        E1vvJtKLJJsXGoQ8z9t5dL/iWzIheOrJ/+Mv772XI8cOE0aansFr6LniWoyKEFJQr9dZPbKa
+        m//wZt63+f3EnR3Mz1e9wOtdEK03uFQqMTY2xnNPPsPuX/yqkM5LpLNUxl9kduwlXO5Yv+5K
+        /uGf/pEP/8GthA6EVgtC5rNVKWcPwuI/t6QgxUzIkSOH+ZsvP8CPdv6A3Epk3EPPqhG6Bt5D
+        qrsxxkFapWdwBZtvvJ4P3nwdvSv6MFiaWYZuI8taFyPb05ZPEXitT0vi49y51b1LbTrx33VB
+        FeipZAsEfIvDCW/11bqA3FmkDkEoQiRHD77O00/9nNGXRkkSQznqIMJQmznG9Nh+0vkJnEm4
+        Y+udfOXBr7DhqqtAgHReYHZRg3ChsNYyNzfHE088wYMPPsjo6CgqilDlfnqGN9A5sAEru5F5
+        E5HWMUqw+qr1XHfDtVz9vivp6V+JlZY0STHWFCXUReIwJ9p6Uv+gzlTgne8GLja85ilvP3T/
+        AizIemyR69FCooUEIQmDiIkTE7y8dz/P/GI3M6fncNYQhgExkkblFKdP7qdZex2XGLo7e/ji
+        F7/I9u3b6e3tvWhKzpIHwaMuDTMzMzz00H/wjW/8GxNT04SlbgSa3v61dA1tJC8NY3OHyOqk
+        NiGINSuG+9j4/qvZuHEjq1evIe4ukVlD0mz6iykeVps2aS9fndt/EvL2mieQnmpPofhWChVo
+        smbCiaPHOHTwEC88/xLTJyYRTUscdeDTvg3qtRnmJvbTmD2JtDmhiLnzk3dy3/33sX79elro
+        zYt9YZY0CAu8US/4VVpx8uQ4Ox7ewY7vPMzxY4dRUYhRZcKeAXoHRujoHgYZk+YSKRx57sVP
+        pTimd3gFGzZexcj6dQysXEXfUA9CewsWay1m6aKGN7t6hLRttJpWGoHi9OkZTpw4wcnjp3jt
+        5cOMHTtO1ky8r6jyZDClAkw2S23mCLXJw5j5SW/2qgQf/9htfP7ez3Ptlt8FgXfvhSXVoZc8
+        COd8LQQmz5mamuKRRx7he9//Hnv27EEpT9R1QhP2rKJ7cB1B+Qpk0O1RmcIhnMXlBme8wYOK
+        Y7pX9DC8ZhUrh/rpW9lPZ2eZnt5OOjtLxJ3dHhyrPFE+M2fepMO2malCgDMJtWrK3FyNRrVJ
+        Y3aOudNzTIxPcWpsnKmpk9QbjYK/KglUhJAOHXggI0lKfeYoc5OvYdJ5TJ5gMk/3vf32rXzu
+        3s/xgQ9cSxRFtDSwZzzct2IQzhctamKe+/m2Xq/zyiuvsEGieqkAAAKISURBVGPHDh59dCfT
+        U9M4qbEOoo4AXe4kjobp6R1BlMq4MMDIkAxFlGUIa2j9srbFavUSfSlVwRINCMOAjrjMGV0i
+        +PWmmSSkaUJqmng4h2gvjNJJFArjJHkQEykIyX1KxCSYZoXZqTFqlZPYvIqzTYxJsJllw5Xv
+        Zdu2bdxzzz2MjIy0Ze4t86RLXa+WNQiLzwBeRGza05XWmtnZCrt372bnDx5h189+xokT46gg
+        AGkxwoALCaIuSt39BB296NIQKuwkiGN0FJEbD8i1hUBa6LzdjSOEQJ6lBnFuMUZTYK1XVEtJ
+        sQmQCOGQzpKlVZJ0krRaIavN0KjOYLIaZE1EnhLKiFqtyabN1/KRj97GZ7Zt470bNniOqdZY
+        a1FKndGscqm4umUNwuLDnZSSNE3btdXWwEgpyY2l3mwyMT7Oozt3sueFvfz08Z9SnZv1F190
+        TSo8qdipACFDZLkfHcREYYkgiDFhJ0oHbSt6Kc92rzKFX5zzC3xaJzdNsqzh3/L6LGmzhjOJ
+        bwXAUx+sNaRZCsJRirrYuvWTbNq8kU996o8YXLmSzq4OnAWldHtzshjZeS4s8Tc4CK2LAM54
+        I8739eKwzpEmCVNTU+zatYv9+/dz4MABnnvuWaanp/0NuqJtSwjCICyUzKZ4GN7xSYhi39/q
+        Q3ML3ZImz/05x/fCtqdMu6ivrbOzixtvvJFNmzaxbt06br/9doaGhtotvxfzUBff59s2CMuJ
+        xcxta60n0QMnTpxg9+7dHDp0iEajQbVaZXp6mvHxcWZmZqhWq1SrVaw15Hnebs2S0iOaoyii
+        s7OT7u5uBgYGuOKKK9qOr8PDw2zZsoWrr77aC6+KNeZ8b/hyaZgXG/8PaxrNvX/yc/sAAAAA
+        SUVORK5CYII=
+      </shape>
+      <shape name='plastic/plastic.png'>
+        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
+        RK5CYII=
+      </shape>
+      <shape name='plastic/trash.png'>
+        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
+        gg==
+      </shape>
+    </shapes>
+  </external>
+</workbook>
