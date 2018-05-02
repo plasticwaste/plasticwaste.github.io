@@ -652,7 +652,7 @@ footer.page-footer {
 
 .brand-logo {
   font-weight: 900;
-  align-items: flex-start;
+  display: inline-block;
 }
 
 .dropdown-content {
