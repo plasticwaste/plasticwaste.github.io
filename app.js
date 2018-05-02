@@ -1,5 +1,6 @@
 'use strict';
-$(function(){
+
+$(function() {
   // Setting up the chart area
   var margin = {
     top: 40,
@@ -26,7 +27,7 @@ $(function(){
 
   // Step 1: edit data.csv to include the data you want to show
   d3.csv('data.csv', function(error, data) {
-    if(error) {
+    if (error) {
       console.log('csv error: ', error);
       return;
     }
@@ -48,7 +49,7 @@ $(function(){
     // Add text label for the x axis
     svg.append("text")
       .attr("transform",
-          "translate(" + (width/2) + " ," + (height + margin.top + 32) + ")")
+        "translate(" + (width / 2) + " ," + (height + margin.top + 32) + ")")
       .attr("x", (width / 8))
       .style("text-anchor", "middle")
       .text("Crude Birth Rate (per 1k)");
@@ -63,7 +64,7 @@ $(function(){
     graphArea.append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 0 - margin.left)
-      .attr("x",0 - (height / 2))
+      .attr("x", 0 - (height / 2))
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .text("Crude Death Rate (per 1k)");
@@ -74,36 +75,46 @@ $(function(){
       .enter().append("circle")
       .attr("class", "dot")
       .attr("r", 3.5)
-      .attr("cx", function(d) { return xScale(d.xValue_2012); })
-      .attr("cy", function(d) { return yScale(d.yValue_2012); })
-      .style("fill", function(d) { return color(d.category); });
+      .attr("cx", function(d) {
+        return xScale(d.xValue_2012);
+      })
+      .attr("cy", function(d) {
+        return yScale(d.yValue_2012);
+      })
+      .style("fill", function(d) {
+        return color(d.category);
+      });
 
     // Text for the title of the plot
     graphArea.append("text")
-      .attr("transform","translate(" + width/2 + ",-10)")
-      .style("text-anchor","middle")
-      .text("Correlation between Birth and Death rate in "+year)
-      .classed("title",true);
+      .attr("transform", "translate(" + width / 2 + ",-10)")
+      .style("text-anchor", "middle")
+      .text("Correlation between Birth and Death rate in " + year)
+      .classed("title", true);
 
     // Add Legend
     var legend = graphArea.selectAll(".legend")
       .data(color.domain())
       .enter().append("g")
       .attr("class", "legend")
-      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+      .attr("transform", function(d, i) {
+        return "translate(0," + i * 20 + ")";
+      });
 
     legend.append("rect")
-        .attr("x", width - 18)
-        .attr("width", 16)
-        .attr("height", 16)
-        .style("fill", color);
+      .attr("x", width - 18)
+      .attr("width", 16)
+      .attr("height", 16)
+      .style("fill", color);
 
     legend.append("text")
-        .attr("x", width - 24)
-        .attr("y", 9)
-        .attr("dy", ".35em")
-        .style("text-anchor", "end")
-        .text(function(d) { return d; });
+      .attr("x", width - 24)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .style("text-anchor", "end")
+      .text(function(d) {
+        return d;
+      });
 
   });
 
@@ -137,10 +148,47 @@ $(function(){
 
     //Update title
     svg.selectAll(".title")
-      .text("Correlation between Birth and Death rate in "+year);
+      .text("Correlation between Birth and Death rate in " + year);
 
   });
 
 });
 
-// Step 5: make some other change to the graph
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {
+            elmnt.innerHTML = this.responseText;
+          }
+          if (this.status == 404) {
+            elmnt.innerHTML = "Page not found.";
+          }
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").slideToggle();
+    });
+    $(".dropdown-trigger").dropdown();
+});

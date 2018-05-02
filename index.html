@@ -15,54 +15,28 @@
   <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
 </head>
 
-<script>
-  function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /*loop through a collection of all HTML elements:*/
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /*make an HTTP request using the attribute value as the file name:*/
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {
-              elmnt.innerHTML = this.responseText;
-            }
-            if (this.status == 404) {
-              elmnt.innerHTML = "Page not found.";
-            }
-            /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
-          }
-        }
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /*exit the function:*/
-        return;
-      }
-    }
-  };
-</script>
+
 
 <body>
-  <!-- navbar -->
-  <nav class="nav">
-    <div class="padded">
-      <ul>
-        <li class="active"><a id="link1" class="nav-section1" href="#section1">S1. Info</a></li>
-        <li><a id="link2" class="nav-section2" href="#section2">Section 2</a></li>
-        <li><a id="link3" class="nav-section3" href="#section3">Section 3</a></li>
-        <li><a id="link4" class="nav-section4" href="#section4">Section 4</a></li>
-        <li><a id="link4" class="nav-section4" href="#section5">Section 5</a></li>
-        <li><a id="link4" class="nav-section4" href="#section6">Section 6</a></li>
-        <li><a id="link4" class="nav-section4" href="#section7">Section 7</a></li>
-        <li><a id="link4" class="nav-section4" href="#section8">Section 8</a></li>
-        <li class="scrollTop"><a href="#"><span class="entypo-up-open"></span></a></li>
+
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a id="link1" class="nav-section1" href="#section1">What</a></li>
+    <li><a id="link2" class="nav-section1" href="#section2">Why</a></li>
+  </ul>
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a id="link3" class="nav-section1" href="#section3">Global</a></li>
+    <li><a id="link4" class="nav-section1" href="#section4">USA</a></li>
+    <li><a id="link5" class="nav-section1" href="#section5">Mismanagement</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="" class="left brand-logo">Plastic Waste</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-trigger" href="" data-target="dropdown1">Pollution<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="" data-target="dropdown2">Production<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a id="link6" class="nav-section1" href="#section6">Where</a></li>
+        <li><a id="link7" class="nav-section1" href="#section7">Plastic Bag</a></li>
+        <li><a id="link8" class="nav-section1" href="#section8">Solution</a></li>
       </ul>
     </div>
   </nav>
@@ -171,10 +145,12 @@
   <!--<script src="js/d3.min.js"></script>-->
 
   <!--Import jQuery-->
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
   <!--Import app javascript-->
   <script src="app.js"></script>
+  <!--<script src="js/materialize.js"></script>-->
+  <script src="js/materialize.min.js"></script>
 
   <!--include HTML-->
   <script>
