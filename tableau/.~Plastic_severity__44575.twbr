@@ -1,0 +1,2457 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0404.1406                               -->
+<workbook source-build='10.5.3 (10500.18.0404.1406)' source-platform='mac' version='10.5' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='OceanDetritus_Twasteproduced' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet2 (Top20countries)' inline='true' name='federated.1amu1yb1736u0m17eifzh0rr09t9' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Top20countries' name='excel-direct.1gjgsr71fkwe2r1abqqib08ntth6'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/var/folders/df/jr0yvkp11293x8_mzs0425gw0000gn/T/tableau-temp/2277700436/Data/Desktop/Top20countries.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1gjgsr71fkwe2r1abqqib08ntth6' name='Sheet2' table='[Sheet2$]' type='table'>
+          <columns gridOrigin='A1:I22:no:A1:I22:0' header='yes' outcome='2'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='string' name='Econ. classification' ordinal='1' />
+            <column datatype='real' name='Coastal pop.(millions)' ordinal='2' />
+            <column datatype='real' name='Waste generated (kg/ppd)' ordinal='3' />
+            <column datatype='integer' name='% plastic waste' ordinal='4' />
+            <column datatype='integer' name='% mismanaged waste' ordinal='5' />
+            <column datatype='real' name='Mismanaged plastic waste(MMT/Year)' ordinal='6' />
+            <column datatype='real' name='% of total mismanaged plastic waste' ordinal='7' />
+            <column datatype='string' name='Plastic marine debris (MMT/year)' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Econ. classification</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Econ. classification]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Econ. classification</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Coastal pop.(millions)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Coastal pop.(millions)]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Coastal pop.(millions)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Waste generated (kg/ppd)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Waste generated (kg/ppd)]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Waste generated (kg/ppd)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% plastic waste</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[% plastic waste]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>% plastic waste</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% mismanaged waste</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[% mismanaged waste]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>% mismanaged waste</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mismanaged plastic waste(MMT/Year)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mismanaged plastic waste(MMT/Year)]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Mismanaged plastic waste(MMT/Year)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% of total mismanaged plastic waste</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% of total mismanaged plastic waste]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>% of total mismanaged plastic waste</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Plastic marine debris (MMT/year)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Plastic marine debris (MMT/year)]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>Plastic marine debris (MMT/year)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I22:no:A1:I22:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='% Mismanaged Waste' datatype='integer' name='[% mismanaged waste]' role='measure' type='quantitative' />
+      <column caption='% Of Total Mismanaged Plastic Waste' datatype='real' name='[% of total mismanaged plastic waste]' role='measure' type='quantitative' />
+      <column caption='% Plastic Waste' datatype='integer' name='[% plastic waste]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Econ. classification]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;HIC&quot;' value='High Income ' />
+          <alias key='&quot;LI&quot;' value='Lower Income' />
+          <alias key='&quot;LMI&quot;' value='Lower Middle Income' />
+          <alias key='&quot;UMI&quot;' value='Upper Middle Income' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[Econ. classification]' derivation='None' name='[none:Econ. classification:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Plastic_severity.twb Files/Sheet2 (Top20countries).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/02/2018 02:14:30 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='21' timestamp-start='2018-05-02 02:14:30.630' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Econ. classification</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Econ. classification]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Econ. classification</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Coastal pop.(millions)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Coastal pop.(millions)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Coastal pop.(millions)</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet2</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Waste generated (kg/ppd)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Waste generated (kg/ppd)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Waste generated (kg/ppd)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet2</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% plastic waste</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[% plastic waste]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% plastic waste</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet2</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% mismanaged waste</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[% mismanaged waste]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% mismanaged waste</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet2</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mismanaged plastic waste(MMT/Year)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Mismanaged plastic waste(MMT/Year)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mismanaged plastic waste(MMT/Year)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet2</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% of total mismanaged plastic waste</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% of total mismanaged plastic waste]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% of total mismanaged plastic waste</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet2</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Plastic marine debris (MMT/year)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Plastic marine debris (MMT/year)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Plastic marine debris (MMT/year)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.333893' measure-ordering='alphabetic' measure-percentage='0.666107' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Econ. classification:nk]' type='palette'>
+            <map to='#18007c'>
+              <bucket>&quot;HIC&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;UMI&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;LI&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LMI&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Rank' />
+        <field-sort-custom-order field='Country' />
+        <field-sort-custom-order field='Econ. classification' />
+        <field-sort-custom-order field='Coastal pop.(millions)' />
+        <field-sort-custom-order field='Waste generated (kg/ppd)' />
+        <field-sort-custom-order field='% plastic waste' />
+        <field-sort-custom-order field='% mismanaged waste' />
+        <field-sort-custom-order field='Mismanaged plastic waste(MMT/Year)' />
+        <field-sort-custom-order field='% of total mismanaged plastic waste' />
+        <field-sort-custom-order field='Plastic marine debris (MMT/year)' />
+        <field-sort-custom-order field='Calculation_1919659402998472704' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+    <mapsource inline='true' name='map-blue-plain' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Standard-copy-copy' name='cjglg7srv001m2rleh4j32q2l' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='map-blue-plain' name='map-blue-plain' wait-tile-color='#dddddd'>
+          <map-layer-style name='Standard-copy-copy' request-string='cjglg7srv001m2rleh4j32q2l' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjglg7srv001m2rleh4j32q2l' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='mapbox example' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Standard' name='cjglamra1000g2srzdz79lmgo' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='mapbox example' name='mapbox example' wait-tile-color='#dddddd'>
+          <map-layer-style name='Standard' request-string='cjglamra1000g2srzdz79lmgo' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjglamra1000g2srzdz79lmgo' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='mapbox2' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='whaam!' name='cjgladrpr001p2sn60toix0lm' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='mapbox2' name='mapbox2' wait-tile-color='#dddddd'>
+          <map-layer-style name='whaam!' request-string='cjgladrpr001p2sn60toix0lm' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgladrpr001p2sn60toix0lm' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='mapboxsimple' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Outdoors' name='cjgldh28m000l2sp3yr2w7dbv' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='mapboxsimple' name='mapboxsimple' wait-tile-color='#dddddd'>
+          <map-layer-style name='Outdoors' request-string='cjgldh28m000l2sp3yr2w7dbv' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgldh28m000l2sp3yr2w7dbv' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='whammMapBpx' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='whaam!' name='cjglafepz00082sryqmmegk37' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='whammMapBpx' name='whammMapBpx' wait-tile-color='#dddddd'>
+          <map-layer-style name='whaam!' request-string='cjglafepz00082sryqmmegk37' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjglafepz00082sryqmmegk37' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='bright' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Bright' name='cjgldmwe8000a2sp4ud0n1u8w' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='bright' name='bright' wait-tile-color='#dddddd'>
+          <map-layer-style name='Bright' request-string='cjgldmwe8000a2sp4ud0n1u8w' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgldmwe8000a2sp4ud0n1u8w' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='no label' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Bright' name='cjgldmwe8000a2sp4ud0n1u8w' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='no label' name='no label' wait-tile-color='#dddddd'>
+          <map-layer-style name='Bright' request-string='cjgldmwe8000a2sp4ud0n1u8w' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgldmwe8000a2sp4ud0n1u8w' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='no label-1' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Standard-copy' name='cjgldve7b001r2sn6dczxq35k' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='no label-1' name='no label-1' wait-tile-color='#dddddd'>
+          <map-layer-style name='Standard-copy' request-string='cjgldve7b001r2sn6dczxq35k' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgldve7b001r2sn6dczxq35k' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='map-nolabelsubtle' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Standard' name='cjglamra1000g2srzdz79lmgo' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='map-nolabelsubtle' name='map-nolabelsubtle' wait-tile-color='#dddddd'>
+          <map-layer-style name='Standard' request-string='cjglamra1000g2srzdz79lmgo' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjglamra1000g2srzdz79lmgo' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='map blue' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Scenic' name='cjgn7g6z8000f2snwpreezjqz' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='map blue' name='map blue' wait-tile-color='#dddddd'>
+          <map-layer-style name='Scenic' request-string='cjgn7g6z8000f2snwpreezjqz' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgn7g6z8000f2snwpreezjqz' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='map-no bpundary' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Scenic-copy' name='cjgn7l2gr00012snbx51tslm6' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='map-no bpundary' name='map-no bpundary' wait-tile-color='#dddddd'>
+          <map-layer-style name='Scenic-copy' request-string='cjgn7l2gr00012snbx51tslm6' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgn7l2gr00012snbx51tslm6' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+    <mapsource inline='true' name='map-bright' source-platform='mac' version='10.5'>
+      <connection api-key='pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' class='MapBox' description='' full-url='https://api.mapbox.com/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='/styles/v1/anupandey/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=pk.eyJ1IjoiYW51cGFuZGV5IiwiYSI6ImNqZ2w5eWdvZTFvZXIzM2w0anNqaHY3aHEifQ.9_OJkuyLpRp_GtbAqJ0LLQ' username='anupandey' wait-tile-color='#dddddd' />
+      <languages />
+      <layers>
+        <layer display-name='Bright' name='cjgldmwe8000a2sp4ud0n1u8w' show-ui='true' type='features' />
+      </layers>
+      <properties />
+      <map-styles>
+        <map-style display-name='map-bright' name='map-bright' wait-tile-color='#dddddd'>
+          <map-layer-style name='Bright' request-string='cjgldmwe8000a2sp4ud0n1u8w' />
+        </map-style>
+      </map-styles>
+      <mapsource-defaults version='10.5'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='cjgldmwe8000a2sp4ud0n1u8w' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+      <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+    </mapsource>
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Econ. classification' />
+        <param name='target' value='Sheet 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='18'>OCEAN DETRITUS | </run>
+            <run fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='18'>Countries polluting oceans the most with their</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='18'>mismanaged</run>
+            <run fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='18'>Æ </run>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='18'>plastic waste</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet2 (Top20countries)' name='federated.1amu1yb1736u0m17eifzh0rr09t9' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1amu1yb1736u0m17eifzh0rr09t9'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Econ. classification]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;HIC&quot;' value='High Income ' />
+                <alias key='&quot;LI&quot;' value='Lower Income' />
+                <alias key='&quot;LMI&quot;' value='Lower Middle Income' />
+                <alias key='&quot;UMI&quot;' value='Upper Middle Income' />
+              </aliases>
+            </column>
+            <column datatype='real' name='[Mismanaged plastic waste(MMT/Year)]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Econ. classification]' derivation='None' name='[none:Econ. classification:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mismanaged plastic waste(MMT/Year)]' derivation='Sum' name='[sum:Mismanaged plastic waste(MMT/Year):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Econ. classification:nk]' />
+              <groupfilter function='member' level='[none:Econ. classification:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;HIC&quot;</bucket>
+              <bucket>&quot;UMI&quot;</bucket>
+              <bucket>&quot;LMI&quot;</bucket>
+              <bucket>&quot;LI&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]' field-type='quantitative' max='8.8200000000000003' max-size='1' min='0.28000000000000003' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='border-width' value='2' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#f2f6f7' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]' value='Origin by country of mismanaged plastic waste &#10;in 2010 (million metric tonnes)&#10;' />
+            <format attr='color' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' value='Econ. classification' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_12' value='#00000000' />
+            <format attr='stroke-color' id='annotation_12' value='#000000' />
+            <format attr='body-type' id='annotation_13' value='none' />
+            <format attr='stroke-color' id='annotation_13' value='#000000' />
+            <format attr='fill-color' id='annotation_14' value='#00000000' />
+            <format attr='stroke-color' id='annotation_14' value='#000000' />
+            <format attr='fill-color' id='annotation_15' value='#00000000' />
+            <format attr='stroke-color' id='annotation_15' value='#000000' />
+            <format attr='fill-color' id='annotation_16' value='#00000000' />
+            <format attr='stroke-color' id='annotation_16' value='#000000' />
+            <format attr='fill-color' id='annotation_19' value='#00000000' />
+            <format attr='stroke-color' id='annotation_19' value='#000000' />
+            <format attr='fill-color' id='annotation_20' value='#00000000' />
+            <format attr='stroke-color' id='annotation_20' value='#000000' />
+            <format attr='fill-color' id='annotation_21' value='#00000000' />
+            <format attr='stroke-color' id='annotation_21' value='#000000' />
+            <format attr='line-end' id='annotation_21' value='arrow' />
+            <format attr='line-end' id='annotation_15' value='arrow' />
+            <format attr='line-end' id='annotation_14' value='arrow' />
+            <format attr='line-end' id='annotation_20' value='arrow' />
+            <format attr='line-end' id='annotation_13' value='arrow' />
+            <format attr='line-end' id='annotation_19' value='arrow' />
+            <format attr='line-end' id='annotation_16' value='arrow' />
+            <format attr='line-end' id='annotation_12' value='arrow' />
+            <format attr='fill-color' id='annotation_22' value='#00000000' />
+            <format attr='stroke-color' id='annotation_22' value='#000000' />
+            <format attr='line-end' id='annotation_22' value='arrow' />
+            <format attr='line-end-size' id='annotation_20' value='large' />
+            <format attr='fill-color' id='annotation_23' value='#00000000' />
+            <format attr='stroke-color' id='annotation_23' value='#000000' />
+            <format attr='line-end' id='annotation_23' value='arrow' />
+            <format attr='stroke-color' id='annotation_24' value='#000000' />
+            <format attr='line-end' id='annotation_24' value='arrow' />
+            <format attr='fill-color' id='annotation_24' value='#00000000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.019999999552965164' />
+            <format attr='map-style' value='' />
+            <format attr='wrap' value='false' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+          </style-rule>
+          <style-rule element='data-highlighter'>
+            <format attr='border-color' value='#499894' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='data-highlighter-title'>
+            <format attr='title' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' value='Highlight Country' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' />
+              <size column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' />
+              <lod column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#4e79a7'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#4e79a7'>Mismanaged plastic waste:</run>
+                <run bold='true' fontalignment='1' fontcolor='#4e79a7'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+                <run fontalignment='1' fontcolor='#4e79a7'>(MMT/Year)</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#333333' fontsize='10'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#333333' fontsize='10'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt; MMT/Year</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='wrap' value='on' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='3.2510809898376465' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='has-halo' value='false' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#1b1b1b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</rows>
+        <cols>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</cols>
+        <mark-labels>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Philippines&quot;</value>
+                <value>&quot;LMI&quot;</value>
+                <value>1.8799999999999999</value>
+                <value>17.181000000000001</value>
+                <value>121.256</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-1172' y='21' />
+          </mark-label>
+          <mark-label id='4'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;China&quot;</value>
+                <value>&quot;UMI&quot;</value>
+                <value>8.8200000000000003</value>
+                <value>35.1753</value>
+                <value>99.387699999999995</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-1220' y='28' />
+          </mark-label>
+        </mark-labels>
+        <annotations>
+          <annotation class='point' id='12' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>8.8200000000000003</value>
+                    <value>35.1753</value>
+                    <value>99.387699999999995</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='40' y='-102' />
+          </annotation>
+          <annotation class='point' id='13' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Sri Lanka&quot;</value>
+                    <value>1.5900000000000001</value>
+                    <value>7.2999999999999998</value>
+                    <value>80.727000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-21' y='68' />
+          </annotation>
+          <annotation class='point' id='14' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Indonesia&quot;</value>
+                    <value>3.2200000000000002</value>
+                    <value>-0.73899999999999999</value>
+                    <value>114.045</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-17' y='77' />
+          </annotation>
+          <annotation class='point' id='15' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Egypt&quot;</value>
+                    <value>0.96999999999999997</value>
+                    <value>26.16</value>
+                    <value>28.742000000000001</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='62' y='60' />
+          </annotation>
+          <annotation class='point' id='16' mark-position='1' pullback='12' text-width='64'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Nigeria&quot;</value>
+                    <value>0.84999999999999998</value>
+                    <value>9.3416999999999994</value>
+                    <value>7.6779999999999999</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-39' y='42' />
+          </annotation>
+          <annotation class='point' id='19' mark-position='1' pullback='12' text-width='64'>
+            <formatted-text>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;India&quot;</value>
+                    <value>0.59999999999999998</value>
+                    <value>22.741</value>
+                    <value>78.236000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='10' y='-74' />
+          </annotation>
+          <annotation class='point' id='20' mark-position='1' pullback='12' text-width='77'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Vietnam&quot;</value>
+                    <value>1.8300000000000001</value>
+                    <value>21.75</value>
+                    <value>105.373</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='117' y='92' />
+          </annotation>
+          <annotation class='point' id='21' mark-position='1' pullback='12' text-width='103'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Philippines&quot;</value>
+                    <value>1.8799999999999999</value>
+                    <value>17.181000000000001</value>
+                    <value>121.256</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='27' y='-45' />
+          </annotation>
+          <annotation class='point' id='22' mark-position='1' pullback='12' text-width='132'>
+            <formatted-text>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;North Korea&quot;</value>
+                    <value>0.29999999999999999</value>
+                    <value>39.767000000000003</value>
+                    <value>126.389</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='19' y='-49' />
+          </annotation>
+          <annotation class='point' id='23' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000'> &lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000'> &lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;MMT/Year</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Indonesia&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>3.2200000000000002</value>
+                    <value>-0.73899999999999999</value>
+                    <value>114.045</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-26' y='79' />
+          </annotation>
+          <annotation class='point' id='24' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>(</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]&gt;MMT/Year</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Sri Lanka&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>1.5900000000000001</value>
+                    <value>7.2999999999999998</value>
+                    <value>80.727000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-47' y='77' />
+          </annotation>
+        </annotations>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2(a)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='18'>OCEAN DETRITUS | </run>
+            <run fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='18'>Top </run>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='18'>20</run>
+            <run fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='18'> sources of mismanaged </run>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Verdana' fontsize='18'>Plastic waste</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet2 (Top20countries)' name='federated.1amu1yb1736u0m17eifzh0rr09t9' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1amu1yb1736u0m17eifzh0rr09t9'>
+            <column caption='% Mismanaged Waste' datatype='integer' name='[% mismanaged waste]' role='measure' type='quantitative' />
+            <column caption='% Of Total Mismanaged Plastic Waste' datatype='real' name='[% of total mismanaged plastic waste]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Econ. classification]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;HIC&quot;' value='High Income ' />
+                <alias key='&quot;LI&quot;' value='Lower Income' />
+                <alias key='&quot;LMI&quot;' value='Lower Middle Income' />
+                <alias key='&quot;UMI&quot;' value='Upper Middle Income' />
+              </aliases>
+            </column>
+            <column datatype='real' name='[Mismanaged plastic waste(MMT/Year)]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Econ. classification]' derivation='None' name='[none:Econ. classification:nk]' pivot='key' type='nominal' />
+            <column-instance column='[% mismanaged waste]' derivation='Sum' name='[sum:% mismanaged waste:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[% of total mismanaged plastic waste]' derivation='Sum' name='[sum:% of total mismanaged plastic waste:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mismanaged plastic waste(MMT/Year)]' derivation='Sum' name='[sum:Mismanaged plastic waste(MMT/Year):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Econ. classification:nk]' />
+              <groupfilter function='member' level='[none:Econ. classification:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;HIC&quot;</bucket>
+              <bucket>&quot;UMI&quot;</bucket>
+              <bucket>&quot;LMI&quot;</bucket>
+              <bucket>&quot;LI&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]' field-type='quantitative' max-size='1' min-size='0' type='rangesize' />
+            <encoding attr='size' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='border-width' value='2' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#f7f7f0' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' value='Econ. classification' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_12' value='#00000000' />
+            <format attr='stroke-color' id='annotation_12' value='#000000' />
+            <format attr='body-type' id='annotation_13' value='none' />
+            <format attr='stroke-color' id='annotation_13' value='#000000' />
+            <format attr='fill-color' id='annotation_14' value='#00000000' />
+            <format attr='stroke-color' id='annotation_14' value='#000000' />
+            <format attr='fill-color' id='annotation_15' value='#00000000' />
+            <format attr='stroke-color' id='annotation_15' value='#000000' />
+            <format attr='fill-color' id='annotation_16' value='#00000000' />
+            <format attr='stroke-color' id='annotation_16' value='#000000' />
+            <format attr='fill-color' id='annotation_19' value='#00000000' />
+            <format attr='stroke-color' id='annotation_19' value='#000000' />
+            <format attr='fill-color' id='annotation_20' value='#00000000' />
+            <format attr='stroke-color' id='annotation_20' value='#000000' />
+            <format attr='fill-color' id='annotation_21' value='#00000000' />
+            <format attr='stroke-color' id='annotation_21' value='#000000' />
+            <format attr='line-end' id='annotation_21' value='arrow' />
+            <format attr='line-end' id='annotation_15' value='arrow' />
+            <format attr='line-end' id='annotation_14' value='arrow' />
+            <format attr='line-end' id='annotation_20' value='arrow' />
+            <format attr='line-end' id='annotation_13' value='arrow' />
+            <format attr='line-end' id='annotation_19' value='arrow' />
+            <format attr='line-end' id='annotation_16' value='arrow' />
+            <format attr='line-end' id='annotation_12' value='arrow' />
+            <format attr='fill-color' id='annotation_23' value='#00000000' />
+            <format attr='line-end' id='annotation_23' value='arrow' />
+            <format attr='stroke-color' id='annotation_23' value='#000000' />
+            <format attr='fill-color' id='annotation_25' value='#00000000' />
+            <format attr='stroke-color' id='annotation_25' value='#000000' />
+            <format attr='line-end' id='annotation_25' value='arrow' />
+            <format attr='line-end-size' id='annotation_25' value='large' />
+            <format attr='line-end' id='annotation_26' value='arrow' />
+            <format attr='line-end-size' id='annotation_26' value='large' />
+            <format attr='stroke-color' id='annotation_26' value='#000000' />
+            <format attr='fill-color' id='annotation_26' value='#00000000' />
+            <format attr='fill-color' id='annotation_27' value='#00000000' />
+            <format attr='stroke-color' id='annotation_27' value='#000000' />
+            <format attr='line-end' id='annotation_27' value='arrow' />
+            <format attr='stroke-color' id='annotation_29' value='#000000' />
+            <format attr='line-end' id='annotation_29' value='arrow' />
+            <format attr='fill-color' id='annotation_29' value='#00000000' />
+            <format attr='fill-color' id='annotation_30' value='#00000000' />
+            <format attr='stroke-color' id='annotation_30' value='#000000' />
+            <format attr='line-end' id='annotation_30' value='arrow' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='tableau-light-gray' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+          </style-rule>
+          <style-rule element='data-highlighter'>
+            <format attr='border-color' value='#499894' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='data-highlighter-title'>
+            <format attr='title' field='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' value='Highlight Country' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' />
+              <size column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]' />
+              <tooltip column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' />
+              <text column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]' />
+              <lod column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' />
+              <lod column='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontalignment='1'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+                <run fontalignment='1'>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#333333' fontsize='10'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#333333' fontsize='10'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#333333' fontsize='10'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='wrap' value='on' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2.0863175392150879' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-color' value='#f9001e' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#1b1b1b' />
+                <format attr='has-halo' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</rows>
+        <cols>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;North Korea&quot;</value>
+                <value>&quot;LI&quot;</value>
+                <value>90</value>
+                <value>39.767000000000003</value>
+                <value>126.389</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-1187' y='38' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;United States&quot;</value>
+                <value>&quot;HIC&quot;</value>
+                <value>2</value>
+                <value>0.90000000000000002</value>
+                <value>40.0792</value>
+                <value>-98.816400000000002</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.666667' y='-41' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Brazil&quot;</value>
+                <value>&quot;UMI&quot;</value>
+                <value>11</value>
+                <value>1.5</value>
+                <value>-11.694000000000001</value>
+                <value>-48.978000000000002</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.2' y='39' />
+          </mark-label>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                  <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Morocco&quot;</value>
+                <value>&quot;LMI&quot;</value>
+                <value>68</value>
+                <value>1.0</value>
+                <value>31.129000000000001</value>
+                <value>-7.3550000000000004</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-28' y='29' />
+          </mark-label>
+        </mark-labels>
+        <annotations>
+          <annotation class='point' id='12' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;China&quot;</value>
+                    <value>8.8200000000000003</value>
+                    <value>35.1753</value>
+                    <value>99.387699999999995</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='40' y='-102' />
+          </annotation>
+          <annotation class='point' id='13' mark-position='1' pullback='12' text-width='92'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Sri Lanka&quot;</value>
+                    <value>1.5900000000000001</value>
+                    <value>7.2999999999999998</value>
+                    <value>80.727000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-69' y='68' />
+          </annotation>
+          <annotation class='point' id='14' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Indonesia&quot;</value>
+                    <value>3.2200000000000002</value>
+                    <value>-0.73899999999999999</value>
+                    <value>114.045</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-17' y='77' />
+          </annotation>
+          <annotation class='point' id='15' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Egypt&quot;</value>
+                    <value>0.96999999999999997</value>
+                    <value>26.16</value>
+                    <value>28.742000000000001</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='62' y='60' />
+          </annotation>
+          <annotation class='point' id='16' mark-position='1' pullback='12' text-width='103'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Nigeria&quot;</value>
+                    <value>0.84999999999999998</value>
+                    <value>9.3416999999999994</value>
+                    <value>7.6779999999999999</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-58' y='42' />
+          </annotation>
+          <annotation class='point' id='19' mark-position='1' pullback='12' text-width='73'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;India&quot;</value>
+                    <value>0.59999999999999998</value>
+                    <value>22.741</value>
+                    <value>78.236000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='8' y='-144' />
+          </annotation>
+          <annotation class='point' id='20' mark-position='1' pullback='12' text-width='91'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Vietnam&quot;</value>
+                    <value>1.8300000000000001</value>
+                    <value>21.75</value>
+                    <value>105.373</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='120' y='89' />
+          </annotation>
+          <annotation class='point' id='21' mark-position='1' pullback='12' text-width='109'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='11'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]&gt; %</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Philippines&quot;</value>
+                    <value>1.8799999999999999</value>
+                    <value>17.181000000000001</value>
+                    <value>121.256</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='88' y='-24' />
+          </annotation>
+          <annotation class='point' id='23' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Sri Lanka&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>84</value>
+                    <value>7.2999999999999998</value>
+                    <value>80.727000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-26' y='159' />
+          </annotation>
+          <annotation class='point' id='25' mark-position='1' pullback='12' text-width='141'>
+            <formatted-text>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Egypt&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>69</value>
+                    <value>26.16</value>
+                    <value>28.742000000000001</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='28' y='64' />
+          </annotation>
+          <annotation class='point' id='26' mark-position='1' pullback='12' text-width='166'>
+            <formatted-text>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Nigeria&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>83</value>
+                    <value>9.3416999999999994</value>
+                    <value>7.6779999999999999</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-131' y='190' />
+          </annotation>
+          <annotation class='point' id='27' mark-position='1' pullback='12' text-width='132'>
+            <formatted-text>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Indonesia&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>83</value>
+                    <value>-0.73899999999999999</value>
+                    <value>114.045</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='4' y='97' />
+          </annotation>
+          <annotation class='point' id='29' mark-position='1' pullback='12' text-width='103'>
+            <formatted-text>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;% </run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;India&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>87</value>
+                    <value>22.741</value>
+                    <value>78.236000000000004</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-38' y='111' />
+          </annotation>
+          <annotation class='point' id='30' mark-position='1' pullback='12' text-width='108'>
+            <formatted-text>
+              <run fontcolor='#787878'>Æ </run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>(&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]&gt;)</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>&lt;[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% mismanaged waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Latitude (generated)]</field>
+                      <field>[federated.1amu1yb1736u0m17eifzh0rr09t9].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Philippines&quot;</value>
+                    <value>&quot;LMI&quot;</value>
+                    <value>83</value>
+                    <value>5.9000000000000004</value>
+                    <value>17.181000000000001</value>
+                    <value>121.256</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='36' y='52' />
+          </annotation>
+        </annotations>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='11' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='8' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='98000' id='5' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='98000' id='3' type='layout-basic' w='98400' x='800' y='1000'>
+                  <zone h='98000' id='1' name='Sheet 1' w='98400' x='800' y='1000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='18500' id='6' name='Sheet 1' pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]' type='size' w='29300' x='1200' y='75500'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+        <zone h='4000' id='9' name='Sheet 1' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' show-title='false' type='highlighter' w='13700' x='85200' y='10375'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='5250' id='12' type='text' w='95200' x='1400' y='93250'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='8'>Source: </run>
+            <run fontcolor='#000000' fontname='Tableau Medium' fontsize='8'>Jambeck et al, Science Feb 2015, UNEP, NCEAS . Retrieved from </run>
+            <run auto-url='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='8' hyperlink='tabdoc:load-url url=&amp;quot;http://science.sciencemag.org/content/347/6223/768&amp;quot;'>http://science.sciencemag.org/content/347/6223/768</run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='12' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='9' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='98000' id='5' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='98000' id='3' type='layout-basic' w='98400' x='800' y='1000'>
+                  <zone h='98000' id='1' name='Sheet 2(a)' w='98400' x='800' y='1000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='13750' id='7' leg-item-order='normal' name='Sheet 2(a)' pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' type='color' w='14400' x='84200' y='9875'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+        <zone h='18750' id='6' name='Sheet 2(a)' pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]' type='size' w='13800' x='1700' y='73625'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+        <zone fixed-size='160' h='6000' id='8' is-fixed='true' layout-strategy-id='distribute-evenly' param='vert' type='layout-flow' w='92000' x='1700' y='91125'>
+          <zone forceUpdate='true' h='6000' id='10' type='text' w='92000' x='1700' y='91125'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='8'>Source: </run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='8'>Jambeck et al, Science Feb 2015, UNEP, NCEAS . Retrieved from </run>
+              <run auto-url='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='8' hyperlink='tabdoc:load-url url=&amp;quot;http://science.sciencemag.org/content/347/6223/768&amp;quot;'>http://science.sciencemag.org/content/347/6223/768</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='4250' id='13' name='Sheet 2(a)' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Country:nk]' show-title='false' type='highlighter' w='16000' x='3300' y='11750'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:Mismanaged plastic waste(MMT/Year):qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2(a)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='137'>
+            <card pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[none:Econ. classification:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1amu1yb1736u0m17eifzh0rr09t9].[sum:% of total mismanaged plastic waste:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='4' />
+        </viewpoint>
+      </viewpoints>
+      <active id='1' />
+      <device-preview visible='true' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 2(a)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+  </windows>
+</workbook>
