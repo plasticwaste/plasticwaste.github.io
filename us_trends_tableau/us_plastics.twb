@@ -1,0 +1,797 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.17.1226.1925                               -->
+<workbook original-version='10.5' source-build='10.5.0 (10500.17.1226.1925)' source-platform='mac' version='10.5' xml:base='https://us-west-2b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='USPlastics' path='/t/jontableauonline/workbooks' revision='1.0' site='jontableauonline' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (U.S. Plastics Transpose)' inline='true' name='federated.0fxnb901ggqk8b1fd063g0bumjri' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='U.S. Plastics Transpose' name='excel-direct.1bq6cy51qycwwm12gb7ln0esbewd'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/jonathangillick/Downloads/U.S. Plastics Transpose.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1bq6cy51qycwwm12gb7ln0esbewd' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:L12:no:A1:L12:0' header='yes' lost='0' outcome='2' processed='132'>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='integer' name='Plastic Generated' ordinal='1' />
+            <column datatype='integer' name='Plastic Recycled' ordinal='2' />
+            <column datatype='integer' name='Plastic Combusted' ordinal='3' />
+            <column datatype='integer' name='Plastic Landfilled' ordinal='4' />
+            <column datatype='integer' name='Plastic Bags and Cups Generated' ordinal='5' />
+            <column datatype='integer' name='Products – Containers and Packaging – Plastics Packaging – PET Bottles and Jars' ordinal='6' />
+            <column datatype='integer' name='Products – Containers and Packaging – Plastics Packaging – HDPE Natural Bottles' ordinal='7' />
+            <column datatype='integer' name='Products – Containers and Packaging – Plastics Packaging – Other Containers' ordinal='8' />
+            <column datatype='integer' name='Products – Containers and Packaging – Plastics Packaging – Bags, Sacks, and Wraps -- Subtotal' ordinal='9' />
+            <column datatype='integer' name='Products – Containers and Packaging – Plastics Packaging – Other Plastics Packaging' ordinal='10' />
+            <column datatype='integer' name='Products – Containers and Packaging – Plastics Packaging -- Total' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Plastic Generated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Plastic Generated]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Plastic Generated</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Plastic Recycled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Plastic Recycled]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Plastic Recycled</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Plastic Combusted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Plastic Combusted]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Plastic Combusted</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Plastic Landfilled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Plastic Landfilled]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Plastic Landfilled</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Plastic Bags and Cups Generated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Plastic Bags and Cups Generated]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Plastic Bags and Cups Generated</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Products – Containers and Packaging – Plastics Packaging – PET Bottles and Jars</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Products – Containers and Packaging – Plastics Packaging – PET Bottles and Jars]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Products – Containers and Packaging – Plastics Packaging – PET Bottles and Jars</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Products – Containers and Packaging – Plastics Packaging – HDPE Natural Bottles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Products – Containers and Packaging – Plastics Packaging – HDPE Natural Bottles]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Products – Containers and Packaging – Plastics Packaging – HDPE Natural Bottles</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Products – Containers and Packaging – Plastics Packaging – Other Containers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Products – Containers and Packaging – Plastics Packaging – Other Containers]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Products – Containers and Packaging – Plastics Packaging – Other Containers</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Products – Containers and Packaging – Plastics Packaging – Bags, Sacks, and Wraps -- Subtotal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Products – Containers and Packaging – Plastics Packaging – Bags, Sacks, and Wraps -- Subtotal]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Products – Containers and Packaging – Plastics Packaging – Bags, Sacks, and Wraps -- Subtotal</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Products – Containers and Packaging – Plastics Packaging – Other Plastics Packaging</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Products – Containers and Packaging – Plastics Packaging – Other Plastics Packaging]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Products – Containers and Packaging – Plastics Packaging – Other Plastics Packaging</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Products – Containers and Packaging – Plastics Packaging -- Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Products – Containers and Packaging – Plastics Packaging -- Total]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Products – Containers and Packaging – Plastics Packaging -- Total</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L12:no:A1:L12:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Plastic Bags and Cups Generated]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Plastic Combusted]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Plastic Generated]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Plastic Landfilled]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Plastic Recycled]' role='measure' type='quantitative' />
+      <column-instance column='[Plastic Bags and Cups Generated]' derivation='Sum' name='[sum:Plastic Bags and Cups Generated:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Plastic Combusted]' derivation='Sum' name='[sum:Plastic Combusted:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Plastic Generated]' derivation='Sum' name='[sum:Plastic Generated:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Plastic Landfilled]' derivation='Sum' name='[sum:Plastic Landfilled:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Plastic Recycled]' derivation='Sum' name='[sum:Plastic Recycled:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/jonathangillick/Documents/My Tableau Repository/Datasources/Sheet1 (U.S. Plastics Transpose).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/02/2018 04:25:22 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='11' timestamp-start='2018-05-02 04:25:22.885' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Plastic Generated</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Plastic Generated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Plastic Generated</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Plastic Recycled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Plastic Recycled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Plastic Recycled</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Plastic Combusted</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Plastic Combusted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Plastic Combusted</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Plastic Landfilled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Plastic Landfilled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Plastic Landfilled</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Plastic Bags and Cups Generated</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Plastic Bags and Cups Generated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Plastic Bags and Cups Generated</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Products – Containers and Packaging – Plastics Packaging – PET Bottles and Jars</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Products – Containers and Packaging – Plastics Packaging – PET Bottles and Jars]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Products – Containers and Packaging – Plastics Packaging – PET Bottles and Jars</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Products – Containers and Packaging – Plastics Packaging – HDPE Natural Bottles</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Products – Containers and Packaging – Plastics Packaging – HDPE Natural Bottles]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Products – Containers and Packaging – Plastics Packaging – HDPE Natural Bottles</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Products – Containers and Packaging – Plastics Packaging – Other Containers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Products – Containers and Packaging – Plastics Packaging – Other Containers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Products – Containers and Packaging – Plastics Packaging – Other Containers</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Products – Containers and Packaging – Plastics Packaging – Bags, Sacks, and Wraps -- Subtotal</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Products – Containers and Packaging – Plastics Packaging – Bags, Sacks, and Wraps -- Subtotal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Products – Containers and Packaging – Plastics Packaging – Bags, Sacks, and Wraps -- Subtotal</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Products – Containers and Packaging – Plastics Packaging – Other Plastics Packaging</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Products – Containers and Packaging – Plastics Packaging – Other Plastics Packaging]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Products – Containers and Packaging – Plastics Packaging – Other Plastics Packaging</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Products – Containers and Packaging – Plastics Packaging -- Total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Products – Containers and Packaging – Plastics Packaging -- Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Products – Containers and Packaging – Plastics Packaging -- Total</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.304569' measure-ordering='alphabetic' measure-percentage='0.695431' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Recycled:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Generated:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Landfilled:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Bags and Cups Generated:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Combusted:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Tons of Plastic in the U.S. - 1960-2010&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (U.S. Plastics Transpose)' name='federated.0fxnb901ggqk8b1fd063g0bumjri' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fxnb901ggqk8b1fd063g0bumjri'>
+            <column datatype='string' name='[F1]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Plastic Combusted]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Plastic Generated]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Plastic Landfilled]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Plastic Recycled]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Plastic Combusted]' derivation='Sum' name='[sum:Plastic Combusted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Plastic Generated]' derivation='Sum' name='[sum:Plastic Generated:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Plastic Landfilled]' derivation='Sum' name='[sum:Plastic Landfilled:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Plastic Recycled]' derivation='Sum' name='[sum:Plastic Recycled:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fxnb901ggqk8b1fd063g0bumjri].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Recycled:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Combusted:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Landfilled:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Generated:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.0fxnb901ggqk8b1fd063g0bumjri].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Recycled:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Combusted:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Landfilled:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0fxnb901ggqk8b1fd063g0bumjri].[sum:Plastic Generated:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <filter class='categorical' column='[federated.0fxnb901ggqk8b1fd063g0bumjri].[none:F1:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:F1:nk]' />
+              <groupfilter function='member' level='[none:F1:nk]' member='&quot;2012&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0fxnb901ggqk8b1fd063g0bumjri].[none:F1:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:F1:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:F1:nk]' member='&quot;2011&quot;' />
+                <groupfilter function='member' level='[none:F1:nk]' member='&quot;2013&quot;' />
+                <groupfilter function='member' level='[none:F1:nk]' member='&quot;2014&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fxnb901ggqk8b1fd063g0bumjri].[:Measure Names]</column>
+            <column>[federated.0fxnb901ggqk8b1fd063g0bumjri].[none:F1:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0fxnb901ggqk8b1fd063g0bumjri].[Multiple Values]' scope='rows' value='Tons' />
+            <format attr='subtitle' class='0' field='[federated.0fxnb901ggqk8b1fd063g0bumjri].[Multiple Values]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.0fxnb901ggqk8b1fd063g0bumjri].[Multiple Values]' scope='rows' value='true' />
+            <format attr='height' field='[federated.0fxnb901ggqk8b1fd063g0bumjri].[:Measure Names]' value='10' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='1' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0fxnb901ggqk8b1fd063g0bumjri].[:Measure Names]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fxnb901ggqk8b1fd063g0bumjri].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>&lt;[federated.0fxnb901ggqk8b1fd063g0bumjri].[:Measure Names]&gt;:&#9;</run>
+                <run bold='true'>&lt;[federated.0fxnb901ggqk8b1fd063g0bumjri].[Multiple Values]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='558' />
+                <format attr='maxheight' value='558' />
+                <format attr='minwidth' value='80' />
+                <format attr='maxwidth' value='80' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fxnb901ggqk8b1fd063g0bumjri].[Multiple Values]</rows>
+        <cols>([federated.0fxnb901ggqk8b1fd063g0bumjri].[none:F1:nk] / [federated.0fxnb901ggqk8b1fd063g0bumjri].[:Measure Names])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='204'>
+            <card pane-specification-id='0' param='[federated.0fxnb901ggqk8b1fd063g0bumjri].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <fields>
+                  <field>[federated.0fxnb901ggqk8b1fd063g0bumjri].[none:F1:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>&quot;2014&quot;</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fxnb901ggqk8b1fd063g0bumjri].[none:F1:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      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
+      52/mzOW+X93Xf9+u9l5OKy+lvLKKstISTFCgun4m2dat5AJDb/MOSmqOIbavRGMMYRgCEIYh
+      QRDg+34U5R9146kf3/cxxoyLXqDvz5+O9m0TBMGgxoVhGPlcC4JwUOPCIOyvKTzCfqLcNsaY
+      gcfAQTUZBrGM6duOUfZjgiCaAIjF42DyB913/PwGvl7/Ga9u2UDZsQu45sIzwfGYfWwlX23d
+      TefXn7LwhIV88MlX3xR8yJM/mI0xVhhjxk0/462XA/9/NDrS2qLcPoNdjzlg7GArG73b5pDn
+      d5DlRd6PMdEEwHesmUUnn8UJjoMxF/K//vUXwJkALFy8mKdeeY8g082159b2B4DjOMRifeWG
+      YYjneePmz1C6rkssFhsX/TiOg+u646IXgFgsRhiGo7qf/a+LgbiuG/lc82PeoMZ53jdzxvMG
+      u4yH60a7bRzHGXgMzkE1DWoZp287RvnaMa4bTQA0bd/MjqZdtOzdw/vvvsOshtm89pfnmDF3
+      Ppn2RpKVk/rHlk2YSqZ5NdWzTyPhDvzEiYjI0EQSAIlUitKySi676gocY0gmS7jksuVs2LiZ
+      RO0MVp43H8eF7y+9AMeNseK6W0iUVuPEYyw759QoShQRsU4kATCxdgoTa6cccm+axUsmHHRP
+      Xd1kAGrqvhk7ZZJ+dE5E5GjQF8FERCylABARsZQCQETEUgoAERFLKQBERCylABARsZQCQETE
+      UgoAERFLFem3gETku4T5PJm1awccF6ubRLJhdgQVyXimABAZRUxPD3v+x78MOK70/PMVADJs
+      OgUkImIpBYCIiKUUACIillIAiIhYSgEgImIpBYCIiKUUACIillIAiIhYSgEgImIpBYCIiKUU
+      ACIillIAiIhYSgEgImIpBYCIiKUUACIillIAiIhYSgEgImIpBYCIiKUUACIillIAiIhYSgEg
+      ImIpBYCIiKUUACIillIAiIhYSgEgImIpBYCIiKUUACIillIAiIhYSgEgImIpBYCIiKUUACIi
+      llIAiIhYSgEgImIpBYCIiKUUACIillIAiIhYSgEgImKpyAIgn+3lq682EJq+234+yztvvc6b
+      73xAwQ8xJuTr9Z/T0Z3pX6a5aTtbd+yOqkQREatEEgDNm7/i17+9h0cefZK8ATC8+MRqOgoJ
+      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
+      rkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
