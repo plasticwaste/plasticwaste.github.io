@@ -25,14 +25,37 @@
       of the plastic waste generated on land. The plastic that finds its way into the ocean is mostly mismanaged. It consists of small particles hidden just below the surface of the water that circulates and concentrates in the ocean gyres, large circular
       systems of ocean currents</p>
 
-
-
     </br>
-  </div>
 
-  <div "class="center " id="container "></div>
 
-    <script type="text/javascript ">
+
+
+  <head>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/sankey.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+    <style>
+      #container {
+        min-width: 1000px;
+        max-width: 1000px;
+        height: 800px;
+        margin: 1em auto;
+      }
+
+      #csv {
+        display: none;
+      }
+
+
+    </style>
+
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <script type="text/javascript">
       Highcharts.chart('container', {
       plotOptions:{
       sankey:{
@@ -42,7 +65,7 @@
       nodePadding:20,
       states:{
       hover:{
-      borderColor:"white ",
+      borderColor:"white",
 
       brightness: -0.3
       }
@@ -106,8 +129,8 @@
             ['6% On the surface', 'Ingestion', .75, '#526c61'],
             ['94% Underwater', 'Litter on beaches', 9.3, '#999966'],
             ['94% Underwater', 'Entanglement', 9.3, '#cc6600'],
-            ['94% Underwater', 'Ingestion', 9.3,"#526c61 "],
-            ['94% Underwater', '70% eventually sinks to the sea floor', 66,"#0099cc ", "skyblue "]
+            ['94% Underwater', 'Ingestion', 9.3,"#526c61"],
+            ['94% Underwater', '70% eventually sinks to the sea floor', 66,"#0099cc", "skyblue"]
 
           ],
 
@@ -153,13 +176,13 @@
                             color:' #0099ff'
                             },
                             {id:'Litter on beaches',
-                              color:"#999966 "},
+                              color:"#999966"},
                             {id:'Ingestion',
-                              color:"#526c61 "},
+                              color:"#526c61"},
                               {id:'Entanglement',
-                                color:"#cc6600 "},
+                                color:"#cc6600"},
                             {id:'70% eventually sinks to the sea floor',
-                              color:"#0099cc "}
+                              color:"#0099cc"}
 
 
             ],
@@ -171,342 +194,363 @@
     </script>
 
 
+    <p>Unfortunately, we currently recycle only a small percentage of our plastic output. Unless some basic changes take place soon, the global plastic problem will only grow more and more severe over time.</p></div>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    </head>
+    <script>
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+      </script>
+    <style>
 
-</div>
-
-<div class="center ">
-</div>
-
-
-<script>
-  <link rel="stylesheet " type="text/css " href="//fonts.googleapis.com/css?family=Lato " />
-  </script>
-<style>
-
-    body {
-        font-family:"Lato ", "Helvetica Neue ", Helvetica, Arial, sans-serif;
-        text-align:center;
-        width: 960px;
-        height: 500px;
-        position: relative;
-    }
-
-    /*
-    body {
-      font-family: "Helvetica Neue ", Helvetica, Arial, sans-serif;
-      width: 960px;
-      height: 500px;
-      position: relative;
-    }
-    */
-    svg {
-        width: 100%;
-        height: 100%;
-        position: center;
-    }
-
-    path.slice{
-        stroke-width:1px;
-    }
-
-    text{
-        font-family: "Helvetica Neue ", Helvetica, Arial, sans-serif;
-    }
-
-    polyline{
-        opacity: .3;
-        stroke: black;
-        stroke-width: 2px;
-        fill: none;
-    }
-
-    .labelValue
-    {
-        font-family: "Helvetica Neue ", Helvetica, Arial, sans-serif;
-        font-size: 60%;
-        opacity: .5;
-
-    }
-
-    .axis-label {
-        text-anchor: middle;
-    }
-
-    label {
-        font-family: "Lato ","Helvetica Neue ", Helvetica, Arial, sans-serif;
-        font-weight: normal;
-    }
-
-
-
-    .toolTip {
-        font-family: "Lato ","Helvetica Neue ", Helvetica, Arial, sans-serif;
-        position: absolute;
-        display: none;
-        width: auto;
-        height: auto;
-        font-weight: bold;
-        background: none repeat scroll 0 0 white;
-        border: 0 none;
-        border-radius: 8px 8px 8px 8px;
-        box-shadow: -3px 3px 15px #888888;
-        color: #018AC0;
-        font: 12px sans-serif;
-        padding: 5px;
-        text-align: center;
-    }
-
-    .legend {
-        font-family: "Helvetica Neue ", Helvetica, Arial, sans-serif;
-        font-size: 60%;
-    }
-    rect {
-        stroke-width: 2;
-
-    }
-
-    text {
-        font: 10px sans-serif;
-    }
-
-
-    text.value{
-        font-size: 200%;
-        fill: white;
-    }
-
-    text.label{
-        font-size: 100%;
-    }
-
-    .axis text {
-        font: 10px sans-serif;
-    }
-
-    .axis path{
-        fill: none;
-        stroke: #000;
-    }
-
-    .axis path,
-    .axis line {
-        fill:none;
-        stroke:#000;
-        stroke-width: 3;
-        shape-rendering:crispEdges;
-    }
-
-    .axis .tick line {
-        stroke-width: 1;
-        stroke: rgba(0, 0, 0, 0.2);
-    }
-
-    .axisHorizontal path{
-        fill: none;
-    }
-
-    .axisHorizontal line {
-        fill: none;
-        stroke: #000;
-        shape-rendering: crispEdges;
-    }
-
-    .axisHorizontal .tick line {
-        stroke-width: 1;
-        stroke:#018AC0;
-    }
-
-    .bar {
-        fill: #018AC0;
-        fill-opacity: .9;
-    }
-
-    .x.axis path {
-
-    }
-      #title,
-      #footer{
-      font-family:"Lato ";
-      font-size: 20px;
-        padding-top: 10px;
-        padding-left: 50px;
-
-      }
-        #title{
-          text-align: center;
+        body {
+            font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-align:center;
+            width: 960px;
+            height: 500px;
+            position: relative;
         }
-#footer{
-  font-size: 16px;
-  text-align: left;
-}
 
-#source{
-  font-size: 10px;
-  text-align: left;
-  padding-left: 50px;
+        /*
+        body {
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          width: 960px;
+          height: 500px;
+          position: relative;
+        }
+        */
+        svg {
+            width: 100%;
+            height: 100%;
+            position: center;
+        }
 
-}
-    }
+        path.slice{
+            stroke-width:1px;
+        }
 
-</style>
-<br></br>
+        text{
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
 
-  <div class = "center " id ="title "> <h1>Plastic Marine Debris Projections</h1></div>
+        polyline{
+            opacity: .3;
+            stroke: black;
+            stroke-width: 2px;
+            fill: none;
+        }
 
-<p>Unfortunately, we currently recycle only a small percentage of our plastic output. Unless some basic changes take place soon, the global plastic problem will only grow more and more severe over time.</p>
-
-<form>
-    <label><input type="radio " name="dataset " id="dataset " value="Low " checked> Low (15%)</label>
-    <label><input type="radio " name="dataset " id="dataset " value="Mid ">Mid (25%) </label>
-    <label><input type="radio " name="dataset " id="dataset " value="High "> High (40%)</label>
-</form>
-
-<script src="http://d3js.org/d3.v3.min.js "></script>
-<script>
-
-    d3.select("input[value=\ "Low\"] ").property("checked ", true);
-
-    datasetLow = [
-        {label:"2010 ", value:7},
-        {label:"2015 ", value:30},
-        {label:"2020 ", value:57},
-        {label:"2025 ", value:90},
-
-    ];
-
-    datasetMid = [
-    {label:"2010 ", value:10},
-    {label:"2015 ", value:50},
-    {label:"2020 ", value:95},
-    {label:"2025 ", value:155},
-
-    ];
-
-    datasetHigh = [
-    {label:"2010 ", value:15},
-    {label:"2015 ", value:80},
-    {label:"2020 ", value:150},
-    {label:"2025 ", value:235},
-    ];
-
-    d3.selectAll("input ").on("change ", selectDataset);
-
-    function selectDataset()
-    {
-        var value = this.value;
-        if (value == "Low ")
+        .labelValue
         {
-            change(datasetLow);
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 60%;
+            opacity: .5;
+
         }
-        else if (value == "Mid ")
-        {
-            change(datasetMid);
+
+        .axis-label {
+            text-anchor: middle;
         }
-        else if (value == "High ")
-        {
-            change(datasetHigh);
+
+        label {
+            font-family: "Lato","Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: normal;
         }
+
+
+
+        .toolTip {
+            font-family: "Lato","Helvetica Neue", Helvetica, Arial, sans-serif;
+            position: absolute;
+            display: none;
+            width: auto;
+            height: auto;
+            font-weight: bold;
+            background: none repeat scroll 0 0 white;
+            border: 0 none;
+            border-radius: 8px 8px 8px 8px;
+            box-shadow: -3px 3px 15px #888888;
+            color: #018AC0;
+            font: 12px sans-serif;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .legend {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 60%;
+        }
+        rect {
+            stroke-width: 2;
+
+        }
+
+        text {
+            font: 10px sans-serif;
+        }
+
+
+        text.value{
+            font-size: 200%;
+            fill: white;
+        }
+
+        text.label{
+            font-size: 100%;
+        }
+
+        .axis text {
+            font: 10px sans-serif;
+        }
+
+        .axis path{
+            fill: none;
+            stroke: #000;
+        }
+
+        .axis path,
+        .axis line {
+            fill:none;
+            stroke:#000;
+            stroke-width: 3;
+            shape-rendering:crispEdges;
+        }
+
+        .axis .tick line {
+            stroke-width: 1;
+            stroke: rgba(0, 0, 0, 0.2);
+        }
+
+        .axisHorizontal path{
+            fill: none;
+        }
+
+        .axisHorizontal line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        .axisHorizontal .tick line {
+            stroke-width: 1;
+            stroke:#018AC0;
+        }
+
+        .bar {
+            fill: #018AC0;
+            fill-opacity: .9;
+        }
+
+        .x.axis path {
+
+        }
+          #title,
+          #footer{
+          font-family:"Lato";
+          font-size: 20px;
+            padding-top: 10px;
+            padding-left: 50px;
+
+          }
+            #title{
+              text-align: center;
+            }
+    #footer{
+      font-size: 16px;
+      text-align: left;
     }
 
+    #source{
+      font-size: 10px;
+      text-align: left;
+      padding-left: 50px;
 
-    var margin = {top: (parseInt(d3.select('body').style('height'), 10)/10), right: (parseInt(d3.select('body').style('width'), 10)/20), bottom: (parseInt(d3.select('body').style('height'), 10)/10), left: (parseInt(d3.select('body').style('width'), 10)/10)},
-            width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right - 400,
-            height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
+    }
+        }
 
-    var div = d3.select("body ").append("div ").attr("class ", "toolTip ");
+    </style>
+    <body>
+      <div id ="title"> <b>Plastic Marine Debris Projections</b></div>
+      <br></br>
 
-    var formatPercent = d3.format(" ");
+    <form>
+        <label><input type="radio" name="dataset" id="dataset" value="Low" checked> Low (15%)</label>
+        <label><input type="radio" name="dataset" id="dataset" value="Mid">Mid (25%) </label>
+        <label><input type="radio" name="dataset" id="dataset" value="High"> High (40%)</label>
+    </form>
 
-    var x = d3.scale.ordinal()
-            .rangeRoundBands([0, width], .2, 0.5);
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script>
 
-    var y = d3.scale.linear()
-            .range([height, 0]);
+        d3.select("input[value=\"Low\"]").property("checked", true);
 
-    var xAxis = d3.svg.axis()
-            .scale(x)
-            .orient("bottom ");
+        datasetLow = [
+            {label:"2010", value:7},
+            {label:"2015", value:30},
+            {label:"2020", value:57},
+            {label:"2025", value:90},
 
-    var yAxis = d3.svg.axis()
-            .scale(y)
-            .orient("left ")
-            .tickFormat(formatPercent);
+        ];
 
-    var svg = d3.select("body ").append("svg ")
-            .attr("width ", width + margin.left + margin.right)
-            .attr("height ", height + margin.top + margin.bottom)
-            .append("g ")
-            .attr("transform ", "translate( " + margin.left + ", " + margin.top + ") ");
+        datasetMid = [
+        {label:"2010", value:10},
+        {label:"2015", value:50},
+        {label:"2020", value:95},
+        {label:"2025", value:155},
 
-    svg.append("g ")
-            .attr("class ", "x axis ")
-            .attr("transform ", "translate(0, " + height + ") ")
-            .call(xAxis);
+        ];
 
-    /*svg.append("text ")
-                .attr("x ", (width / 2))
-                .attr("y ", 0 - (margin.top / 2))
-                .attr("text-anchor ", "middle ")
-                .style("font-size ", "16px ")
-                .text("Plastic Projections ");*/
+        datasetHigh = [
+        {label:"2010", value:15},
+        {label:"2015", value:80},
+        {label:"2020", value:150},
+        {label:"2025", value:235},
+        ];
 
-    change(datasetLow);
+        d3.selectAll("input").on("change", selectDataset);
 
-    function change(dataset) {
-
-        x.domain(dataset.map(function(d) { return d.label; }));
-        //y.domain([0, d3.max(dataset, function(d) { return d.value; })]);
-        y.domain([0,250]);
-
-        svg.append("g ")
-                .attr("class ", "x axis ")
-                .attr("transform ", "translate(0, " + height + ") ")
-                .call(xAxis)
-                .append("text ")
-                .attr("x ", (width / 2))
-                .attr("y ", (margin.top / 2)+10)
-                .style("font-size ","14px ")
-                .style("font-family ","Lato ")
-                .text("Year ");
-
-        svg.select(".y.axis ").remove();
-        svg.select(".x.axis ").remove();
-
-        svg.append("g ")
-                .attr("class ", "y axis ")
-                .call(yAxis)
-                .append("text ")
-                .attr("transform ", "rotate(-90) ")
-                .attr("y ", 6)
-                .attr("dy ", ".71em ")
-                .style("text-anchor ", "end ")
-                .style("font-size ","14px ")
-                .style("font-family ","Lato ")
-                .text("Plastic marine debris, cumulative (in million metric tons) ");
+        function selectDataset()
+        {
+            var value = this.value;
+            if (value == "Low")
+            {
+                change(datasetLow);
+            }
+            else if (value == "Mid")
+            {
+                change(datasetMid);
+            }
+            else if (value == "High")
+            {
+                change(datasetHigh);
+            }
+        }
 
 
-        var bar = svg.selectAll(".bar ")
-                .data(dataset, function(d) { return d.label; });
-        // new data:
-        bar.enter().append("rect ")
-                .attr("class ", "bar ")
-                .attr("x ", function(d) { return x(d.label); })
-                .attr("y ", function(d) { return y(d.value); })
-                .attr("height ", function(d) { return height - y(d.value); })
-                .attr("width ", x.rangeBand());
+        var margin = {top: (parseInt(d3.select('body').style('height'), 10)/10), right: (parseInt(d3.select('body').style('width'), 10)/20), bottom: (parseInt(d3.select('body').style('height'), 10)/10), left: (parseInt(d3.select('body').style('width'), 10)/10)},
+                width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right - 400,
+                height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
 
-        bar
-                .on("mousemove ", function(d){
-                    div.style("left ", d3.event.pageX+10+"px ");
-                    div.style("top ", d3.event.pageY-25+"px ");
-                    div.style("display ", "inline-block ");
-                    div.html("Year: <b>"+(d.label)+"</b>"+"<br>"+"<b>"+(d.value)+"</b>" +" Million MT"); }); bar .on("mouseout", function(d){ div.style("display", "none"); }); // removed data: bar.exit().remove(); // updated data: bar .transition() .duration(750) .attr("y", function(d) {
-    return y(d.value); }) .attr("height", function(d) { return height - y(d.value); }); };
+        var div = d3.select("body").append("div").attr("class", "toolTip");
+
+        var formatPercent = d3.format("");
+
+        var x = d3.scale.ordinal()
+                .rangeRoundBands([0, width], .2, 0.5);
+
+        var y = d3.scale.linear()
+                .range([height, 0]);
+
+        var xAxis = d3.svg.axis()
+                .scale(x)
+                .orient("bottom");
+
+        var yAxis = d3.svg.axis()
+                .scale(y)
+                .orient("left")
+                .tickFormat(formatPercent);
+
+        var svg = d3.select("body").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        svg.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis);
+
+        /*svg.append("text")
+                    .attr("x", (width / 2))
+                    .attr("y", 0 - (margin.top / 2))
+                    .attr("text-anchor", "middle")
+                    .style("font-size", "16px")
+                    .text("Plastic Projections");*/
+
+        change(datasetLow);
+
+        function change(dataset) {
+
+            x.domain(dataset.map(function(d) { return d.label; }));
+            //y.domain([0, d3.max(dataset, function(d) { return d.value; })]);
+            y.domain([0,250]);
+
+            svg.append("g")
+                    .attr("class", "x axis")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(xAxis)
+                    .append("text")
+                    .attr("x", (width / 2))
+                    .attr("y", (margin.top / 2)+10)
+                    .style("font-size","14px")
+                    .style("font-family","Lato")
+                    .text("Year");
+
+            svg.select(".y.axis").remove();
+            svg.select(".x.axis").remove();
+
+            svg.append("g")
+                    .attr("class", "y axis")
+                    .call(yAxis)
+                    .append("text")
+                    .attr("transform", "rotate(-90)")
+                    .attr("y", 6)
+                    .attr("dy", ".71em")
+                    .style("text-anchor", "end")
+                    .style("font-size","14px")
+                    .style("font-family","Lato")
+                    .text("Plastic marine debris, cumulative (in million metric tons)");
+
+
+            var bar = svg.selectAll(".bar")
+                    .data(dataset, function(d) { return d.label; });
+            // new data:
+            bar.enter().append("rect")
+                    .attr("class", "bar")
+                    .attr("x", function(d) { return x(d.label); })
+                    .attr("y", function(d) { return y(d.value); })
+                    .attr("height", function(d) { return height - y(d.value); })
+                    .attr("width", x.rangeBand());
+
+            bar
+                    .on("mousemove", function(d){
+                        div.style("left", d3.event.pageX+10+"px");
+                        div.style("top", d3.event.pageY-25+"px");
+                        div.style("display", "inline-block");
+                        div.html("Year: <b>"+(d.label)+"</b>"+"<br>"+"<b>"+(d.value)+"</b>" +" Million MT");
+                    });
+            bar
+                    .on("mouseout", function(d){
+                        div.style("display", "none");
+                    });
+
+            // removed data:
+            bar.exit().remove();
+            // updated data:
+            bar
+                    .transition()
+                    .duration(750)
+                    .attr("y", function(d) { return y(d.value); })
+                    .attr("height", function(d) { return height - y(d.value); });
+        };
     </script>
-    <div id="footer"> Estimates reflect assumed conversion rates of mismanaged plastic waste to marine debris <br>(high, 40%; mid, 25%; low, 15%)<br> </br>
+    <div id = "footer"> Estimates reflect assumed conversion rates of mismanaged plastic waste to marine debris <br>(high, 40%; mid, 25%; low, 15%)<br> </br></div>
+    <div id = "source">  Source:Jambeck et al. (2015, February 13). Plastic waste inputs from land into the ocean
     </div>
-    <div id="source"> Source:Jambeck et al. (2015, February 13). Plastic waste inputs from land into the ocean
-    </div>
-    <br>
+    </body>
+    </html>
+
+    <div>
+
+
+
+
+
+
+
 
 </body>
+  </html>
