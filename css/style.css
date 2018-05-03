@@ -7,14 +7,10 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a, nav .brand-logo {
-  color: #white;
-}
-
 p {
   line-height: 2rem;
   font-size: 16px;
-  
+
 }
 
 .sidenav-trigger {
@@ -650,11 +646,6 @@ footer.page-footer {
 
 .mdc-component__toolbar .mdc-fab.mdc--theme-secondary.mdc-ripple-upgraded::after {
   background-color: rgba(0, 0, 0, 0.16);
-}
-
-.brand-logo {
-  font-weight: 900;
-  display: inline-block;
 }
 
 .dropdown-content {
