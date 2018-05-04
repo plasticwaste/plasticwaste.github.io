@@ -10,7 +10,7 @@
   body {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
-    width: 960px;
+    width: 1200px;
     height: 500px;
     position: relative;
   }
@@ -164,17 +164,17 @@
 </style>
 
 <body>
-  <div id="title"> <b>Plastic Marine Debris Projections</b></div>
+  <div id="title" class=""> <b>Plastic Marine Debris Projections</b></div>
   <br></br>
 
-  <form>
+  <form class="">
       <label><input type="radio" name="dataset" id="dataset" value="Low" checked> If we sdopt some waste management  infrastructure improvements  (15%)</label><br>
       <label><input type="radio" name="dataset" id="dataset" value="Mid"> Without waste management infrastructure improvements (25%) </label><br>
       <label><input type="radio" name="dataset" id="dataset" value="High"> If we do worse in waste management (40%)</label><br>
   </form>
 
   <script>
-    d3.select("input[value=\"Low\"]").property("checked", true);
+    d3.select("input[value=\"Low\"]").property("checked", true).attr("align","center");
 
     datasetLow = [{
         label: "2010",
@@ -364,10 +364,10 @@
         });
     };
   </script>
-  <div id="footer">
+  <div id="" class="center" style="font-size:12px">
     Estimates reflect assumed conversion rates of mismanaged plastic waste to marine debris <br>(high, 40%; mid, 25%; low, 15%)<br> </br>
   </div>
-  <div id="source">
+  <div id="" class="center" style="font-size:10px">
     Source:Jambeck et al. (2015, February 13). Plastic waste inputs from land into the ocean
   </div>
 
