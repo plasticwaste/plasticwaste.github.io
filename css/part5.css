@@ -11,7 +11,7 @@ body {
 
 .card {
   width: 350px;
-  height: 400px;
+  height: 420px;
   margin: 0 auto;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   margin-top: 5em;
@@ -126,11 +126,11 @@ body {
       animation: ejemplo 0.5s 0.2s forwards;
     }
     .cardContentName {
-      color: #018AC0;
+      color: #0d47a1;
       font-size: 25px;
     }
     .cardContentJob {
-      color: #B0C6DB;
+      color: #1976d2;
       font-size: 15px;
     }
     p {
@@ -190,11 +190,11 @@ body {
 }
 
 .cardContentTitle{
-  color: #018AC0;
+  color: #0d47a1;
   font-size: 25px;
 }
 
 .cardContentDetail{
-  color: #B0C6DB;
+  color: #424242;
   font-size: 15px;
 }
