@@ -58,128 +58,129 @@
     },
 
       title: {
-        text: 'Where does the Plastic you throw go?'
+        text: 'What happens to Plastic in the Sea?'
       },
 
       tooltip: {
               enabled: false
           },
 
-      series: [{
-        keys: ['from', 'to', 'weight','color'],
-        data: [
-          ['Beverage litter 33%', '6% On the surface', 1.98,'#800000'],
-          ['Beverage litter 33%', '94% Underwater', 31.02, '#cc9900'],
-          ['Tyre dust 18%', '6% On the surface', 1.08, '#800000'],
-          ['Tyre dust 18%', '94% Underwater', 16.92, '#806000'],
-          ['Maritime Waste 11%', '6% On the surface', 0.66, '#800000'],
-          ['Maritime Waste 11%', '94% Underwater', 10.34, '#664d00'],
-          ['Nurdles 9%', '6% On the surface', 0.54, '#800000'],
-          ['Nurdles 9%', '94% Underwater', 8.46, '#4d3900'],
+          series: [{
+            keys: ['from', 'to', 'weight', 'color'],
+            data: [
+              ['Beverage litter 33%', '6% On the surface', 1.98, '#800000'],
+              ['Beverage litter 33%', '94% Underwater', 31.02, '#cc9900'],
+              ['Tyre dust 18%', '6% On the surface', 1.08, '#800000'],
+              ['Tyre dust 18%', '94% Underwater', 16.92, '#806000'],
+              ['Maritime Waste 11%', '6% On the surface', 0.66, '#800000'],
+              ['Maritime Waste 11%', '94% Underwater', 10.34, '#664d00'],
+              ['Nurdles 9%', '6% On the surface', 0.54, '#800000'],
+              ['Nurdles 9%', '94% Underwater', 8.46, '#4d3900'],
 
-          ['Synthetic fibres 9%', '6% On the surface', 0.54, '#800000'],
-          ['Synthetic fibres 9%', '94% Underwater', 8.46, '#332600'],
-          ['Other plastic litter 9%', '6% On the surface', 0.54, '#800000'],
-          ['Other plastic litter 9%', '94% Underwater', 8.46, '#997300'],
+              ['Synthetic fibres 9%', '6% On the surface', 0.54, '#800000'],
+              ['Synthetic fibres 9%', '94% Underwater', 8.46, '#332600'],
+              ['Other plastic litter 9%', '6% On the surface', 0.54, '#800000'],
+              ['Other plastic litter 9%', '94% Underwater', 8.46, '#997300'],
 
-          ['Cigarettes 5%', '6% On the surface', 0.3, '#800000'],
-          ['Cigarettes 5%', '94% Underwater', 4.7, '#61526c'],
+              ['Cigarettes 5%', '6% On the surface', 0.3, '#800000'],
+              ['Cigarettes 5%', '94% Underwater', 4.7, '#61526c'],
 
-          ['Plastic dust 4%', '6% On the surface', 0.24, '#800000'],
-          ['Plastic dust 4%', '94% Underwater', 3.76, '#5d6c52'],
+              ['Plastic dust 4%', '6% On the surface', 0.24, '#800000'],
+              ['Plastic dust 4%', '94% Underwater', 3.76, '#5d6c52'],
 
-          ['Plastic bags 1%', '6% On the surface', .06, '#800000'],
-          ['Plastic bags 1%', '94% Underwater', .94, '#4d4156'],
+              ['Plastic bags 1%', '6% On the surface', .06, '#800000'],
+              ['Plastic bags 1%', '94% Underwater', .94, '#4d4156'],
 
-          ['Microbeads 1%', '6% On the surface', .06, '#800000'],
-          ['Microbeads 1%', '94% Underwater', .94, '#302936'],
-          ['6% On the surface', 'Litter on beaches', 4.5, '#999966'],
-          ['6% On the surface', 'Entanglement', .75, '#cc6600'],
-          ['6% On the surface', 'Ingestion', .75, '#526c61'],
-          ['94% Underwater', 'Litter on beaches', 9.3, '#999966'],
-          ['94% Underwater', 'Entanglement', 9.3, '	#0080ff'],
-          ['94% Underwater', 'Ingestion', 9.3, "#6f6fff"],
-          ['94% Underwater', '70% eventually sinks to the sea floor', 66, "#0000ff"]
+              ['Microbeads 1%', '6% On the surface', .06, '#800000'],
+              ['Microbeads 1%', '94% Underwater', .94, '#302936'],
 
-        ],
+              ['6% On the surface', 'Litter on beaches', 4.5, '#999966'],
+              ['6% On the surface', 'Entanglement', .75, '#cc6600'],
+              ['6% On the surface', 'Ingestion', .75, '#526c61'],
+              ['94% Underwater', 'Litter on beaches', 9.3, '#999966'],
+              ['94% Underwater', 'Entanglement', 9.3, '	#70DBDB'],
+              ['94% Underwater', 'Ingestion', 9.3, "#00C5CD		"],
+              ['94% Underwater', '70% eventually sinks to the sea floor', 66, "#41b9e1"]
 
-        nodes: [{
-            id: 'Beverage litter 33%',
-            color: '#cc9900',
+            ],
 
-          },
+            nodes: [{
+                id: 'Beverage litter 33%',
+                color: '#cc9900',
 
-          {
-            id: 'Tyre dust 18%',
-            color: '#806000'
-          },
-          {
-            id: 'Maritime Waste 11%',
-            color: '#664d00'
-          },
-          {
-            id: 'Nurdles 9%',
-            color: '#4d3900'
-          },
-          {
-            id: 'Synthetic fibres 9%',
-            color: '#332600'
-          },
-          {
-            id: 'Cigarettes 5%',
-            color: '#61526c'
-          },
-          {
-            id: 'Plastic dust 4%',
-            color: '#5d6c52'
-          },
-          {
-            id: 'Other plastic litter 9%',
-            color: '#997300'
-          },
-          {
-            id: 'Plastic bags 1%',
-            color: '#4d4156'
-          },
-          {
-            id: 'Microbeads 1%',
-            color: '#302936'
-          },
+              },
 
-          {
-            id: '6% On the surface',
-            color: '#800000'
-          },
-          {
-            id: '94% Underwater',
-            color: ' #0099ff'
-          },
-          {
-            id: 'Litter on beaches',
-            color: "#999966"
-          },
-          {
-            id: 'Ingestion',
-            color: "#6f6fff"
-          },
-          {
-            id: 'Entanglement',
-            color: "	#0080ff"
-          },
-          {
-            id: '70% eventually sinks to the sea floor',
-            color: "#0000ff"
-          }
+              {
+                id: 'Tyre dust 18%',
+                color: '#806000'
+              },
+              {
+                id: 'Maritime Waste 11%',
+                color: '#664d00'
+              },
+              {
+                id: 'Nurdles 9%',
+                color: '#4d3900'
+              },
+              {
+                id: 'Synthetic fibres 9%',
+                color: '#332600'
+              },
+              {
+                id: 'Cigarettes 5%',
+                color: '#61526c'
+              },
+              {
+                id: 'Plastic dust 4%',
+                color: '#5d6c52'
+              },
+              {
+                id: 'Other plastic litter 9%',
+                color: '#997300'
+              },
+              {
+                id: 'Plastic bags 1%',
+                color: '#4d4156'
+              },
+              {
+                id: 'Microbeads 1%',
+                color: '#302936'
+              },
+
+              {
+                id: '6% On the surface',
+                color: '#800000'
+              },
+              {
+                id: '94% Underwater',
+                color: ' #0099ff'
+              },
+              {
+                id: 'Litter on beaches',
+                color: "#999966"
+              },
+              {
+                id: 'Ingestion',
+                color: "#00C5CD	"
+              },
+              {
+                id: 'Entanglement',
+                color: "#70DBDB	"
+              },
+              {
+                id: '70% eventually sinks to the sea floor',
+                color: "#41b9e1"
+              }
 
 
-        ],
-        type: 'sankey',
-        name: ' ',
+            ],
+            type: 'sankey',
+            name: ' ',
 
-        }]
+          }]
         });
 
-  </script>
+      </script>
 </body>
 
 </html>
